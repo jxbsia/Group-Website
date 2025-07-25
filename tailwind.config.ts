@@ -19,8 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				inter: ['Inter', 'sans-serif'],
-				playfair: ['Playfair Display', 'serif'],
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				mono: ['JetBrains Mono', 'monospace'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -56,12 +56,6 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				academic: {
-					blue: 'hsl(var(--academic-blue))',
-					light: 'hsl(var(--academic-light))',
-					accent: 'hsl(var(--academic-accent))',
-					navy: 'hsl(var(--academic-navy))',
-				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -71,6 +65,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				spacex: {
+					dark: 'hsl(var(--spacex-dark))',
+					light: 'hsl(var(--spacex-light))',
+					gray: 'hsl(var(--spacex-gray))',
+					border: 'hsl(var(--spacex-border))',
 				}
 			},
 			borderRadius: {

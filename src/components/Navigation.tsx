@@ -19,13 +19,13 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-white/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+    <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 font-playfair font-semibold text-xl text-primary">
-            <Lightbulb className="h-6 w-6 text-accent" />
-            <span>Photonics Research Group</span>
+          <Link to="/" className="flex items-center space-x-3 font-sans font-bold text-xl text-primary tracking-wide">
+            <Lightbulb className="h-6 w-6 text-primary" />
+            <span>SIA LABORATORIES</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -36,7 +36,7 @@ const Navigation = () => {
                 to={item.path}
                 className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                   isActive(item.path)
-                    ? 'text-primary border-b-2 border-accent'
+                    ? 'text-primary border-b-2 border-primary'
                     : 'text-muted-foreground hover:text-primary'
                 }`}
               >
@@ -61,7 +61,7 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t">
               {navItems.map((item) => (
                 <Link
                   key={item.name}

@@ -28,7 +28,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ news, featured = false }) => {
   };
 
   return (
-    <Card className={`group hover:shadow-lg transition-all duration-300 ${featured ? 'border-accent' : ''}`}>
+    <Card className={`group hover:bg-card/70 transition-all duration-500 bg-card/50 border-border/50 ${featured ? 'border-primary/30' : ''}`}>
       {news.thumbnail && (
         <div className="aspect-video overflow-hidden rounded-t-lg">
           <img 
@@ -40,7 +40,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ news, featured = false }) => {
       )}
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between mb-2">
-          <Badge variant="secondary" className="text-xs">
+          <Badge variant="secondary" className="text-xs bg-secondary/60 text-secondary-foreground">
             {news.category}
           </Badge>
           <div className="flex items-center text-muted-foreground text-xs">
@@ -48,12 +48,12 @@ const NewsCard: React.FC<NewsCardProps> = ({ news, featured = false }) => {
             {formatDate(news.date)}
           </div>
         </div>
-        <CardTitle className={`${featured ? 'text-lg' : 'text-base'} font-playfair leading-tight`}>
+        <CardTitle className={`${featured ? 'text-lg' : 'text-base'} font-bold leading-tight tracking-wide`}>
           {news.title}
         </CardTitle>
       </CardHeader>
       <CardContent className="pt-0">
-        <CardDescription className="text-sm leading-relaxed">
+        <CardDescription className="text-sm leading-relaxed font-light">
           {news.description}
         </CardDescription>
         {news.link && (
@@ -61,9 +61,9 @@ const NewsCard: React.FC<NewsCardProps> = ({ news, featured = false }) => {
             href={news.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center mt-3 text-primary hover:text-accent transition-colors text-sm font-medium"
+            className="inline-flex items-center mt-3 text-primary hover:text-primary/80 transition-colors text-sm font-medium tracking-wide"
           >
-            Read more <ExternalLink className="ml-1 h-3 w-3" />
+            READ MORE <ExternalLink className="ml-1 h-3 w-3" />
           </a>
         )}
       </CardContent>
