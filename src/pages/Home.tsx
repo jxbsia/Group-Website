@@ -23,16 +23,16 @@ const Home = () => {
         
         <div className="relative z-10 text-center text-primary max-w-6xl mx-auto px-4">
           <div className="mb-6">
-            <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
+            <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase font-sans">
               Nanyang Technological University
             </div>
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight">
+            <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight font-sans">
               SIA LABORATORIES
             </h1>
-            <h2 className="text-xl md:text-2xl font-light mb-8 text-muted-foreground tracking-wide">
+            <h2 className="text-xl md:text-2xl font-light mb-8 text-muted-foreground tracking-wide font-sans">
               Professor Brian Sia Jia Xu
             </h2>
-            <p className="text-lg md:text-xl leading-relaxed mb-12 text-muted-foreground max-w-4xl mx-auto font-light">
+            <p className="text-lg md:text-xl leading-relaxed mb-12 text-muted-foreground max-w-4xl mx-auto">
               Advancing high-performance integrated lasers and large-scale photonic integration
             </p>
           </div>
@@ -70,13 +70,13 @@ const Home = () => {
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
+            <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase font-sans">
               Innovation
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 tracking-tight font-sans">
               RESEARCH EXCELLENCE
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Pushing the boundaries of photonic technologies through cutting-edge research 
               in integrated laser systems and large-scale photonic integration.
             </p>
@@ -88,12 +88,12 @@ const Home = () => {
                 <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
                   <Zap className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold tracking-wide uppercase">
+                <CardTitle className="text-xl font-bold tracking-wide uppercase font-sans">
                   HIGH-PERFORMANCE LASERS
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="text-muted-foreground leading-relaxed font-light">
+                <CardDescription className="text-muted-foreground leading-relaxed">
                   Developing next-generation integrated laser technologies with unprecedented 
                   efficiency and performance characteristics for advanced applications.
                 </CardDescription>
@@ -105,12 +105,12 @@ const Home = () => {
                 <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
                   <CircuitBoard className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold tracking-wide uppercase">
+                <CardTitle className="text-xl font-bold tracking-wide uppercase font-sans">
                   PHOTONIC INTEGRATION
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="text-muted-foreground leading-relaxed font-light">
+                <CardDescription className="text-muted-foreground leading-relaxed">
                   Advancing large-scale photonic integration techniques to create complex, 
                   highly-functional photonic circuits on single platforms.
                 </CardDescription>
@@ -122,12 +122,12 @@ const Home = () => {
                 <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
                   <Microscope className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold tracking-wide uppercase">
+                <CardTitle className="text-xl font-bold tracking-wide uppercase font-sans">
                   INNOVATION & IMPACT
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="text-muted-foreground leading-relaxed font-light">
+                <CardDescription className="text-muted-foreground leading-relaxed">
                   Translating fundamental research into practical solutions that advance 
                   telecommunications, sensing, and quantum photonic applications.
                 </CardDescription>
@@ -142,13 +142,13 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-12">
             <div>
-              <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
+              <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase font-sans">
                 Updates
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight">
+              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight font-sans">
                 LATEST NEWS
               </h2>
-              <p className="text-muted-foreground font-light">
+              <p className="text-muted-foreground">
                 Stay updated with our recent achievements and developments
               </p>
             </div>
@@ -186,13 +186,13 @@ const Home = () => {
       {/* Call to Action */}
       <section className="py-24 bg-background">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
+          <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase font-sans">
             Collaboration
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 tracking-tight font-sans">
             JOIN OUR MISSION
           </h2>
-          <p className="text-lg text-muted-foreground mb-12 leading-relaxed font-light">
+          <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
             Interested in cutting-edge photonics research? Explore collaboration opportunities, 
             open positions, and ways to engage with our research community.
           </p>

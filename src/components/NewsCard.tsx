@@ -48,12 +48,12 @@ const NewsCard: React.FC<NewsCardProps> = ({ news, featured = false }) => {
             {formatDate(news.date)}
           </div>
         </div>
-        <CardTitle className={`${featured ? 'text-lg' : 'text-base'} font-bold leading-tight tracking-wide`}>
+        <CardTitle className={`${featured ? 'text-lg' : 'text-base'} font-bold leading-tight tracking-wide font-sans`}>
           {news.title}
         </CardTitle>
       </CardHeader>
       <CardContent className="pt-0">
-        <CardDescription className="text-sm leading-relaxed font-light">
+        <CardDescription className="text-sm leading-relaxed">
           {news.description}
         </CardDescription>
         {news.link && (
