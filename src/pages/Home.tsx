@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import NewsCard from '@/components/NewsCard';
 import { newsData } from '@/data/newsData';
 import { ArrowRight, Microscope, Zap, CircuitBoard, ChevronDown } from 'lucide-react';
-import heroImage from '@/assets/spacex-hero.jpg';
+const heroImage = '/lovable-uploads/d47cdeb8-e0c7-44fc-a49a-89e290bc0c22.png';
 
 const Home = () => {
   const featuredNews = newsData.slice(0, 3);
