@@ -26,7 +26,7 @@ const Home = () => {
             <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
               Nanyang Technological University
             </div>
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight font-meoky">
+            <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight font-orbitron">
               SIA LABORATORIES
             </h1>
             <h2 className="text-xl md:text-2xl font-light mb-8 text-muted-foreground tracking-wide">
