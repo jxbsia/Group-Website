@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import NewsCard from '@/components/NewsCard';
 import { newsData } from '@/data/newsData';
 import { ArrowRight, Microscope, Zap, CircuitBoard, ChevronDown } from 'lucide-react';
-const heroImage = '/lovable-uploads/d47cdeb8-e0c7-44fc-a49a-89e290bc0c22.png';
+const heroImage = '/lovable-uploads/2e207b63-021b-4169-a2d0-c2557318ff95.png';
 
 const Home = () => {
   const featuredNews = newsData.slice(0, 3);
