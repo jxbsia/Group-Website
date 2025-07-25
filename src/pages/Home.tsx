@@ -23,13 +23,13 @@ const Home = () => {
         
         <div className="relative z-10 text-center text-primary max-w-6xl mx-auto px-4">
           <div className="mb-6">
-            <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase font-sans">
+            <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
               Nanyang Technological University
             </div>
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight font-sans">
+            <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight">
               SIA LABORATORIES
             </h1>
-            <h2 className="text-xl md:text-2xl font-light mb-8 text-muted-foreground tracking-wide font-sans">
+            <h2 className="text-xl md:text-2xl font-light mb-8 text-muted-foreground tracking-wide">
               Professor Brian Sia Jia Xu
             </h2>
             <p className="text-lg md:text-xl leading-relaxed mb-12 text-muted-foreground max-w-4xl mx-auto">
@@ -70,10 +70,10 @@ const Home = () => {
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase font-sans">
+            <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
               Innovation
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 tracking-tight font-sans">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 tracking-tight">
               RESEARCH EXCELLENCE
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -88,7 +88,7 @@ const Home = () => {
                 <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
                   <Zap className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold tracking-wide uppercase font-sans">
+                <CardTitle className="text-xl font-bold tracking-wide uppercase">
                   HIGH-PERFORMANCE LASERS
                 </CardTitle>
               </CardHeader>
@@ -105,7 +105,7 @@ const Home = () => {
                 <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
                   <CircuitBoard className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold tracking-wide uppercase font-sans">
+                <CardTitle className="text-xl font-bold tracking-wide uppercase">
                   PHOTONIC INTEGRATION
                 </CardTitle>
               </CardHeader>
@@ -122,7 +122,7 @@ const Home = () => {
                 <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
                   <Microscope className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold tracking-wide uppercase font-sans">
+                <CardTitle className="text-xl font-bold tracking-wide uppercase">
                   INNOVATION & IMPACT
                 </CardTitle>
               </CardHeader>
@@ -142,10 +142,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-12">
             <div>
-              <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase font-sans">
+              <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
                 Updates
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight font-sans">
+              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight">
                 LATEST NEWS
               </h2>
               <p className="text-muted-foreground">
@@ -186,10 +186,10 @@ const Home = () => {
       {/* Call to Action */}
       <section className="py-24 bg-background">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase font-sans">
+          <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
             Collaboration
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 tracking-tight font-sans">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 tracking-tight">
             JOIN OUR MISSION
           </h2>
           <p className="text-lg text-muted-foreground mb-12 leading-relaxed">

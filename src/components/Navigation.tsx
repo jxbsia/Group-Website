@@ -23,7 +23,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 font-sans font-bold text-xl text-primary tracking-wide">
+          <Link to="/" className="flex items-center space-x-3 font-mono font-bold text-xl text-primary tracking-wide">
             <Lightbulb className="h-6 w-6 text-primary" />
             <span>SIA LABORATORIES</span>
           </Link>

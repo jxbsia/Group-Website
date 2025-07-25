@@ -48,7 +48,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ news, featured = false }) => {
             {formatDate(news.date)}
           </div>
         </div>
-        <CardTitle className={`${featured ? 'text-lg' : 'text-base'} font-bold leading-tight tracking-wide font-sans`}>
+        <CardTitle className={`${featured ? 'text-lg' : 'text-base'} font-bold leading-tight tracking-wide`}>
           {news.title}
         </CardTitle>
       </CardHeader>
