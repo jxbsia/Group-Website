@@ -61,31 +61,17 @@
     --sidebar-ring: 0 0% 95%;
 }
 
-@keyframes hero-swirl {
+@keyframes hero-rotate {
   0% {
     transform: rotate(0deg) scale(1.1);
-    transform-origin: 50% 40%;
-  }
-  25% {
-    transform: rotate(90deg) scale(1.15);
-    transform-origin: 60% 50%;
-  }
-  50% {
-    transform: rotate(180deg) scale(1.1);
-    transform-origin: 50% 60%;
-  }
-  75% {
-    transform: rotate(270deg) scale(1.15);
-    transform-origin: 40% 50%;
   }
   100% {
     transform: rotate(360deg) scale(1.1);
-    transform-origin: 50% 40%;
   }
 }
 
 .hero-background {
-  animation: hero-swirl 40s ease-in-out infinite;
+  animation: hero-rotate 30s linear infinite;
 }
 
   .dark {
