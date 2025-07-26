@@ -61,19 +61,17 @@
     --sidebar-ring: 0 0% 95%;
 }
 
-@keyframes hero-pulse {
-  0%, 100% {
-    transform: scale(1);
-    filter: brightness(1) contrast(1);
+@keyframes hero-rotate {
+  0% {
+    transform: rotate(0deg) scale(1.1);
   }
-  50% {
-    transform: scale(1.05);
-    filter: brightness(1.1) contrast(1.1);
+  100% {
+    transform: rotate(360deg) scale(1.1);
   }
 }
 
 .hero-background {
-  animation: hero-pulse 8s ease-in-out infinite;
+  animation: hero-rotate 30s linear infinite;
 }
 
   .dark {
