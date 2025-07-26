@@ -15,8 +15,11 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-pulse"
+          style={{ 
+            backgroundImage: `url(${heroImage})`,
+            animation: 'pulse 4s ease-in-out infinite alternate'
+          }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
         </div>
