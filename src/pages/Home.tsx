@@ -22,6 +22,9 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background"></div>
         </div>
         
+        {/* Laser beam effect */}
+        <div className="laser-beam"></div>
+        
         <div className="relative z-10 text-center text-primary max-w-6xl mx-auto px-4">
           <div className="mb-6">
             <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
