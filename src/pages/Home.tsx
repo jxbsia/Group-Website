@@ -154,13 +154,9 @@ const Home = () => {
           <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
             Support
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-16 tracking-tight">
             OUR FUNDERS
           </h2>
-          <p className="text-lg text-muted-foreground mb-16 leading-relaxed max-w-3xl mx-auto">
-            Our research is made possible through the generous support of leading organizations 
-            committed to advancing photonic technologies and scientific innovation.
-          </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
             <div className="w-40 h-20 flex items-center justify-center p-4">
