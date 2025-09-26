@@ -151,24 +151,21 @@ const Home = () => {
       {/* Funders */}
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
-            Support
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-16 tracking-tight">
             OUR FUNDERS
           </h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-            <div className="w-40 h-20 flex items-center justify-center p-4">
+            <div className="w-56 h-32 flex items-center justify-center p-6">
               <img src={ntuLogo} alt="Nanyang Technological University Singapore" className="max-w-full max-h-full object-contain" />
             </div>
-            <div className="w-40 h-20 flex items-center justify-center p-4">
+            <div className="w-56 h-32 flex items-center justify-center p-6">
               <img src={astarLogo} alt="Agency for Science, Technology and Research Singapore" className="max-w-full max-h-full object-contain" />
             </div>
-            <div className="w-40 h-20 flex items-center justify-center p-4">
+            <div className="w-56 h-32 flex items-center justify-center p-6">
               <img src={moeLogo} alt="Ministry of Education Singapore" className="max-w-full max-h-full object-contain" />
             </div>
-            <div className="w-40 h-20 flex items-center justify-center p-4">
+            <div className="w-56 h-32 flex items-center justify-center p-6">
               <img src={dsoLogo} alt="DSO National Laboratories" className="max-w-full max-h-full object-contain" />
             </div>
           </div>
