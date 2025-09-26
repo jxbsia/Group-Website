@@ -53,15 +53,6 @@ const Home = () => {
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
-              Research Focus
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 tracking-tight">
-              THREE MAIN DIRECTIONS
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Our laboratory focuses on three core research areas that define the future of photonic technologies.
-            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
