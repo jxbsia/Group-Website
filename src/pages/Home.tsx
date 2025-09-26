@@ -68,10 +68,7 @@ const Home = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="text-muted-foreground leading-relaxed">
-                  Advancing ultra-coherent laser systems for precision applications in quantum computing, 
-                  sensing, and high-resolution spectroscopy.
-                </CardDescription>
+                <CardDescription className="text-muted-foreground leading-relaxed">High-Performance, Turkey, Chip-Scale Lasers</CardDescription>
               </CardContent>
             </Card>
 
@@ -80,15 +77,10 @@ const Home = () => {
                 <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
                   <CircuitBoard className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold tracking-wide uppercase">
-                  LARGE-SCALE INTEGRATION
-                </CardTitle>
+                <CardTitle className="text-xl font-bold tracking-wide uppercase">UNIFICATION OF THE THZ AND MHZ</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="text-muted-foreground leading-relaxed">
-                  Developing scalable photonic integration platforms that enable complex 
-                  optical circuits with thousands of components on a single chip.
-                </CardDescription>
+                <CardDescription className="text-muted-foreground leading-relaxed">Seamless Integration of Photonics and Electronics within a Cohesive Framework</CardDescription>
               </CardContent>
             </Card>
 
@@ -97,15 +89,10 @@ const Home = () => {
                 <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
                   <Microscope className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold tracking-wide uppercase">
-                  PHOTONIC INNOVATION
-                </CardTitle>
+                <CardTitle className="text-xl font-bold tracking-wide uppercase">LARGE-SCALE PHOTONIC INTEGRATION</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="text-muted-foreground leading-relaxed">
-                  Pioneering novel photonic materials and devices that push the boundaries 
-                  of optical communication and information processing.
-                </CardDescription>
+                <CardDescription className="text-muted-foreground leading-relaxed">Multi-Optoelectronic Platform Integration</CardDescription>
               </CardContent>
             </Card>
           </div>
