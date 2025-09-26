@@ -30,9 +30,6 @@ const Home = () => {
             <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight font-orbitron text-white">
               SIA LABORATORIES
             </h1>
-            <h2 className="text-xl md:text-2xl font-light mb-8 text-muted-foreground tracking-wide">
-              Professor Brian Sia Jia Xu
-            </h2>
             <p className="text-lg md:text-xl leading-relaxed mb-12 text-muted-foreground max-w-4xl mx-auto">
               Advancing high-performance integrated lasers and large-scale photonic integration
             </p>
