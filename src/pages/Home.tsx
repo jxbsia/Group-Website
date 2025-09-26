@@ -160,13 +160,13 @@ const Home = () => {
               <img src={ntuLogo} alt="Nanyang Technological University Singapore" className="max-w-full max-h-full object-contain" />
             </div>
             <div className="w-96 h-80 flex items-center justify-center p-12">
+              <img src={dsoLogo} alt="DSO National Laboratories" className="max-w-full max-h-full object-contain" />
+            </div>
+            <div className="w-96 h-80 flex items-center justify-center p-12">
               <img src={astarLogo} alt="Agency for Science, Technology and Research Singapore" className="max-w-full max-h-full object-contain" />
             </div>
             <div className="w-96 h-80 flex items-center justify-center p-12">
               <img src={moeLogo} alt="Ministry of Education Singapore" className="max-w-full max-h-full object-contain" />
-            </div>
-            <div className="w-96 h-80 flex items-center justify-center p-12">
-              <img src={dsoLogo} alt="DSO National Laboratories" className="max-w-full max-h-full object-contain" />
             </div>
           </div>
         </div>
