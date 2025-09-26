@@ -26,7 +26,7 @@ const Home = () => {
             <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight font-orbitron text-white">
               SIA LABORATORIES
             </h1>
-            <p className="text-lg md:text-xl leading-relaxed mb-12 text-muted-foreground max-w-4xl mx-auto">Ultra-Coherence, and Large-Scale Photonic Integration</p>
+            <p className="text-lg md:text-xl leading-relaxed mb-12 text-muted-foreground max-w-4xl mx-auto">Ultra-Coherence, Large-Scale Photonics</p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
