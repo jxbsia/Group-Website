@@ -123,4 +123,15 @@
   body {
     @apply bg-background text-foreground font-mono;
   }
+
+  .steel-text {
+    background-image: url('/src/assets/steel-texture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
 }

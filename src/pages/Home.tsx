@@ -6,6 +6,7 @@ import NewsCard from '@/components/NewsCard';
 import { newsData } from '@/data/newsData';
 import { ArrowRight, Microscope, Zap, CircuitBoard, ChevronDown } from 'lucide-react';
 import ruggedBackground from '@/assets/rugged-background.png';
+import steelTexture from '@/assets/steel-texture.jpg';
 
 const Home = () => {
   const featuredNews = newsData.slice(0, 3);
@@ -26,7 +27,7 @@ const Home = () => {
             <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
               Nanyang Technological University
             </div>
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight font-orbitron">
+            <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight font-orbitron steel-text">
               SIA LABORATORIES
             </h1>
             <h2 className="text-xl md:text-2xl font-light mb-8 text-muted-foreground tracking-wide">
