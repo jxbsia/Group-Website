@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import NewsCard from '@/components/NewsCard';
 import { newsData } from '@/data/newsData';
-import { ArrowRight, Microscope, Zap, CircuitBoard, ChevronDown } from 'lucide-react';
+import { ArrowRight, Network, Zap, CircuitBoard, ChevronDown } from 'lucide-react';
 import gargantuaBackground from '@/assets/gargantua-background.jpg';
 import steelTexture from '@/assets/steel-texture.jpg';
 import ntuLogo from '@/assets/ntu-logo.png';
@@ -87,7 +87,7 @@ const Home = () => {
             <Card className="bg-card/50 border-border/50 hover:bg-card/70 transition-all duration-500 group">
               <CardHeader className="text-center pb-8">
                 <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
-                  <Microscope className="h-8 w-8 text-primary" />
+                  <Network className="h-8 w-8 text-primary" />
                 </div>
                 <CardTitle className="text-xl font-bold tracking-wide uppercase">LARGE-SCALE PHOTONIC INTEGRATION</CardTitle>
               </CardHeader>
