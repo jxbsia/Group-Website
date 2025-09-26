@@ -157,10 +157,10 @@ const Home = () => {
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 items-center justify-items-center">
             <div className="w-96 h-80 flex items-center justify-center p-12">
-              <img src={dsoLogo} alt="DSO National Laboratories" className="max-w-full max-h-full object-contain" />
+              <img src={astarLogo} alt="Agency for Science, Technology and Research Singapore" className="max-w-full max-h-full object-contain" />
             </div>
             <div className="w-96 h-80 flex items-center justify-center p-12">
-              <img src={astarLogo} alt="Agency for Science, Technology and Research Singapore" className="max-w-full max-h-full object-contain" />
+              <img src={dsoLogo} alt="DSO National Laboratories" className="max-w-full max-h-full object-contain" />
             </div>
             <div className="w-96 h-80 flex items-center justify-center p-12">
               <img src={ntuLogo} alt="Nanyang Technological University Singapore" className="max-w-full max-h-full object-contain" />
