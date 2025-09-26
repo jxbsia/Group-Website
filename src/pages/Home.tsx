@@ -7,6 +7,10 @@ import { newsData } from '@/data/newsData';
 import { ArrowRight, Microscope, Zap, CircuitBoard, ChevronDown } from 'lucide-react';
 import gargantuaBackground from '@/assets/gargantua-background.jpg';
 import steelTexture from '@/assets/steel-texture.jpg';
+import ntuLogo from '@/assets/ntu-logo.png';
+import astarLogo from '@/assets/astar-logo.png';
+import moeLogo from '@/assets/moe-logo.png';
+import dsoLogo from '@/assets/dso-logo.png';
 const Home = () => {
   const featuredNews = newsData.slice(0, 3);
   return <div className="min-h-screen">
@@ -159,18 +163,17 @@ const Home = () => {
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-            {/* Placeholder for funder logos */}
-            <div className="w-32 h-20 bg-muted/30 rounded-lg flex items-center justify-center">
-              <span className="text-muted-foreground text-sm">FUNDER 1</span>
+            <div className="w-40 h-20 flex items-center justify-center p-4">
+              <img src={ntuLogo} alt="Nanyang Technological University Singapore" className="max-w-full max-h-full object-contain" />
             </div>
-            <div className="w-32 h-20 bg-muted/30 rounded-lg flex items-center justify-center">
-              <span className="text-muted-foreground text-sm">FUNDER 2</span>
+            <div className="w-40 h-20 flex items-center justify-center p-4">
+              <img src={astarLogo} alt="Agency for Science, Technology and Research Singapore" className="max-w-full max-h-full object-contain" />
             </div>
-            <div className="w-32 h-20 bg-muted/30 rounded-lg flex items-center justify-center">
-              <span className="text-muted-foreground text-sm">FUNDER 3</span>
+            <div className="w-40 h-20 flex items-center justify-center p-4">
+              <img src={moeLogo} alt="Ministry of Education Singapore" className="max-w-full max-h-full object-contain" />
             </div>
-            <div className="w-32 h-20 bg-muted/30 rounded-lg flex items-center justify-center">
-              <span className="text-muted-foreground text-sm">FUNDER 4</span>
+            <div className="w-40 h-20 flex items-center justify-center p-4">
+              <img src={dsoLogo} alt="DSO National Laboratories" className="max-w-full max-h-full object-contain" />
             </div>
           </div>
         </div>
