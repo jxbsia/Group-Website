@@ -7,18 +7,14 @@ import { newsData } from '@/data/newsData';
 import { ArrowRight, Microscope, Zap, CircuitBoard, ChevronDown } from 'lucide-react';
 import gargantuaBackground from '@/assets/gargantua-background.jpg';
 import steelTexture from '@/assets/steel-texture.jpg';
-
 const Home = () => {
   const featuredNews = newsData.slice(0, 3);
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${gargantuaBackground})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${gargantuaBackground})`
+      }}>
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background"></div>
         </div>
         
@@ -30,27 +26,16 @@ const Home = () => {
             <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight font-orbitron text-white">
               SIA LABORATORIES
             </h1>
-            <p className="text-lg md:text-xl leading-relaxed mb-12 text-muted-foreground max-w-4xl mx-auto">
-              Advancing high-performance integrated lasers and large-scale photonic integration
-            </p>
+            <p className="text-lg md:text-xl leading-relaxed mb-12 text-muted-foreground max-w-4xl mx-auto">Ultra-Coherence, and Large-Scale Photonic Integration</p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button 
-              size="lg" 
-              asChild 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 text-base"
-            >
+            <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 text-base">
               <Link to="/research">
                 OUR RESEARCH
               </Link>
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              asChild 
-              className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-3 text-base"
-            >
+            <Button size="lg" variant="outline" asChild className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-3 text-base">
               <Link to="/publications">
                 PUBLICATIONS
               </Link>
@@ -150,11 +135,7 @@ const Home = () => {
                 Stay updated with our recent achievements and developments
               </p>
             </div>
-            <Button 
-              variant="outline" 
-              asChild
-              className="border-primary/30 text-primary hover:bg-primary/10 hidden md:flex"
-            >
+            <Button variant="outline" asChild className="border-primary/30 text-primary hover:bg-primary/10 hidden md:flex">
               <Link to="/news">
                 VIEW ALL <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -162,17 +143,11 @@ const Home = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredNews.map((news, index) => (
-              <NewsCard key={news.id} news={news} featured={index === 0} />
-            ))}
+            {featuredNews.map((news, index) => <NewsCard key={news.id} news={news} featured={index === 0} />)}
           </div>
 
           <div className="text-center mt-12 md:hidden">
-            <Button 
-              variant="outline" 
-              asChild
-              className="border-primary/30 text-primary hover:bg-primary/10"
-            >
+            <Button variant="outline" asChild className="border-primary/30 text-primary hover:bg-primary/10">
               <Link to="/news">
                 VIEW ALL NEWS <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -195,26 +170,15 @@ const Home = () => {
             open positions, and ways to engage with our research community.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button 
-              size="lg" 
-              asChild
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 text-base"
-            >
+            <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 text-base">
               <Link to="/team">MEET OUR TEAM</Link>
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              asChild
-              className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-3 text-base"
-            >
+            <Button size="lg" variant="outline" asChild className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-3 text-base">
               <Link to="/contact">CONTACT US</Link>
             </Button>
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
