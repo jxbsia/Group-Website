@@ -144,8 +144,40 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Funders */}
       <section className="py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
+            Support
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 tracking-tight">
+            OUR FUNDERS
+          </h2>
+          <p className="text-lg text-muted-foreground mb-16 leading-relaxed max-w-3xl mx-auto">
+            Our research is made possible through the generous support of leading organizations 
+            committed to advancing photonic technologies and scientific innovation.
+          </p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+            {/* Placeholder for funder logos */}
+            <div className="w-32 h-20 bg-muted/30 rounded-lg flex items-center justify-center">
+              <span className="text-muted-foreground text-sm">FUNDER 1</span>
+            </div>
+            <div className="w-32 h-20 bg-muted/30 rounded-lg flex items-center justify-center">
+              <span className="text-muted-foreground text-sm">FUNDER 2</span>
+            </div>
+            <div className="w-32 h-20 bg-muted/30 rounded-lg flex items-center justify-center">
+              <span className="text-muted-foreground text-sm">FUNDER 3</span>
+            </div>
+            <div className="w-32 h-20 bg-muted/30 rounded-lg flex items-center justify-center">
+              <span className="text-muted-foreground text-sm">FUNDER 4</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-24 bg-secondary/30">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
             Collaboration
