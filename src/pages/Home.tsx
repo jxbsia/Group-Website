@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import NewsCard from '@/components/NewsCard';
 import { newsData } from '@/data/newsData';
 import { ArrowRight, Microscope, Zap, CircuitBoard, ChevronDown } from 'lucide-react';
-import ruggedTexture from '@/assets/rugged-texture.jpg';
+import ruggedBackground from '@/assets/rugged-background.png';
 
 const Home = () => {
   const featuredNews = newsData.slice(0, 3);
@@ -16,7 +16,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${ruggedTexture})` }}
+          style={{ backgroundImage: `url(${ruggedBackground})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background"></div>
         </div>
