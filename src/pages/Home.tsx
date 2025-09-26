@@ -49,6 +49,75 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Main Research Directions */}
+      <section className="py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
+              Research Focus
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 tracking-tight">
+              THREE MAIN DIRECTIONS
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Our laboratory focuses on three core research areas that define the future of photonic technologies.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="bg-card/50 border-border/50 hover:bg-card/70 transition-all duration-500 group">
+              <CardHeader className="text-center pb-8">
+                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
+                  <Zap className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle className="text-xl font-bold tracking-wide uppercase">
+                  ULTRA-COHERENCE
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <CardDescription className="text-muted-foreground leading-relaxed">
+                  Advancing ultra-coherent laser systems for precision applications in quantum computing, 
+                  sensing, and high-resolution spectroscopy.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 border-border/50 hover:bg-card/70 transition-all duration-500 group">
+              <CardHeader className="text-center pb-8">
+                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
+                  <CircuitBoard className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle className="text-xl font-bold tracking-wide uppercase">
+                  LARGE-SCALE INTEGRATION
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <CardDescription className="text-muted-foreground leading-relaxed">
+                  Developing scalable photonic integration platforms that enable complex 
+                  optical circuits with thousands of components on a single chip.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 border-border/50 hover:bg-card/70 transition-all duration-500 group">
+              <CardHeader className="text-center pb-8">
+                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
+                  <Microscope className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle className="text-xl font-bold tracking-wide uppercase">
+                  PHOTONIC INNOVATION
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <CardDescription className="text-muted-foreground leading-relaxed">
+                  Pioneering novel photonic materials and devices that push the boundaries 
+                  of optical communication and information processing.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
       {/* Latest News */}
       <section className="py-24 bg-secondary/30">
