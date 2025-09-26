@@ -157,38 +157,12 @@ work has been featured in numerous media outlets (i.e., MIT News, Optics.org).</
 
             {/* Education */}
             <Card>
-              <CardHeader>
-                <CardTitle className="font-playfair">Education</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {education.map((edu, index) => <div key={index} className="border-l-2 border-accent pl-4">
-                      <h4 className="font-semibold text-foreground">{edu.degree}</h4>
-                      <p className="text-muted-foreground">{edu.institution}</p>
-                      <p className="text-sm text-muted-foreground">{edu.year}</p>
-                    </div>)}
-                </div>
-              </CardContent>
+              
+              
             </Card>
 
             {/* Awards */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="font-playfair flex items-center">
-                  <Award className="h-6 w-6 mr-2 text-accent" />
-                  Awards & Recognition
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {awards.map((award, index) => <div key={index} className="border-l-2 border-accent pl-4">
-                      <h4 className="font-semibold text-foreground">{award.title}</h4>
-                      <p className="text-muted-foreground">{award.organization}</p>
-                      <p className="text-sm text-muted-foreground">{award.year}</p>
-                    </div>)}
-                </div>
-              </CardContent>
-            </Card>
+            
           </div>
         </div>
       </div>
