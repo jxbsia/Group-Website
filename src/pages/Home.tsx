@@ -31,9 +31,7 @@ const Home = () => {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 text-base">
-              <Link to="/research">
-                OUR RESEARCH
-              </Link>
+              <Link to="/research">RESEARCH</Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-3 text-base">
               <Link to="/publications">
