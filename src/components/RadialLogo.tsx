@@ -18,7 +18,7 @@ const RadialLogo: React.FC<RadialLogoProps> = ({ className = '', size = 24 }) =>
         x="50"
         y="65"
         textAnchor="middle"
-        fontSize="80"
+        fontSize="95"
         fontFamily="serif"
         fill="currentColor"
         className="text-primary"
