@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import RadialLogo from './RadialLogo';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +23,8 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 font-orbitron font-bold text-xl text-primary tracking-wide">
-            <RadialLogo className="h-6 w-6 text-primary" size={24} />
-            <span>SIA LABORATORIES</span>
+          <Link to="/" className="flex items-center font-orbitron font-bold text-4xl text-primary tracking-wide">
+            <span>λ</span>
           </Link>
 
           {/* Desktop Navigation */}
