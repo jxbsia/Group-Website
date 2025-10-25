@@ -23,7 +23,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center font-orbitron font-bold text-4xl text-primary tracking-wide">
+          <Link to="/" className="flex items-center font-inter font-bold text-4xl text-primary tracking-tight -ml-2">
             <span>λ</span>
           </Link>
 
