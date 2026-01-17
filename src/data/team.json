@@ -1,0 +1,64 @@
+{
+  "members": [
+    {
+      "id": "1",
+      "name": "Dr. Sarah Chen",
+      "position": "Postdoctoral Research Fellow",
+      "role": "postdoc",
+      "email": "sarah.chen@ntu.edu.sg",
+      "researchInterests": ["Silicon Photonics", "Integrated Lasers", "Optical Communications"],
+      "startYear": "2023"
+    },
+    {
+      "id": "2",
+      "name": "Alex Wang",
+      "position": "PhD Student",
+      "role": "phd",
+      "email": "alex.wang@ntu.edu.sg",
+      "researchInterests": ["Quantum Photonics", "Photonic Integration", "Nonlinear Optics"],
+      "startYear": "2022"
+    },
+    {
+      "id": "3",
+      "name": "Dr. Maria Rodriguez",
+      "position": "Research Scientist",
+      "role": "staff",
+      "email": "maria.rodriguez@ntu.edu.sg",
+      "researchInterests": ["Laser Physics", "Photonic Devices", "Optical Sensing"],
+      "startYear": "2021"
+    },
+    {
+      "id": "4",
+      "name": "James Liu",
+      "position": "PhD Student",
+      "role": "phd",
+      "email": "james.liu@ntu.edu.sg",
+      "researchInterests": ["Photonic Circuits", "Integrated Optics", "Device Modeling"],
+      "startYear": "2021"
+    },
+    {
+      "id": "5",
+      "name": "Emily Zhang",
+      "position": "Master's Student",
+      "role": "masters",
+      "email": "emily.zhang@ntu.edu.sg",
+      "researchInterests": ["Optical Communications", "Signal Processing"],
+      "startYear": "2024"
+    },
+    {
+      "id": "6",
+      "name": "David Kumar",
+      "position": "PhD Student",
+      "role": "phd",
+      "email": "david.kumar@ntu.edu.sg",
+      "researchInterests": ["Photonic Integration", "Laser Design", "Manufacturing"],
+      "startYear": "2020"
+    }
+  ],
+  "alumni": [],
+  "joinUs": {
+    "title": "Join Our Research Group",
+    "description": "We are always looking for motivated researchers to join our team. If you're interested in photonics research and want to contribute to cutting-edge discoveries, we'd love to hear from you.",
+    "contactEmail": "bsxu@ntu.edu.sg"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "pi": {
+    "name": "Professor Brian Sia Jia Xu",
+    "title": "Principal Investigator",
+    "description": "For research collaboration and academic inquiries",
+    "email": "jiaxubrian.sia@ntu.edu.sg",
+    "phone": "+65 6790 4XXX",
+    "facultyProfileLink": "#"
+  },
+  "address": {
+    "department": "School of Electrical & Electronic Engineering",
+    "university": "Nanyang Technological University",
+    "street": "50 Nanyang Avenue",
+    "city": "Singapore",
+    "postalCode": "639798"
+  },
+  "office": {
+    "building": "Block S2.1",
+    "level": "Level 3",
+    "room": "Room S2.1-B3-XX",
+    "officeHours": "Monday - Friday, 9:00 AM - 6:00 PM"
+  },
+  "mapLink": "https://maps.google.com/?q=Nanyang+Technological+University+Singapore",
+  "opportunities": [
+    {
+      "type": "PhD",
+      "title": "PhD Positions",
+      "description": "We regularly accept PhD students with strong backgrounds in electrical engineering, physics, or related fields."
+    },
+    {
+      "type": "Postdoc",
+      "title": "Postdoctoral Positions",
+      "description": "Postdoc opportunities are available for researchers with expertise in photonics and integrated systems."
+    },
+    {
+      "type": "Visiting",
+      "title": "Visiting Researchers",
+      "description": "We welcome visiting researchers and sabbatical visitors for collaborative projects."
+    }
+  ],
+  "additionalInfo": {
+    "responseTime": "We typically respond to inquiries within 2-3 business days. For urgent matters, please email Professor Xu directly.",
+    "collaborationNote": "For research collaboration proposals, please include relevant background information and preliminary ideas in your message. We're always interested in exploring new partnerships that advance photonic technologies."
+  }
+}

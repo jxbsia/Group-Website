@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "institution": "Nanyang Technological University",
+    "title": "SIA LABORATORIES",
+    "subtitle": "Integrated Optics"
+  },
+  "researchHighlights": [
+    {
+      "id": "1",
+      "title": "Wafer-scale photonic integrated circuits",
+      "description": "Scalable photonic circuits for high-volume manufacturing",
+      "icon": "CircuitBoard"
+    },
+    {
+      "id": "2",
+      "title": "Highly-performance lasers",
+      "description": "Next-generation laser sources with exceptional efficiency",
+      "icon": "Zap"
+    },
+    {
+      "id": "3",
+      "title": "Laser-driven RF-photonic systems",
+      "description": "Bridging optical and radio-frequency domains",
+      "icon": "Wifi"
+    },
+    {
+      "id": "4",
+      "title": "Large-scale photonic integration",
+      "description": "Complex, highly-functional photonic circuits",
+      "icon": "Cpu"
+    },
+    {
+      "id": "5",
+      "title": "GPS-free navigation",
+      "description": "Photonic-based inertial navigation systems",
+      "icon": "Navigation"
+    },
+    {
+      "id": "6",
+      "title": "Integrated radar",
+      "description": "Compact, high-performance photonic radar systems",
+      "icon": "Radar"
+    },
+    {
+      "id": "7",
+      "title": "Unification of the THz and the GHz/MHz",
+      "description": "Bridging terahertz and microwave frequency domains",
+      "icon": "Activity"
+    }
+  ],
+  "funders": [
+    {
+      "name": "Nanyang Technological University Singapore",
+      "logo": "ntu-logo.png"
+    },
+    {
+      "name": "Agency for Science, Technology and Research Singapore",
+      "logo": "astar-logo.png"
+    },
+    {
+      "name": "DSO National Laboratories",
+      "logo": "dso-logo.png"
+    },
+    {
+      "name": "Ministry of Education Singapore",
+      "logo": "moe-logo.png"
+    },
+    {
+      "name": "Samsung",
+      "logo": "samsung-logo.png"
+    }
+  ],
+  "callToAction": {
+    "sectionLabel": "Collaboration",
+    "title": "JOIN OUR MISSION",
+    "description": "Interested in cutting-edge photonics research? Explore collaboration opportunities, open positions, and ways to engage with our research community."
+  }
+}

@@ -1,171 +1,147 @@
 import React from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Mail, MapPin, GraduationCap, Award, ExternalLink } from 'lucide-react';
-import professorImage from '@/assets/professor-placeholder.jpg';
+import { Mail, MapPin, ExternalLink } from 'lucide-react';
+import AnimatedBlock from '@/components/AnimatedBlock';
+import professorImage from '@/assets/professor.jpg';
+import aboutData from '@/data/about.json';
+
 const About = () => {
-  const education = [{
-    degree: 'Ph.D. in Electrical Engineering',
-    institution: 'Stanford University',
-    year: '2015'
-  }, {
-    degree: 'M.S. in Photonics',
-    institution: 'University of California, Berkeley',
-    year: '2010'
-  }, {
-    degree: 'B.Eng. in Electrical Engineering',
-    institution: 'National University of Singapore',
-    year: '2008'
-  }];
-  const awards = [{
-    title: 'Outstanding Young Researcher Award',
-    organization: 'IEEE Photonics Society',
-    year: '2023'
-  }, {
-    title: 'Early Career Research Excellence Award',
-    organization: 'NTU Singapore',
-    year: '2022'
-  }, {
-    title: 'Best Paper Award',
-    organization: 'International Conference on Integrated Optics',
-    year: '2021'
-  }, {
-    title: 'Young Investigator Award',
-    organization: 'Optical Society of America',
-    year: '2020'
-  }];
-  const researchInterests = ['Integrated Laser Technologies', 'Large-scale Photonic Integration', 'Silicon Photonics', 'Quantum Photonics', 'Optical Communications', 'Photonic Sensing Systems'];
-  return <div className="min-h-screen py-12">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-playfair font-bold text-primary mb-4">
-            About the Principal Investigator
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Leading innovative research in photonics and integrated laser technologies
-          </p>
-        </div>
+  const { pi } = aboutData;
 
-        {/* Main Content */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          {/* Profile Section */}
-          <div className="lg:col-span-1">
-            <Card className="sticky top-24">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4">
-                  <img src={professorImage} alt="Professor Brian Sia Jia Xu" className="w-48 h-48 rounded-full object-cover mx-auto border-4 border-secondary" />
+  return (
+    <div className="min-h-screen pt-20">
+      {/* Hero Section */}
+      <section className="vlt-gap-100 bg-background">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left: Experience Block */}
+            <div>
+              <AnimatedBlock>
+                <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+                  Principal Investigator
+                </p>
+              </AnimatedBlock>
+
+              <AnimatedBlock delay={0.1}>
+                <h1 className="text-4xl md:text-6xl font-semibold text-foreground mb-8">
+                  {pi.name.split(' ')[0]}<br />
+                  {pi.name.split(' ').slice(1).join(' ')}<span className="text-accent">.</span>
+                </h1>
+              </AnimatedBlock>
+
+              <AnimatedBlock delay={0.2}>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                  {pi.title}, {pi.affiliation}
+                </p>
+              </AnimatedBlock>
+
+              <AnimatedBlock delay={0.3}>
+                <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
+                  <a
+                    href={`mailto:${pi.email}`}
+                    className="flex items-center hover:text-accent transition-colors"
+                  >
+                    <Mail className="h-4 w-4 mr-2" />
+                    {pi.email}
+                  </a>
+                  <span className="flex items-center">
+                    <MapPin className="h-4 w-4 mr-2" />
+                    {pi.location}
+                  </span>
                 </div>
-                <CardTitle className="text-2xl font-playfair">
-                  Professor Brian Sia Jia Xu
-                </CardTitle>
-                <CardDescription className="text-base">
-                  Principal Investigator <br />
-                  School of Electrical & Electronic Engineering <br />
-                  Nanyang Technological University
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <Mail className="h-4 w-4 mr-2" />
-                  <a href="mailto:bsxu@ntu.edu.sg" className="hover:text-primary transition-colors">
-                    bsxu@ntu.edu.sg
+              </AnimatedBlock>
+
+              <AnimatedBlock delay={0.4}>
+                <div className="mt-8">
+                  <a
+                    href={pi.googleScholarLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="gilber-btn gilber-btn-outline text-sm"
+                  >
+                    <ExternalLink className="h-4 w-4 mr-2" />
+                    GOOGLE SCHOLAR
                   </a>
                 </div>
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <MapPin className="h-4 w-4 mr-2" />
-                  <span>Singapore 639798</span>
+              </AnimatedBlock>
+            </div>
+
+            {/* Right: Image with Experience Number */}
+            <div className="relative">
+              <AnimatedBlock delay={0.2} animation="slide-in-right">
+                <div className="relative">
+                  <img
+                    src={professorImage}
+                    alt={pi.name}
+                    className="w-full aspect-[3/4] object-cover"
+                  />
                 </div>
-                <div className="flex items-center text-sm text-primary">
-                  <ExternalLink className="h-4 w-4 mr-2" />
-                  <a href="#" className="hover:text-accent transition-colors">
-                    Google Scholar Profile
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
+              </AnimatedBlock>
+            </div>
           </div>
+        </div>
+      </section>
 
-          {/* Biography and Details */}
-          <div className="lg:col-span-2 space-y-8">
-            {/* Biography */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="font-playfair flex items-center">
-                  <GraduationCap className="h-6 w-6 mr-2 text-accent" />
+      {/* Biography Section */}
+      <section className="vlt-gap-100 bg-card">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid gap-16">
+            {/* Left: Biography */}
+            <div>
+              <AnimatedBlock>
+                <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
                   Biography
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="prose prose-gray max-w-none">
-                <p className="text-foreground leading-relaxed mb-4">Brian is a Singaporean electrical engineer who specializes in large-scale photonic integration and high-performance
+                </p>
+                <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-8">
+                  Research Journey<span className="text-accent">.</span>
+                </h2>
+              </AnimatedBlock>
 
-semiconductor lasers. Specifically, by leveraging on the above, Brian interests include GPS-free navigation, THz-
-
-GHz/MHz optoelectronic systems, gyroscopes, instantaneous chemical and biological interrogation and detection, wireless
-
-RF communication based on cutting-edge laser platforms. He received his B.Eng. from Nanyang Technological
-
-University in 2017, where he spent a year (2014-2015) at the University of Strathclyde, UK. Brian received his Ph.D. from
-
-Nanyang Technological University in 2021 where he was elected as the Valedictorian of his graduating class. During
-
-his graduate studies, he received scholarships to work at the Tokyo Institute of Technology, Japan and Intel Labs, Santa
-
-Clara, US in 2018 and 2020 respectively. Upon graduation, Brian joined a prominent Singapore-based silicon photonic
-
-startup as the Head of Optical and Product Engineering where he spearheaded commercial platform development. In
-
-2022, Brian was one of the two annual recipients of the prestigious Ministry of Education-NTU CoE International Postdoctoral
-
-Fellowship where he pursued his fellowship at the Massachusetts Institute of Technology, US, from 2022 to
-
-2024. In the fall of 2024, Brian joined the School of Electrical and Electronic Engineering in Nanyang Technological
-
-University as an assistant professor. To date, Brian has secured up to 4.9 million SGD of funding with 4.2 million as sole
-
-PI. As of now, the IPs authored by Brian have been the subject of licensing fees from industry in excess of 900,000 SGD.
-
-Brian has served as the conference chair at the Photonics@SG, 10th anniversary. He has been invited to numerous
-
-invited talks. Instances include the SEMICON 2024 under the key national capabilities section, and gave the innaugural
-
-Tech. Talk at the National Defense Science Organization (DSO) Quantum Sensing Center (QSC). He serves as the reviewer
-
-for Advanced Optical Materials, Journal of Lightwave Technology, ACS Photonics, Optics Express/Letters, JOSA
-
-B. Brian has been the corresponding author in internationally renowned journals such as Nature Communications. His
-
-work has been featured in numerous media outlets (i.e., MIT News, Optics.org).</p>
-                
-                
-              </CardContent>
-            </Card>
-
-            {/* Research Interests */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="font-playfair">Research Interests</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {researchInterests.map((interest, index) => <Badge key={index} variant="secondary" className="text-sm">
-                      {interest}
-                    </Badge>)}
+              <AnimatedBlock delay={0.1}>
+                <div className="prose prose-invert max-w-none">
+                  <p className="text-muted-foreground leading-relaxed text-lg">
+                    {pi.biography}
+                  </p>
                 </div>
-              </CardContent>
-            </Card>
+              </AnimatedBlock>
+            </div>
 
-            {/* Education */}
-            <Card>
-              
-              
-            </Card>
-
-            {/* Awards */}
-            
           </div>
         </div>
-      </div>
-    </div>;
+      </section>
+
+      {/* Research Interests Section */}
+      <section className="vlt-gap-100 bg-background">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimatedBlock>
+            <div className="text-center mb-16">
+              <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+                Focus Areas
+              </p>
+              <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
+                Research Interests<span className="text-accent">.</span>
+              </h2>
+            </div>
+          </AnimatedBlock>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {pi.researchInterests.map((interest, index) => (
+              <AnimatedBlock key={interest} delay={0.1 + index * 0.05}>
+                <div className="gilber-card p-6 text-center hover:border-accent transition-colors">
+                  <span className="text-4xl font-semibold text-accent opacity-30 mb-4 block">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <h3 className="text-lg font-medium text-foreground">
+                    {interest}
+                  </h3>
+                </div>
+              </AnimatedBlock>
+            ))}
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
 };
+
 export default About;

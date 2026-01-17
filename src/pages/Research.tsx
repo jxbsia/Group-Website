@@ -1,265 +1,176 @@
 import React from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Zap, CircuitBoard, Microscope, Cpu, Wifi, Eye, ExternalLink, Users } from 'lucide-react';
-
-interface ResearchArea {
-  id: string;
-  title: string;
-  description: string;
-  detailedDescription: string;
-  icon: React.ComponentType<any>;
-  applications: string[];
-  keyTechnologies: string[];
-  funding?: string;
-  collaborators?: string[];
-  publications?: number;
-}
+import { Link } from 'react-router-dom';
+import { ExternalLink, ArrowRight } from 'lucide-react';
+import AnimatedBlock from '@/components/AnimatedBlock';
+import { getIcon } from '@/utils/iconMap';
+import researchData from '@/data/research.json';
+import type { ResearchArea } from '@/types/content';
 
 const Research = () => {
-  const researchAreas: ResearchArea[] = [
-    {
-      id: '1',
-      title: 'High-Performance Integrated Lasers',
-      description: 'Developing next-generation integrated laser technologies with unprecedented efficiency and performance.',
-      detailedDescription: 'Our research focuses on creating advanced integrated laser systems that combine high power output with exceptional efficiency. We work on novel cavity designs, gain media optimization, and thermal management solutions to push the boundaries of what\'s possible in integrated photonics.',
-      icon: Zap,
-      applications: ['Optical Communications', 'LiDAR Systems', 'Medical Devices', 'Industrial Processing'],
-      keyTechnologies: ['Silicon Photonics', 'III-V Integration', 'Hybrid Platforms', 'Thermal Management'],
-      funding: 'NRF Investigator Award (S$2.5M)',
-      collaborators: ['IMEC Belgium', 'MIT Lincoln Laboratory', 'Huawei Technologies'],
-      publications: 45
-    },
-    {
-      id: '2',
-      title: 'Large-Scale Photonic Integration',
-      description: 'Advancing techniques for creating complex, highly-functional photonic circuits on single platforms.',
-      detailedDescription: 'We develop scalable manufacturing processes and design methodologies for large-scale photonic integrated circuits. Our work enables the creation of complex photonic systems with hundreds of components on a single chip.',
-      icon: CircuitBoard,
-      applications: ['Data Centers', 'Quantum Computing', 'Signal Processing', 'Optical Interconnects'],
-      keyTechnologies: ['Wafer-Scale Integration', 'Multi-layer Architectures', 'Advanced Lithography', 'Design Automation'],
-      funding: 'A*STAR RIE2025 Programme (S$3.2M)',
-      collaborators: ['GlobalFoundries', 'TSMC', 'University of California Santa Barbara'],
-      publications: 38
-    },
-    {
-      id: '3',
-      title: 'Silicon Photonics Platforms',
-      description: 'Creating versatile silicon-based platforms for diverse photonic applications.',
-      detailedDescription: 'Our silicon photonics research leverages CMOS-compatible processes to create cost-effective, scalable photonic solutions. We focus on developing novel device architectures and integration strategies.',
-      icon: Cpu,
-      applications: ['Telecom Infrastructure', 'Datacom Systems', 'Sensors', 'Optical Computing'],
-      keyTechnologies: ['CMOS Integration', 'Grating Couplers', 'Waveguide Design', 'Packaging Solutions'],
-      funding: 'Industry Collaboration (S$1.8M)',
-      collaborators: ['Intel Corporation', 'Cisco Systems', 'STMicroelectronics'],
-      publications: 32
-    },
-    {
-      id: '4',
-      title: 'Quantum Photonic Systems',
-      description: 'Exploring quantum applications of integrated photonic technologies.',
-      detailedDescription: 'We investigate quantum properties of light in integrated photonic systems, developing components for quantum communication, computing, and sensing applications.',
-      icon: Microscope,
-      applications: ['Quantum Communication', 'Quantum Computing', 'Quantum Sensing', 'Quantum Cryptography'],
-      keyTechnologies: ['Single Photon Sources', 'Quantum Interferometry', 'Entanglement Generation', 'Quantum State Control'],
-      funding: 'Quantum Engineering Programme (S$2.1M)',
-      collaborators: ['Centre for Quantum Technologies', 'University of Bristol', 'Xanadu'],
-      publications: 28
-    },
-    {
-      id: '5',
-      title: 'Optical Communications',
-      description: 'Advancing optical communication systems through innovative photonic solutions.',
-      detailedDescription: 'Our research addresses the growing demands of optical communication networks by developing high-speed, low-power photonic components and systems.',
-      icon: Wifi,
-      applications: ['5G Networks', 'Fiber-Optic Systems', 'Satellite Communications', 'Underwater Networks'],
-      keyTechnologies: ['High-Speed Modulators', 'Coherent Detection', 'Wavelength Division Multiplexing', 'Signal Processing'],
-      funding: 'Telecom Innovation Fund (S$1.5M)',
-      collaborators: ['Singtel', 'Nokia Bell Labs', 'University of Sydney'],
-      publications: 41
-    },
-    {
-      id: '6',
-      title: 'Photonic Sensing Systems',
-      description: 'Developing advanced sensing solutions using integrated photonic technologies.',
-      detailedDescription: 'We create innovative photonic sensors for environmental monitoring, biomedical applications, and industrial process control, leveraging the sensitivity and selectivity of optical sensing.',
-      icon: Eye,
-      applications: ['Environmental Monitoring', 'Biomedical Diagnostics', 'Industrial Sensing', 'Food Safety'],
-      keyTechnologies: ['Optical Biosensors', 'Spectroscopic Systems', 'Interferometric Sensors', 'Surface Plasmonics'],
-      funding: 'Healthcare Innovation Grant (S$1.9M)',
-      collaborators: ['Singapore General Hospital', 'A*STAR IMRE', 'Bosch Research'],
-      publications: 35
-    }
-  ];
+  const researchAreas: ResearchArea[] = researchData.areas;
 
   return (
-    <div className="min-h-screen py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-playfair font-bold text-primary mb-4">
-            Research Areas
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Our research spans multiple areas of photonics and integrated laser technologies, 
-            pushing the boundaries of what's possible in optical systems and applications.
-          </p>
-        </div>
+    <div className="min-h-screen pt-20">
+      {/* Hero Section */}
+      <section className="vlt-gap-100 bg-background">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div>
+            <AnimatedBlock>
+              <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+                Our Work
+              </p>
+            </AnimatedBlock>
 
-        {/* Research Overview Stats */}
-        <div className="grid md:grid-cols-4 gap-6 mb-16">
-          <Card className="text-center">
-            <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary mb-2">150+</div>
-              <div className="text-sm text-muted-foreground">Publications</div>
-            </CardContent>
-          </Card>
-          <Card className="text-center">
-            <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary mb-2">$12M+</div>
-              <div className="text-sm text-muted-foreground">Research Funding</div>
-            </CardContent>
-          </Card>
-          <Card className="text-center">
-            <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary mb-2">25+</div>
-              <div className="text-sm text-muted-foreground">Collaborators</div>
-            </CardContent>
-          </Card>
-          <Card className="text-center">
-            <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary mb-2">15</div>
-              <div className="text-sm text-muted-foreground">Patent Applications</div>
-            </CardContent>
-          </Card>
-        </div>
+            <AnimatedBlock delay={0.1}>
+              <h1 className="text-4xl md:text-6xl font-semibold text-foreground mb-8">
+                Research<br />Areas<span className="text-accent">.</span>
+              </h1>
+            </AnimatedBlock>
 
-        {/* Research Areas */}
-        <div className="space-y-12">
-          {researchAreas.map((area, index) => {
-            const IconComponent = area.icon;
-            return (
-              <Card key={area.id} className="overflow-hidden group hover:shadow-xl transition-all duration-300">
-                <div className={`grid lg:grid-cols-3 gap-0 ${index % 2 === 0 ? '' : 'lg:grid-flow-col-dense'}`}>
-                  {/* Content */}
-                  <div className={`lg:col-span-2 p-8 ${index % 2 === 0 ? '' : 'lg:order-2'}`}>
-                    <CardHeader className="p-0 mb-6">
-                      <div className="flex items-center mb-4">
-                        <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center mr-4">
-                          <IconComponent className="h-6 w-6 text-white" />
+            <AnimatedBlock delay={0.2}>
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
+                Our research spans multiple areas of photonics and integrated laser technologies,
+                pushing the boundaries of what's possible in optical systems and applications.
+              </p>
+            </AnimatedBlock>
+          </div>
+        </div>
+      </section>
+
+      {/* Research Areas */}
+      <section className="vlt-gap-120 bg-card">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="space-y-24">
+            {researchAreas.map((area, index) => {
+              const IconComponent = getIcon(area.icon);
+              const isEven = index % 2 === 0;
+
+              return (
+                <AnimatedBlock key={area.id} delay={0.1}>
+                  <div className={`grid lg:grid-cols-2 gap-12 items-center ${!isEven ? 'lg:grid-flow-col-dense' : ''}`}>
+                    {/* Content */}
+                    <div className={!isEven ? 'lg:col-start-2' : ''}>
+                      <div className="flex items-center gap-4 mb-6">
+                        <div className="w-12 h-12 bg-accent/10 flex items-center justify-center">
+                          <IconComponent className="h-6 w-6 text-accent" />
                         </div>
-                        <div>
-                          <CardTitle className="text-2xl font-playfair text-primary">
-                            {area.title}
-                          </CardTitle>
-                          <CardDescription className="text-base mt-1">
-                            {area.description}
-                          </CardDescription>
-                        </div>
+                        <span className="text-sm uppercase tracking-widest text-muted-foreground">
+                          0{index + 1}
+                        </span>
                       </div>
-                    </CardHeader>
 
-                    <CardContent className="p-0 space-y-6">
-                      <p className="text-foreground leading-relaxed">
+                      <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4">
+                        {area.title}<span className="text-accent">.</span>
+                      </h2>
+
+                      <p className="text-muted-foreground leading-relaxed mb-6">
                         {area.detailedDescription}
                       </p>
 
-                      <div>
-                        <h4 className="font-semibold text-primary mb-3">Key Applications</h4>
+                      <div className="mb-6">
+                        <h4 className="text-sm uppercase tracking-widest text-accent mb-3">
+                          Key Applications
+                        </h4>
                         <div className="flex flex-wrap gap-2">
-                          {area.applications.map((app, idx) => (
-                            <Badge key={idx} variant="secondary" className="text-xs">
+                          {area.applications.map((app) => (
+                            <span
+                              key={app}
+                              className="px-3 py-1 text-xs border border-border text-muted-foreground hover:border-accent hover:text-accent transition-colors"
+                            >
                               {app}
-                            </Badge>
+                            </span>
                           ))}
                         </div>
                       </div>
 
-                      <div>
-                        <h4 className="font-semibold text-primary mb-3">Technologies</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {area.keyTechnologies.map((tech, idx) => (
-                            <Badge key={idx} variant="outline" className="text-xs">
+                      <div className="flex items-center gap-6 text-sm">
+                        <span className="text-foreground">
+                          <strong className="text-accent">{area.publications}</strong> Publications
+                        </span>
+                        {area.funding && (
+                          <span className="text-muted-foreground">
+                            Funded by: {area.funding.split(' - ')[0]}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Visual Card */}
+                    <div className={!isEven ? 'lg:col-start-1' : ''}>
+                      <div className="gilber-card p-8 lg:p-12 aspect-square flex flex-col justify-between relative overflow-hidden group">
+                        <div className="absolute top-0 right-0 text-[200px] font-semibold text-accent/5 leading-none select-none">
+                          {String(index + 1).padStart(2, '0')}
+                        </div>
+
+                        <div className="relative z-10">
+                          <h3 className="text-2xl font-semibold text-foreground mb-4">
+                            {area.title}
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            {area.description}
+                          </p>
+                        </div>
+
+                        <div className="relative z-10 flex flex-wrap gap-2">
+                          {area.keyTechnologies.slice(0, 3).map((tech) => (
+                            <span
+                              key={tech}
+                              className="px-3 py-1 text-xs bg-background text-muted-foreground"
+                            >
                               {tech}
-                            </Badge>
+                            </span>
                           ))}
                         </div>
                       </div>
-
-                      {area.funding && (
-                        <div className="bg-accent/10 p-4 rounded-lg">
-                          <h4 className="font-semibold text-primary mb-2">Current Funding</h4>
-                          <p className="text-sm text-foreground">{area.funding}</p>
-                        </div>
-                      )}
-                    </CardContent>
-                  </div>
-
-                  {/* Stats and Info Panel */}
-                  <div className={`bg-secondary/30 p-8 flex flex-col justify-center ${index % 2 === 0 ? '' : 'lg:order-1'}`}>
-                    <div className="space-y-6">
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-primary mb-1">{area.publications}</div>
-                        <div className="text-sm text-muted-foreground">Publications</div>
-                      </div>
-
-                      {area.collaborators && (
-                        <div>
-                          <h4 className="font-semibold text-primary mb-3 flex items-center">
-                            <Users className="h-4 w-4 mr-2" />
-                            Key Collaborators
-                          </h4>
-                          <div className="space-y-2">
-                            {area.collaborators.slice(0, 3).map((collab, idx) => (
-                              <div key={idx} className="text-sm text-foreground bg-white/60 p-2 rounded">
-                                {collab}
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-
-                      <Button variant="outline" size="sm" className="w-full">
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        View Related Publications
-                      </Button>
                     </div>
                   </div>
-                </div>
-              </Card>
-            );
-          })}
+                </AnimatedBlock>
+              );
+            })}
+          </div>
         </div>
+      </section>
 
-        {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-playfair font-bold text-primary mb-4">
-                Interested in Collaboration?
-              </h3>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                We're always open to new collaborations and partnerships. 
-                Whether you're from academia or industry, let's explore how we can work together 
-                to advance photonic technologies.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" asChild>
-                  <a href="mailto:bsxu@ntu.edu.sg">
-                    Contact for Collaboration
-                  </a>
-                </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <a href="/publications">
-                    View Our Publications
-                  </a>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+      {/* Collaboration CTA */}
+      <section className="vlt-gap-100 bg-background">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <AnimatedBlock>
+            <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+              Collaboration
+            </p>
+          </AnimatedBlock>
+
+          <AnimatedBlock delay={0.1}>
+            <h2 className="text-3xl md:text-5xl font-semibold text-foreground mb-8">
+              {researchData.collaboration.title}<span className="text-accent">.</span>
+            </h2>
+          </AnimatedBlock>
+
+          <AnimatedBlock delay={0.2}>
+            <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+              {researchData.collaboration.description}
+            </p>
+          </AnimatedBlock>
+
+          <AnimatedBlock delay={0.3}>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href={`mailto:${researchData.collaboration.contactEmail}`}
+                className="gilber-btn gilber-btn-primary"
+              >
+                GET IN TOUCH
+              </a>
+              <Link
+                to="/publications"
+                className="gilber-btn gilber-btn-outline"
+              >
+                VIEW PUBLICATIONS
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </div>
+          </AnimatedBlock>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

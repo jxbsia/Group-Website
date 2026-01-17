@@ -1,187 +1,219 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import NewsCard from '@/components/NewsCard';
-import { newsData } from '@/data/newsData';
-import { ArrowRight, Network, Zap, CircuitBoard, ChevronDown } from 'lucide-react';
-import gargantuaBackground from '@/assets/gargantua-background.jpg';
-import steelTexture from '@/assets/steel-texture.jpg';
+import { ArrowRight } from 'lucide-react';
+import AnimatedBlock from '@/components/AnimatedBlock';
+import KenBurnsBackground from '@/components/KenBurnsBackground';
+import MagicBackground from '@/components/MagicBackground';
+import ctaBackground from '@/assets/cta-background.jpg';
 import ntuLogo from '@/assets/ntu-logo.png';
 import astarLogo from '@/assets/astar-logo.png';
 import moeLogo from '@/assets/moe-logo.png';
 import dsoLogo from '@/assets/dso-logo.png';
+import samsungLogo from '@/assets/samsung-logo.png';
+import siaLogo from '@/assets/sia-logo.svg';
+import homeData from '@/data/home.json';
+import newsData from '@/data/news.json';
+import type { NewsItem } from '@/types/content';
+
 const Home = () => {
-  const featuredNews = newsData.slice(0, 3);
-  return <div className="min-h-screen">
-      {/* Hero Section */}
+  const featuredNews: NewsItem[] = newsData.slice(0, 3);
+
+  const logoMap: Record<string, string> = {
+    'astar-logo.png': astarLogo,
+    'dso-logo.png': dsoLogo,
+    'ntu-logo.png': ntuLogo,
+    'moe-logo.png': moeLogo,
+    'samsung-logo.png': samsungLogo
+  };
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section with Magic Background */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: `url(${gargantuaBackground})`
-      }}>
-          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background"></div>
-        </div>
-        
-        <div className="relative z-10 text-center text-primary max-w-6xl mx-auto px-4">
-          <div className="mb-6">
-            <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
-              Nanyang Technological University
-            </div>
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight font-orbitron text-white">
-              SIA LABORATORIES
-            </h1>
-            <p className="text-lg md:text-xl leading-relaxed mb-12 text-muted-foreground max-w-4xl mx-auto">Ultra-Coherence, Large-Scale Photonics</p>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 text-base">
-              <Link to="/research">RESEARCH</Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-3 text-base">
-              <Link to="/publications">
-                PUBLICATIONS
-              </Link>
-            </Button>
-          </div>
-        </div>
+        <MagicBackground interval={4000} />
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-muted-foreground animate-bounce">
-          <ChevronDown className="h-6 w-6" />
-        </div>
-      </section>
-
-      {/* Main Research Directions */}
-      <section className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-card/50 border-border/50 hover:bg-card/70 transition-all duration-500 group">
-              <CardHeader className="text-center pb-8">
-                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
-                  <Zap className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="text-xl font-bold tracking-wide uppercase">
-                  ULTRA-COHERENCE
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="text-muted-foreground leading-relaxed">High-Performance, Turkey, Chip-Scale Lasers</CardDescription>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card/50 border-border/50 hover:bg-card/70 transition-all duration-500 group">
-              <CardHeader className="text-center pb-8">
-                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
-                  <CircuitBoard className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="text-xl font-bold tracking-wide uppercase">UNIFICATION OF THE THZ AND MHZ</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="text-muted-foreground leading-relaxed">Seamless Integration of Photonics and Electronics within a Cohesive Framework</CardDescription>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card/50 border-border/50 hover:bg-card/70 transition-all duration-500 group">
-              <CardHeader className="text-center pb-8">
-                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500">
-                  <Network className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="text-xl font-bold tracking-wide uppercase">LARGE-SCALE PHOTONIC INTEGRATION</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="text-muted-foreground leading-relaxed">Multi-Optoelectronic Platform Integration</CardDescription>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Latest News */}
-      <section className="py-24 bg-secondary/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-12">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Text Content */}
             <div>
-              <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
-                Updates
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight">
-                LATEST NEWS
-              </h2>
-              <p className="text-muted-foreground">
-                Stay updated with our recent achievements and developments
+              <p className="text-lg uppercase tracking-[0.3em] text-accent font-medium mb-4" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7)' }}>
+                {homeData.hero.institution}
               </p>
+
+              <AnimatedBlock delay={0.1}>
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-foreground tracking-[0.1em] mb-6" style={{ fontFamily: 'Moonspace, sans-serif' }}>
+                  SIA LABORATORIES<span className="text-accent">.</span>
+                </h1>
+              </AnimatedBlock>
+
+              <AnimatedBlock delay={0.2}>
+                <p className="hero-subtitle mb-8">
+                  {homeData.hero.subtitle}
+                </p>
+              </AnimatedBlock>
+
+              <AnimatedBlock delay={0.3}>
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    to="/research"
+                    className="gilber-btn gilber-btn-primary"
+                  >
+                    EXPLORE RESEARCH
+                  </Link>
+                  <Link
+                    to="/publications"
+                    className="gilber-btn gilber-btn-outline"
+                  >
+                    VIEW PUBLICATIONS
+                  </Link>
+                </div>
+              </AnimatedBlock>
             </div>
-            <Button variant="outline" asChild className="border-primary/30 text-primary hover:bg-primary/10 hidden md:flex">
-              <Link to="/news">
-                VIEW ALL <ArrowRight className="ml-2 h-4 w-4" />
+
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground">
+          <span className="text-xs uppercase tracking-widest">Scroll</span>
+          <div className="w-px h-12 bg-border relative overflow-hidden">
+            <div className="absolute inset-0 bg-accent animate-pulse" />
+          </div>
+        </div>
+      </section>
+
+      {/* Research Highlights Section */}
+      <section className="vlt-gap-120 bg-background">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimatedBlock>
+            <h2 className="text-4xl md:text-5xl font-semibold text-foreground mb-12">
+              Areas<span className="text-accent">.</span>
+            </h2>
+          </AnimatedBlock>
+
+          <ul className="space-y-4" style={{ fontFamily: 'CS Gilbert Mono, monospace' }}>
+            {homeData.researchHighlights.map((highlight, index) => (
+              <AnimatedBlock key={highlight.id} delay={0.2 + index * 0.05}>
+                <li className="text-lg md:text-xl text-foreground flex items-start gap-4">
+                  <span className="text-accent">—</span>
+                  {highlight.title}
+                </li>
+              </AnimatedBlock>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Latest News Section */}
+      <section className="vlt-gap-120 bg-card">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+            <AnimatedBlock>
+              <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+                Updates
+              </p>
+              <h2 className="text-4xl md:text-5xl font-semibold text-foreground">
+                Latest News<span className="text-accent">.</span>
+              </h2>
+            </AnimatedBlock>
+
+            <AnimatedBlock delay={0.1}>
+              <Link
+                to="/news"
+                className="inline-flex items-center text-sm uppercase tracking-widest text-muted-foreground hover:text-accent transition-colors"
+              >
+                VIEW ALL NEWS
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
-            </Button>
+            </AnimatedBlock>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredNews.map((news, index) => <NewsCard key={news.id} news={news} featured={index === 0} />)}
+            {featuredNews.map((news, index) => (
+              <AnimatedBlock key={news.id} delay={0.1 + index * 0.1}>
+                <article className="news-card">
+                  <div className="news-card-image bg-secondary">
+                    <div className="w-full h-full flex items-center justify-center text-muted-foreground">
+                      <span className="text-6xl font-semibold opacity-20">
+                        {String(index + 1).padStart(2, '0')}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="news-card-content">
+                    <p className="news-card-date">{news.date}</p>
+                    <h3 className="news-card-title">{news.title}</h3>
+                    <p className="news-card-excerpt">{news.excerpt}</p>
+                  </div>
+                </article>
+              </AnimatedBlock>
+            ))}
           </div>
+        </div>
+      </section>
 
-          <div className="text-center mt-12 md:hidden">
-            <Button variant="outline" asChild className="border-primary/30 text-primary hover:bg-primary/10">
-              <Link to="/news">
-                VIEW ALL NEWS <ArrowRight className="ml-2 h-4 w-4" />
+      {/* Funders Section */}
+      <section className="vlt-gap-100 bg-background">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimatedBlock>
+            <div className="text-center mb-16">
+              <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+                Our Partners
+              </p>
+              <h2 className="text-4xl md:text-5xl font-semibold text-foreground">
+                Funders<span className="text-accent">.</span>
+              </h2>
+            </div>
+          </AnimatedBlock>
+
+          <AnimatedBlock delay={0.2}>
+            <div className="flex justify-center items-center gap-6 lg:gap-12">
+              {homeData.funders.map((funder, index) => (
+                <div
+                  key={index}
+                  className={`flex items-center justify-center p-6 bg-white/5 rounded-2xl ${index === 2 ? 'scale-110' : ''}`}
+                >
+                  <img
+                    src={logoMap[funder.logo]}
+                    alt={funder.name}
+                    className="partner-logo max-h-28 w-auto rounded-xl"
+                  />
+                </div>
+              ))}
+            </div>
+          </AnimatedBlock>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="relative vlt-gap-120 overflow-hidden">
+        <KenBurnsBackground
+          imageSrc={ctaBackground}
+          alt="CTA Background"
+          overlay="dark"
+          reverse
+        />
+
+        <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <AnimatedBlock>
+            <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white uppercase tracking-[0.2em]">
+              Collaboration
+            </h2>
+          </AnimatedBlock>
+
+          <AnimatedBlock delay={0.2}>
+            <div className="flex justify-center mt-12">
+              <Link
+                to="/contact"
+                className="gilber-btn gilber-btn-outline"
+              >
+                GET IN TOUCH
               </Link>
-            </Button>
-          </div>
+            </div>
+          </AnimatedBlock>
         </div>
       </section>
-
-      {/* Funders */}
-      <section className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-16 tracking-tight">
-            OUR FUNDERS
-          </h2>
-          
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 items-center justify-items-center">
-            <div className="w-96 h-80 flex items-center justify-center p-12">
-              <img src={astarLogo} alt="Agency for Science, Technology and Research Singapore" className="max-w-full max-h-full object-contain" />
-            </div>
-            <div className="w-96 h-80 flex items-center justify-center p-12">
-              <img src={dsoLogo} alt="DSO National Laboratories" className="max-w-full max-h-full object-contain" />
-            </div>
-            <div className="w-96 h-80 flex items-center justify-center p-12">
-              <img src={ntuLogo} alt="Nanyang Technological University Singapore" className="max-w-full max-h-full object-contain" />
-            </div>
-            <div className="w-96 h-80 flex items-center justify-center p-12">
-              <img src={moeLogo} alt="Ministry of Education Singapore" className="max-w-full max-h-full object-contain" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-24 bg-secondary/30">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <div className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
-            Collaboration
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 tracking-tight">
-            JOIN OUR MISSION
-          </h2>
-          <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-            Interested in cutting-edge photonics research? Explore collaboration opportunities, 
-            open positions, and ways to engage with our research community.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 text-base">
-              <Link to="/team">MEET OUR TEAM</Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-3 text-base">
-              <Link to="/contact">CONTACT US</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-    </div>;
+    </div>
+  );
 };
+
 export default Home;

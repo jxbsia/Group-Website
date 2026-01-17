@@ -1,270 +1,161 @@
-import React, { useState } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Mail, GraduationCap, Users, UserCheck } from 'lucide-react';
-
-interface TeamMember {
-  id: string;
-  name: string;
-  position: string;
-  role: 'phd' | 'postdoc' | 'staff' | 'masters';
-  email: string;
-  researchInterests: string[];
-  startYear: string;
-  image?: string;
-}
-
-interface AlumniMember {
-  id: string;
-  name: string;
-  previousPosition: string;
-  currentPosition: string;
-  graduationYear: string;
-  currentInstitution?: string;
-}
+import React from 'react';
+import { Mail, GraduationCap } from 'lucide-react';
+import AnimatedBlock from '@/components/AnimatedBlock';
+import teamData from '@/data/team.json';
+import type { TeamMember } from '@/types/content';
 
 const Team = () => {
-  const [selectedFilter, setSelectedFilter] = useState<string>('all');
-
-  const teamMembers: TeamMember[] = [
-    {
-      id: '1',
-      name: 'Dr. Sarah Chen',
-      position: 'Postdoctoral Research Fellow',
-      role: 'postdoc',
-      email: 'sarah.chen@ntu.edu.sg',
-      researchInterests: ['Silicon Photonics', 'Integrated Lasers', 'Optical Communications'],
-      startYear: '2023'
-    },
-    {
-      id: '2',
-      name: 'Alex Wang',
-      position: 'PhD Student',
-      role: 'phd',
-      email: 'alex.wang@ntu.edu.sg',
-      researchInterests: ['Quantum Photonics', 'Photonic Integration', 'Nonlinear Optics'],
-      startYear: '2022'
-    },
-    {
-      id: '3',
-      name: 'Dr. Maria Rodriguez',
-      position: 'Research Scientist',
-      role: 'staff',
-      email: 'maria.rodriguez@ntu.edu.sg',
-      researchInterests: ['Laser Physics', 'Photonic Devices', 'Optical Sensing'],
-      startYear: '2021'
-    },
-    {
-      id: '4',
-      name: 'James Liu',
-      position: 'PhD Student',
-      role: 'phd',
-      email: 'james.liu@ntu.edu.sg',
-      researchInterests: ['Photonic Circuits', 'Integrated Optics', 'Device Modeling'],
-      startYear: '2021'
-    },
-    {
-      id: '5',
-      name: 'Emily Zhang',
-      position: 'Master\'s Student',
-      role: 'masters',
-      email: 'emily.zhang@ntu.edu.sg',
-      researchInterests: ['Optical Communications', 'Signal Processing'],
-      startYear: '2024'
-    },
-    {
-      id: '6',
-      name: 'David Kumar',
-      position: 'PhD Student',
-      role: 'phd',
-      email: 'david.kumar@ntu.edu.sg',
-      researchInterests: ['Photonic Integration', 'Laser Design', 'Manufacturing'],
-      startYear: '2020'
-    }
-  ];
-
-  const alumni: AlumniMember[] = [
-    {
-      id: '1',
-      name: 'Dr. Michael Thompson',
-      previousPosition: 'PhD Student (2018-2022)',
-      currentPosition: 'Research Scientist',
-      currentInstitution: 'IMEC, Belgium',
-      graduationYear: '2022'
-    },
-    {
-      id: '2',
-      name: 'Dr. Lisa Kim',
-      previousPosition: 'Postdoc (2019-2023)',
-      currentPosition: 'Assistant Professor',
-      currentInstitution: 'KAIST, South Korea',
-      graduationYear: '2023'
-    },
-    {
-      id: '3',
-      name: 'Dr. Robert Singh',
-      previousPosition: 'PhD Student (2017-2021)',
-      currentPosition: 'Senior Engineer',
-      currentInstitution: 'Intel Corporation',
-      graduationYear: '2021'
-    }
-  ];
-
-  const filterOptions = [
-    { value: 'all', label: 'All Members' },
-    { value: 'phd', label: 'PhD Students' },
-    { value: 'postdoc', label: 'Postdocs' },
-    { value: 'staff', label: 'Research Staff' },
-    { value: 'masters', label: 'Master\'s Students' }
-  ];
-
-  const getRoleColor = (role: string) => {
-    switch (role) {
-      case 'phd': return 'bg-blue-100 text-blue-800 border-blue-200';
-      case 'postdoc': return 'bg-green-100 text-green-800 border-green-200';
-      case 'staff': return 'bg-purple-100 text-purple-800 border-purple-200';
-      case 'masters': return 'bg-orange-100 text-orange-800 border-orange-200';
-      default: return 'bg-gray-100 text-gray-800 border-gray-200';
-    }
-  };
-
-  const filteredMembers = selectedFilter === 'all' 
-    ? teamMembers 
-    : teamMembers.filter(member => member.role === selectedFilter);
+  const teamMembers: TeamMember[] = teamData.members;
 
   return (
-    <div className="min-h-screen py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-playfair font-bold text-primary mb-4">
-            Our Research Team
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Meet the talented researchers advancing the frontiers of photonics and integrated laser technologies
-          </p>
-        </div>
+    <div className="min-h-screen pt-20">
+      {/* Hero Section */}
+      <section className="vlt-gap-100 bg-background">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-end">
+            <div>
+              <AnimatedBlock>
+                <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+                  Our People
+                </p>
+              </AnimatedBlock>
 
-        {/* Current Team Section */}
-        <section className="mb-16">
-          <div className="flex items-center justify-between mb-8">
-            <div className="flex items-center">
-              <Users className="h-6 w-6 text-accent mr-2" />
-              <h2 className="text-3xl font-playfair font-bold text-primary">Current Team</h2>
+              <AnimatedBlock delay={0.1}>
+                <h1 className="text-4xl md:text-6xl font-semibold text-foreground mb-8">
+                  Research<br />Team<span className="text-accent">.</span>
+                </h1>
+              </AnimatedBlock>
+
+              <AnimatedBlock delay={0.2}>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Meet the talented researchers advancing the frontiers of photonics
+                  and integrated laser technologies.
+                </p>
+              </AnimatedBlock>
             </div>
-            
-            {/* Filter Buttons */}
-            <div className="flex flex-wrap gap-2">
-              {filterOptions.map((option) => (
-                <Button
-                  key={option.value}
-                  variant={selectedFilter === option.value ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setSelectedFilter(option.value)}
-                  className="text-xs"
-                >
-                  {option.label}
-                </Button>
-              ))}
-            </div>
+
           </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredMembers.map((member) => (
-              <Card key={member.id} className="group hover:shadow-lg transition-all duration-300">
-                <CardHeader className="text-center pb-4">
-                  <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center">
-                    <GraduationCap className="h-10 w-10 text-primary" />
-                  </div>
-                  <CardTitle className="text-lg font-playfair">{member.name}</CardTitle>
-                  <CardDescription className="text-sm">{member.position}</CardDescription>
-                  <Badge 
-                    variant="outline" 
-                    className={`w-fit mx-auto mt-2 text-xs ${getRoleColor(member.role)}`}
-                  >
-                    {member.role.charAt(0).toUpperCase() + member.role.slice(1)}
-                  </Badge>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-sm mb-2">Research Interests</h4>
-                    <div className="flex flex-wrap gap-1">
-                      {member.researchInterests.map((interest, index) => (
-                        <Badge key={index} variant="secondary" className="text-xs">
-                          {interest}
-                        </Badge>
-                      ))}
+      {/* Current Team Section */}
+      <section className="vlt-gap-100 bg-card">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          {/* Team Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {teamMembers.map((member, index) => (
+              <AnimatedBlock key={member.id} delay={0.1 + (index % 6) * 0.05}>
+                <div className="gilber-card group h-full">
+                  <div className="p-8">
+                    {/* Avatar Placeholder */}
+                    <div className="w-20 h-20 bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                      <GraduationCap className="h-10 w-10 text-accent" />
+                    </div>
+
+                    {/* Member Info */}
+                    <h3 className="text-xl font-semibold text-foreground mb-2">
+                      {member.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      {member.position}
+                    </p>
+
+                    {/* Role Badge */}
+                    <span className="inline-block px-3 py-1 text-xs uppercase tracking-widest text-accent border border-accent mb-6">
+                      {member.role}
+                    </span>
+
+                    {/* Research Interests */}
+                    <div className="mb-6">
+                      <h4 className="text-xs uppercase tracking-widest text-muted-foreground mb-3">
+                        Research Interests
+                      </h4>
+                      <div className="flex flex-wrap gap-2">
+                        {member.researchInterests.slice(0, 3).map((interest) => (
+                          <span
+                            key={interest}
+                            className="px-2 py-1 text-xs bg-secondary text-muted-foreground"
+                          >
+                            {interest}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Footer */}
+                    <div className="flex items-center justify-between text-sm text-muted-foreground pt-4 border-t border-border">
+                      <span>Since {member.startYear}</span>
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="flex items-center hover:text-accent transition-colors"
+                      >
+                        <Mail className="h-4 w-4 mr-1" />
+                        Email
+                      </a>
                     </div>
                   </div>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
-                    <span>Since {member.startYear}</span>
-                    <a 
-                      href={`mailto:${member.email}`}
-                      className="flex items-center hover:text-primary transition-colors"
-                    >
-                      <Mail className="h-3 w-3 mr-1" />
-                      Email
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
+                </div>
+              </AnimatedBlock>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Alumni Section */}
-        <section>
-          <div className="flex items-center mb-8">
-            <UserCheck className="h-6 w-6 text-accent mr-2" />
-            <h2 className="text-3xl font-playfair font-bold text-primary">Alumni</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {alumni.map((alum) => (
-              <Card key={alum.id} className="hover:shadow-lg transition-all duration-300">
-                <CardHeader>
-                  <CardTitle className="text-lg font-playfair">{alum.name}</CardTitle>
-                  <CardDescription className="text-sm">{alum.previousPosition}</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <div>
-                    <h4 className="font-semibold text-sm text-primary">Current Position</h4>
-                    <p className="text-sm text-foreground">{alum.currentPosition}</p>
-                    {alum.currentInstitution && (
-                      <p className="text-xs text-muted-foreground">{alum.currentInstitution}</p>
-                    )}
-                  </div>
-                  <div className="text-xs text-muted-foreground pt-2 border-t">
-                    Graduated: {alum.graduationYear}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-
-        {/* Join Us Section */}
-        <section className="mt-16 text-center">
-          <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-playfair font-bold text-primary mb-4">
-                Join Our Research Group
-              </h3>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                We are always looking for motivated researchers to join our team. 
-                If you're interested in photonics research and want to contribute to cutting-edge discoveries, 
-                we'd love to hear from you.
+      {/* Alumni Section */}
+      <section className="vlt-gap-100 bg-background">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimatedBlock>
+            <div className="mb-16">
+              <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+                Where Are They Now
               </p>
-              <Button size="lg" asChild>
-                <a href="mailto:bsxu@ntu.edu.sg">
-                  Contact Us About Opportunities
-                </a>
-              </Button>
-            </CardContent>
-          </Card>
-        </section>
-      </div>
+              <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
+                Alumni<span className="text-accent">.</span>
+              </h2>
+            </div>
+          </AnimatedBlock>
+
+          <AnimatedBlock delay={0.1}>
+            <div className="gilber-card p-8 text-center">
+              <p className="text-lg text-muted-foreground">
+                Not Yet ...
+              </p>
+            </div>
+          </AnimatedBlock>
+        </div>
+      </section>
+
+      {/* Join Us CTA */}
+      <section className="vlt-gap-100 bg-card">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <AnimatedBlock>
+            <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+              Opportunities
+            </p>
+          </AnimatedBlock>
+
+          <AnimatedBlock delay={0.1}>
+            <h2 className="text-3xl md:text-5xl font-semibold text-foreground mb-8">
+              {teamData.joinUs.title}<span className="text-accent">.</span>
+            </h2>
+          </AnimatedBlock>
+
+          <AnimatedBlock delay={0.2}>
+            <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+              {teamData.joinUs.description}
+            </p>
+          </AnimatedBlock>
+
+          <AnimatedBlock delay={0.3}>
+            <a
+              href={`mailto:${teamData.joinUs.contactEmail}`}
+              className="gilber-btn gilber-btn-primary"
+            >
+              CONTACT US ABOUT OPPORTUNITIES
+            </a>
+          </AnimatedBlock>
+        </div>
+      </section>
     </div>
   );
 };

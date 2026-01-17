@@ -1,243 +1,254 @@
 import React from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { Mail, Phone, MapPin, Clock, Building, ExternalLink, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, ExternalLink, Send } from 'lucide-react';
+import AnimatedBlock from '@/components/AnimatedBlock';
+import KenBurnsBackground from '@/components/KenBurnsBackground';
+import gargantuaBackground from '@/assets/gargantua-background.jpg';
+import contactData from '@/data/contact.json';
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
     console.log('Form submitted');
   };
 
   return (
-    <div className="min-h-screen py-12">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-playfair font-bold text-primary mb-4">
-            Contact Us
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Get in touch with our research group. We welcome inquiries about collaboration, 
-            research opportunities, and partnerships.
-          </p>
+    <div className="min-h-screen pt-20">
+      {/* Hero Section with Ken Burns */}
+      <section className="relative vlt-gap-120 overflow-hidden">
+        <KenBurnsBackground
+          imageSrc={gargantuaBackground}
+          alt="Contact Background"
+          overlay="dark"
+        />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <AnimatedBlock>
+              <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+                Get in Touch
+              </p>
+            </AnimatedBlock>
+
+            <AnimatedBlock delay={0.1}>
+              <h1 className="text-4xl md:text-6xl font-semibold text-foreground mb-8">
+                Contact Us<span className="text-accent">.</span>
+              </h1>
+            </AnimatedBlock>
+
+            <AnimatedBlock delay={0.2}>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                We welcome inquiries about collaboration, research opportunities, and partnerships.
+                Get in touch with our research group.
+              </p>
+            </AnimatedBlock>
+          </div>
         </div>
+      </section>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            {/* Principal Investigator Contact */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="font-playfair text-2xl text-primary">
-                  Principal Investigator
-                </CardTitle>
-                <CardDescription>
-                  For research collaboration and academic inquiries
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-3">
-                  <h3 className="font-semibold text-lg">Professor Brian Sia Jia Xu</h3>
-                  
-                  <div className="flex items-center text-muted-foreground">
-                    <Mail className="h-4 w-4 mr-3" />
-                    <a href="mailto:bsxu@ntu.edu.sg" className="hover:text-primary transition-colors">
-                      bsxu@ntu.edu.sg
-                    </a>
-                  </div>
-                  
-                  <div className="flex items-center text-muted-foreground">
-                    <Phone className="h-4 w-4 mr-3" />
-                    <span>+65 6790 4XXX</span>
-                  </div>
-                  
-                  <div className="flex items-start text-muted-foreground">
-                    <MapPin className="h-4 w-4 mr-3 mt-1" />
-                    <div>
-                      <div>School of Electrical & Electronic Engineering</div>
-                      <div>Nanyang Technological University</div>
-                      <div>50 Nanyang Avenue, Singapore 639798</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t">
-                  <Button variant="outline" size="sm" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      NTU Faculty Profile
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Office Location */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="font-playfair flex items-center">
-                  <Building className="h-5 w-5 mr-2 text-accent" />
-                  Office Location
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-2">
-                  <p className="font-medium">Research Lab & Office</p>
-                  <p className="text-muted-foreground">
-                    Block S2.1, Level 3, Room S2.1-B3-XX<br />
-                    School of Electrical & Electronic Engineering<br />
-                    Nanyang Technological University<br />
-                    Singapore 639798
+      {/* Contact Content */}
+      <section className="vlt-gap-120 bg-background">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Left: Contact Information */}
+            <div className="space-y-12">
+              {/* Principal Investigator */}
+              <AnimatedBlock>
+                <div>
+                  <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+                    {contactData.pi.title}
                   </p>
-                </div>
+                  <h2 className="text-2xl font-semibold text-foreground mb-6">
+                    {contactData.pi.name}
+                  </h2>
 
-                <div className="flex items-center text-muted-foreground">
-                  <Clock className="h-4 w-4 mr-3" />
-                  <span>Office Hours: Monday - Friday, 9:00 AM - 6:00 PM</span>
-                </div>
+                  <div className="space-y-4">
+                    <a
+                      href={`mailto:${contactData.pi.email}`}
+                      className="flex items-center text-muted-foreground hover:text-accent transition-colors"
+                    >
+                      <Mail className="h-5 w-5 mr-4" />
+                      {contactData.pi.email}
+                    </a>
 
-                <div className="pt-4">
-                  <Button variant="outline" size="sm" asChild>
-                    <a 
-                      href="https://maps.google.com/?q=Nanyang+Technological+University+Singapore" 
-                      target="_blank" 
+                    <div className="flex items-center text-muted-foreground">
+                      <Phone className="h-5 w-5 mr-4" />
+                      {contactData.pi.phone}
+                    </div>
+
+                    <a
+                      href={contactData.pi.facultyProfileLink}
+                      target="_blank"
                       rel="noopener noreferrer"
+                      className="flex items-center text-muted-foreground hover:text-accent transition-colors"
+                    >
+                      <ExternalLink className="h-5 w-5 mr-4" />
+                      Faculty Profile
+                    </a>
+                  </div>
+                </div>
+              </AnimatedBlock>
+
+              {/* Office Location */}
+              <AnimatedBlock delay={0.1}>
+                <div>
+                  <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+                    Office Location
+                  </p>
+
+                  <div className="space-y-4">
+                    <div className="flex items-start text-muted-foreground">
+                      <MapPin className="h-5 w-5 mr-4 mt-1 flex-shrink-0" />
+                      <div>
+                        <p className="text-foreground font-medium">
+                          {contactData.office.building}, {contactData.office.level}
+                        </p>
+                        <p>{contactData.office.room}</p>
+                        <p>{contactData.address.department}</p>
+                        <p>{contactData.address.university}</p>
+                        <p>{contactData.address.city} {contactData.address.postalCode}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center text-muted-foreground">
+                      <Clock className="h-5 w-5 mr-4" />
+                      {contactData.office.officeHours}
+                    </div>
+
+                    <a
+                      href={contactData.mapLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="gilber-btn gilber-btn-outline text-sm inline-flex mt-4"
                     >
                       <MapPin className="h-4 w-4 mr-2" />
-                      View on Map
+                      VIEW ON MAP
                     </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Research Inquiries */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="font-playfair">Research Opportunities</CardTitle>
-                <CardDescription>
-                  Interested in joining our research group?
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-3">
-                  <div>
-                    <h4 className="font-medium text-primary">PhD Positions</h4>
-                    <p className="text-sm text-muted-foreground">
-                      We regularly accept PhD students with strong backgrounds in electrical engineering, 
-                      physics, or related fields.
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-medium text-primary">Postdoctoral Positions</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Postdoc opportunities are available for researchers with expertise in photonics 
-                      and integrated systems.
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-medium text-primary">Visiting Researchers</h4>
-                    <p className="text-sm text-muted-foreground">
-                      We welcome visiting researchers and sabbatical visitors for collaborative projects.
-                    </p>
                   </div>
                 </div>
+              </AnimatedBlock>
 
-                <div className="pt-4 border-t">
-                  <Button variant="outline" size="sm" asChild>
-                    <a href="/team">
-                      View Current Team →
-                    </a>
-                  </Button>
+              {/* Research Opportunities */}
+              <AnimatedBlock delay={0.2}>
+                <div>
+                  <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+                    Research Opportunities
+                  </p>
+
+                  <div className="space-y-6">
+                    {contactData.opportunities.map((opp, index) => (
+                      <div key={index} className="gilber-card p-6">
+                        <h4 className="text-lg font-semibold text-foreground mb-2">
+                          {opp.title}
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          {opp.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+              </AnimatedBlock>
+            </div>
 
-          {/* Contact Form */}
-          <div>
-            <Card>
-              <CardHeader>
-                <CardTitle className="font-playfair text-2xl text-primary">
-                  Send us a Message
-                </CardTitle>
-                <CardDescription>
-                  Fill out the form below and we'll get back to you as soon as possible.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name</Label>
-                      <Input id="firstName" placeholder="Enter your first name" required />
+            {/* Right: Contact Form */}
+            <div>
+              <AnimatedBlock delay={0.1}>
+                <div className="gilber-card p-8 lg:p-12">
+                  <h2 className="text-2xl font-semibold text-foreground mb-2">
+                    Send a Message<span className="text-accent">.</span>
+                  </h2>
+                  <p className="text-sm text-muted-foreground mb-8">
+                    Fill out the form below and we'll get back to you as soon as possible.
+                  </p>
+
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <input
+                          type="text"
+                          placeholder="First Name *"
+                          required
+                          className="gilber-input"
+                        />
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          placeholder="Last Name *"
+                          required
+                          className="gilber-input"
+                        />
+                      </div>
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name</Label>
-                      <Input id="lastName" placeholder="Enter your last name" required />
+
+                    <div>
+                      <input
+                        type="email"
+                        placeholder="Email Address *"
+                        required
+                        className="gilber-input"
+                      />
                     </div>
-                  </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email Address</Label>
-                    <Input id="email" type="email" placeholder="Enter your email" required />
-                  </div>
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Institution / Organization"
+                        className="gilber-input"
+                      />
+                    </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="affiliation">Institution/Organization</Label>
-                    <Input id="affiliation" placeholder="Your institution or company" />
-                  </div>
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Subject *"
+                        required
+                        className="gilber-input"
+                      />
+                    </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
-                    <Input id="subject" placeholder="Brief subject of your inquiry" required />
-                  </div>
+                    <div>
+                      <textarea
+                        placeholder="Your Message *"
+                        rows={6}
+                        required
+                        className="gilber-textarea"
+                      />
+                    </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Please describe your inquiry in detail..."
-                      rows={6}
-                      required 
-                    />
-                  </div>
+                    <button
+                      type="submit"
+                      className="gilber-btn gilber-btn-primary w-full"
+                    >
+                      <Send className="h-4 w-4 mr-2" />
+                      SEND MESSAGE
+                    </button>
+                  </form>
+                </div>
+              </AnimatedBlock>
 
-                  <Button type="submit" className="w-full" size="lg">
-                    <Send className="h-4 w-4 mr-2" />
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+              {/* Additional Info */}
+              <AnimatedBlock delay={0.2}>
+                <div className="mt-8 p-6 border border-border">
+                  <h3 className="text-lg font-semibold text-foreground mb-4">
+                    Response Time
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-6">
+                    {contactData.additionalInfo.responseTime}
+                  </p>
 
-            {/* Additional Information */}
-            <Card className="mt-6 bg-secondary/30">
-              <CardContent className="p-6">
-                <h3 className="font-semibold text-primary mb-3">Response Time</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  We typically respond to inquiries within 2-3 business days. For urgent matters, 
-                  please email Professor Xu directly.
-                </p>
-                
-                <h3 className="font-semibold text-primary mb-3">Collaboration Inquiries</h3>
-                <p className="text-sm text-muted-foreground">
-                  For research collaboration proposals, please include relevant background information 
-                  and preliminary ideas in your message. We're always interested in exploring new 
-                  partnerships that advance photonic technologies.
-                </p>
-              </CardContent>
-            </Card>
+                  <h3 className="text-lg font-semibold text-foreground mb-4">
+                    Collaboration Inquiries
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {contactData.additionalInfo.collaborationNote}
+                  </p>
+                </div>
+              </AnimatedBlock>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
