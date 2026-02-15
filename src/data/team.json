@@ -2,63 +2,112 @@
   "members": [
     {
       "id": "1",
-      "name": "Dr. Sarah Chen",
-      "position": "Postdoctoral Research Fellow",
-      "role": "postdoc",
-      "email": "sarah.chen@ntu.edu.sg",
-      "researchInterests": ["Silicon Photonics", "Integrated Lasers", "Optical Communications"],
-      "startYear": "2023"
+      "name": "Wang Wanjun",
+      "position": "Ph.D., Senior Scientist",
+      "role": "Photonic Design Lead",
+      "email": "wanjun.wang@ntu.edu.sg",
+      "researchInterests": ["Photonic IC design", "System architecture"],
+      "startYear": "2025",
+      "image": "/team/wanjun.jpg"
     },
     {
       "id": "2",
-      "name": "Alex Wang",
-      "position": "PhD Student",
-      "role": "phd",
-      "email": "alex.wang@ntu.edu.sg",
-      "researchInterests": ["Quantum Photonics", "Photonic Integration", "Nonlinear Optics"],
-      "startYear": "2022"
+      "name": "Tian Shuoqiu",
+      "position": "Ph.D., Senior Scientist",
+      "role": "Architecture Lead",
+      "email": "shuoqiu.tian@ntu.edu.sg",
+      "researchInterests": ["Photonic architecture", "Scalable integration"],
+      "startYear": "2025",
+      "image": "/team/shuoqiu.jpg"
     },
     {
       "id": "3",
-      "name": "Dr. Maria Rodriguez",
-      "position": "Research Scientist",
-      "role": "staff",
-      "email": "maria.rodriguez@ntu.edu.sg",
-      "researchInterests": ["Laser Physics", "Photonic Devices", "Optical Sensing"],
-      "startYear": "2021"
+      "name": "Tan Yong Zen",
+      "position": "Ph.D., Senior Scientist",
+      "role": "Module & Physical Labs Lead",
+      "email": "yongzen.tan@ntu.edu.sg",
+      "researchInterests": ["Module development", "Packaging"],
+      "startYear": "2024",
+      "image": "/team/yongzen.jpg"
     },
     {
       "id": "4",
-      "name": "James Liu",
-      "position": "PhD Student",
-      "role": "phd",
-      "email": "james.liu@ntu.edu.sg",
-      "researchInterests": ["Photonic Circuits", "Integrated Optics", "Device Modeling"],
-      "startYear": "2021"
+      "name": "Wang Kaiyuan",
+      "position": "Ph.D., Postdoctoral Fellow",
+      "email": "kaiyuan.wang@ntu.edu.sg",
+      "researchInterests": ["Machine design"],
+      "startYear": "2025",
+      "image": "/team/kaiyuan.jpg"
     },
     {
       "id": "5",
-      "name": "Emily Zhang",
-      "position": "Master's Student",
-      "role": "masters",
-      "email": "emily.zhang@ntu.edu.sg",
-      "researchInterests": ["Optical Communications", "Signal Processing"],
-      "startYear": "2024"
+      "name": "Sun Yihong",
+      "position": "Ph.D. Student",
+      "email": "yihong002@e.ntu.edu.sg",
+      "researchInterests": ["Laser combs", "High-speed photonics"],
+      "startYear": "2025",
+      "image": "/team/yihong.jpg"
     },
     {
       "id": "6",
-      "name": "David Kumar",
-      "position": "PhD Student",
-      "role": "phd",
-      "email": "david.kumar@ntu.edu.sg",
-      "researchInterests": ["Photonic Integration", "Laser Design", "Manufacturing"],
-      "startYear": "2020"
+      "name": "Nguyen To Vinh Huy",
+      "position": "Ph.D. Student",
+      "email": "nguyento001@e.ntu.edu.sg",
+      "researchInterests": ["Coherent photonic systems", "Spectrometry"],
+      "startYear": "2025",
+      "image": "/team/huy.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Tina Guo",
+      "position": "Scientist",
+      "email": "xinguo@ntu.edu.sg",
+      "researchInterests": ["Photonic characterization"],
+      "startYear": "2024",
+      "image": "/team/tina-guo.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Tong Xujie",
+      "position": "Ph.D., Postdoctoral Fellow",
+      "email": "xujie.tong@ntu.edu.sg",
+      "researchInterests": ["Hybrid III-V SiN Tunable Lasers"],
+      "startYear": "2024",
+      "image": "/team/xujie.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Dai Gaoqi",
+      "position": "Ph.D. Student",
+      "email": "daig0004@e.ntu.edu.sg",
+      "researchInterests": [],
+      "startYear": "2025",
+      "image": "/team/gaoqi.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Juan Michael Kane Gani",
+      "position": "Ph.D. Student",
+      "email": "juan0013@e.ntu.edu.sg",
+      "researchInterests": [],
+      "startYear": "2025",
+      "image": "/team/michael.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Han Zheng",
+      "position": "Ph.D. Student",
+      "email": "hanz0026@e.ntu.edu.sg",
+      "researchInterests": [],
+      "startYear": "2025",
+      "image": "/team/hz.jpg",
+      "needsNewPhoto": false
     }
   ],
   "alumni": [],
   "joinUs": {
     "title": "Join Our Research Group",
     "description": "We are always looking for motivated researchers to join our team. If you're interested in photonics research and want to contribute to cutting-edge discoveries, we'd love to hear from you.",
-    "contactEmail": "bsxu@ntu.edu.sg"
+    "contactEmail": "jiaxubrian.sia@ntu.edu.sg"
   }
 }

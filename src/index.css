@@ -449,7 +449,7 @@
 
   /* Blog/News Card Styles */
   .news-card {
-    @apply relative bg-card border border-border overflow-hidden;
+    @apply relative bg-card border border-border overflow-hidden flex flex-col h-full;
   }
 
   .news-card-image {
@@ -465,7 +465,7 @@
   }
 
   .news-card-content {
-    @apply p-6;
+    @apply p-6 flex flex-col gap-3 flex-1;
   }
 
   .news-card-date {

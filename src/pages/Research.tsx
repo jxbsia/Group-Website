@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ExternalLink, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import AnimatedBlock from '@/components/AnimatedBlock';
 import { getIcon } from '@/utils/iconMap';
 import researchData from '@/data/research.json';
@@ -30,7 +30,9 @@ const Research = () => {
             <AnimatedBlock delay={0.2}>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
                 Our research spans multiple areas of photonics and integrated laser technologies,
-                pushing the boundaries of what's possible in optical systems and applications.
+                pushing the boundaries of what's possible in optical systems and applications. In Sia's group,
+                we focus on designing cutting-edge and compact photonic integrated systems. 
+                These will be used for a wide range of key technologies, such as communications, computing, spectroscopy, and sensing.
               </p>
             </AnimatedBlock>
           </div>
@@ -101,7 +103,12 @@ const Research = () => {
                         <div className="absolute top-0 right-0 text-[200px] font-semibold text-accent/5 leading-none select-none">
                           {String(index + 1).padStart(2, '0')}
                         </div>
-
+                        <img
+                          src={area.image}
+                          alt={area.title}
+                          className="absolute inset-0 w-full h-full object-cover opacity-90 brightness-110 saturate-110"
+                        />
+                        <div className="absolute inset-0 bg-background/25" />
                         <div className="relative z-10">
                           <h3 className="text-2xl font-semibold text-foreground mb-4">
                             {area.title}
