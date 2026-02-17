@@ -128,7 +128,7 @@ const Home = () => {
             </AnimatedBlock>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
             {featuredNews.map((news, index) => (
               <AnimatedBlock key={news.id} delay={0.1 + index * 0.1}>
                 <article className="news-card">
@@ -142,7 +142,7 @@ const Home = () => {
                   <div className="news-card-content">
                     <p className="news-card-date">{news.date}</p>
                     <h3 className="news-card-title">{news.title}</h3>
-                    <p className="news-card-excerpt">{news.excerpt}</p>
+                    <p className="news-card-excerpt">{news.description || news.excerpt}</p>
                   </div>
                 </article>
               </AnimatedBlock>

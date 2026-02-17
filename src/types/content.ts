@@ -3,11 +3,12 @@ export interface TeamMember {
   id: string;
   name: string;
   position: string;
-  role: 'phd' | 'postdoc' | 'staff' | 'masters';
+  role: string;
   email: string;
   researchInterests: string[];
   startYear: string;
   image?: string;
+  needsNewPhoto?: boolean;
 }
 
 export interface AlumniMember {
@@ -64,6 +65,7 @@ export interface ResearchArea {
   title: string;
   description: string;
   detailedDescription: string;
+  image: string;
   icon: string;
   applications: string[];
   keyTechnologies: string[];
@@ -207,4 +209,5 @@ export interface NewsItem {
   category: string;
   link?: string;
   thumbnail?: string;
+  images?: string[];
 }
