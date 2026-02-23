@@ -133,11 +133,19 @@ const Home = () => {
               <AnimatedBlock key={news.id} delay={0.1 + index * 0.1}>
                 <article className="news-card">
                   <div className="news-card-image bg-secondary">
-                    <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                      <span className="text-6xl font-semibold opacity-20">
-                        {String(index + 1).padStart(2, '0')}
-                      </span>
-                    </div>
+                    {news.thumbnail ? (
+                      <img
+                        src={news.thumbnail}
+                        alt={news.title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-muted-foreground">
+                        <span className="text-6xl font-semibold opacity-20">
+                          {String(index + 1).padStart(2, '0')}
+                        </span>
+                      </div>
+                    )}
                   </div>
                   <div className="news-card-content">
                     <p className="news-card-date">{news.date}</p>

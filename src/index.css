@@ -66,7 +66,7 @@
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 13%;
-    --muted-foreground: 0 0% 40%; /* #666666 */
+    --muted-foreground: 0 0% 100%; /* white */
 
     /* Gilber Accent Red */
     --accent: 0 100% 41%; /* #cf000f - Gilber red */
@@ -108,7 +108,7 @@
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 13%;
-    --muted-foreground: 0 0% 40%;
+    --muted-foreground: 0 0% 100%;
 
     --accent: 0 100% 41%;
     --accent-foreground: 0 0% 100%;
