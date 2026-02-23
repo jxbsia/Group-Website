@@ -1,10 +1,1265 @@
 {
   "stats": {
-    "totalPublications": 0,
-    "totalCitations": 0,
-    "hIndex": 0,
-    "avgCitations": 0
+    "totalPublications": 68,
+    "totalCitations": 454,
+    "hIndex": 13,
+    "avgCitations": 7
   },
   "googleScholarLink": "https://scholar.google.com/citations?hl=en&user=HC8AFQcAAAAJ",
-  "publications": []
+  "publications": [
+    {
+      "id": "HC8AFQcAAAAJ:GnPB-g6toBAC",
+      "title": "Hybrid tungsten oxyselenide/graphene electrodes for near-lossless 2D semiconductor phase modulators",
+      "authors": [
+        "S Guo",
+        "SG Lee",
+        "X Gong",
+        "L Singh",
+        "R Yu",
+        "ASB Juperi",
+        "S Lim",
+        "Y Yang",
+        "J Huo"
+      ],
+      "journal": "Light: Science & Applications 15 (1), 42",
+      "year": 2026,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:GnPB-g6toBAC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:BqipwSGYUEgC",
+      "title": "The emerging applications of silicon photonics",
+      "authors": [
+        "L Ranno",
+        "YZ Tan",
+        "AG Coleto",
+        "VHN To",
+        "S Tian",
+        "Y Sun",
+        "Z Xu",
+        "SH Chae"
+      ],
+      "journal": "Newton",
+      "year": 2025,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:BqipwSGYUEgC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:YFjsv_pBGBYC",
+      "title": "Wide field-of-view and large depth-of-field metalenses",
+      "authors": [
+        "L Martin-Monier",
+        "Z Li",
+        "F Yang",
+        "M Shalaginov",
+        "L Ranno",
+        "JXB Sia",
+        "T Gu"
+      ],
+      "journal": "arXiv preprint arXiv:2512.06635",
+      "year": 2025,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:YFjsv_pBGBYC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:NMxIlDl6LWMC",
+      "title": "Silicon photonic device for generating laser light",
+      "authors": [
+        "JXB SIA",
+        "H Wang",
+        "KS Ang"
+      ],
+      "journal": "US Patent App. 18/691,712",
+      "year": 2025,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:NMxIlDl6LWMC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:hMod-77fHWUC",
+      "title": "Wafer-scale conformal metasurface optics",
+      "authors": [
+        "L Martin-Monier",
+        "S Chang",
+        "J Froech",
+        "Z Li",
+        "L Ranno",
+        "KP Dao",
+        "A Ueno"
+      ],
+      "journal": "arXiv preprint arXiv:2511.10447",
+      "year": 2025,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:hMod-77fHWUC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:k_IJM867U9cC",
+      "title": "Research on optical soliton characteristics GaSb-based ~2 \u03bcm wavelength two-section integrated optical chip",
+      "authors": [
+        "W Yu",
+        "Z Qiao",
+        "X Li",
+        "JXB Sia",
+        "D Weng",
+        "X Hou",
+        "Z Li",
+        "L Li",
+        "H Chen",
+        "Z Zhao"
+      ],
+      "journal": "Journal of Semiconductors 46 (11), 112403",
+      "year": 2025,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:k_IJM867U9cC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:maZDTaKrznsC",
+      "title": "Electrically-driven nonreciprocal silicon photonic isolator based on monolithically integrated bismuth terbium iron garnet",
+      "authors": [
+        "JXB Sia",
+        "L Ranno",
+        "K Hayashi",
+        "L Martin-Monier",
+        "PE LAUER",
+        "SS Ot\u00e1lvaro"
+      ],
+      "journal": "Optica Open",
+      "year": 2025,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:maZDTaKrznsC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:isC4tDSrTZIC",
+      "title": "Electrically tunable ferroelectric NbOBr2-integrated nonlinear photonics",
+      "authors": [
+        "SH Chae",
+        "X Gong",
+        "R Duan",
+        "Y Yang",
+        "J Huo",
+        "SG Lee",
+        "S Guo",
+        "X Guo"
+      ],
+      "journal": "",
+      "year": 2025,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:isC4tDSrTZIC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:TFP_iSt0sucC",
+      "title": "PIC-based spectroscopic chemical sensing",
+      "authors": [
+        "TS Karnik",
+        "JXB Sia",
+        "KP Dao",
+        "L Ranno",
+        "JJ Hu"
+      ],
+      "journal": "Frontiers in Biological Detection: From Nanosensors to Systems XVII 13338, 30-36",
+      "year": 2025,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:TFP_iSt0sucC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:j3f4tGmQtD8C",
+      "title": "Understanding and Circumventing Failure Mechanisms in Chalcogenide Optical Phase Change Material Ge2Sb2Se4Te",
+      "authors": [
+        "CC Popescu",
+        "K Aryana",
+        "B Mills",
+        "TW Lee",
+        "L Martin\u2010Monier",
+        "L Ranno"
+      ],
+      "journal": "Advanced Optical Materials 13 (8), 2402751",
+      "year": 2025,
+      "type": "article",
+      "citations": 11,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:j3f4tGmQtD8C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:r0BpntZqJG4C",
+      "title": "Tunable characteristics of optical frequency combs from ingaas/gaas two-section mode-locked lasers",
+      "authors": [
+        "D Weng",
+        "Y Liang",
+        "Z Qiao",
+        "X Li",
+        "JXB Sia",
+        "Z Li",
+        "L Li",
+        "H Chen",
+        "Z Zhao",
+        "Y Qu"
+      ],
+      "journal": "Sensors 24 (24), 7905",
+      "year": 2024,
+      "type": "article",
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:r0BpntZqJG4C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:_Qo2XoVZTnwC",
+      "title": "Heterogeneous integration of active photonic materials leveraging substrate-inverted multimaterial integration technology (SuMMIT)",
+      "authors": [
+        "L Ranno",
+        "JXB Sia",
+        "KP Dao",
+        "J Hu"
+      ],
+      "journal": "Active Photonic Platforms (APP) 2024 13110, 48-56",
+      "year": 2024,
+      "type": "article",
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:_Qo2XoVZTnwC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:bEWYMUwI8FkC",
+      "title": "Mode-locked Operation Characteristics of a Monolithic Integrated Two-section InGaAs/GaAs Double Quantum Wells Laser with Asymmetric Waveguide (vol 147, 107702, 2022)",
+      "authors": [
+        "Z Qiao",
+        "X Li",
+        "JXB Sia",
+        "WJ Wang",
+        "H Wang",
+        "L Li",
+        "Z Li",
+        "Z Zhao",
+        "G Liu",
+        "H Chen"
+      ],
+      "journal": "OPTICS AND LASER TECHNOLOGY 177",
+      "year": 2024,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:bEWYMUwI8FkC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:ZeXyd9-uunAC",
+      "title": "Corrigendum to \u201cMode-locked Operation Characteristics of a Monolithic Integrated Two-section InGaAs/GaAs Double Quantum Wells Laser with Asymmetric Waveguide\u201d[Optics & Laser\u00a0\u2026",
+      "authors": [
+        "Z Qiao",
+        "X Li",
+        "JXB Sia",
+        "WJ Wang",
+        "H Wang",
+        "L Li",
+        "Z Li",
+        "Z Zhao",
+        "G Liu",
+        "H Chen"
+      ],
+      "journal": "Optics & Laser Technology 177, 111080",
+      "year": 2024,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:ZeXyd9-uunAC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:TQgYirikUcIC",
+      "title": "Unravelling and circumventing failure mechanisms in chalcogenide optical phase change materials",
+      "authors": [
+        "CC Popescu",
+        "K Aryana",
+        "B Mills",
+        "TW Lee",
+        "L Martin-Monier",
+        "L Ranno"
+      ],
+      "journal": "arXiv preprint arXiv:2409.12313",
+      "year": 2024,
+      "type": "article",
+      "citations": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:TQgYirikUcIC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:RHpTSmoSYBkC",
+      "title": "Unravelling and circumventing failure mechanisms in chalcogenide optical phase change materials",
+      "authors": [
+        "C Constantin Popescu",
+        "K Aryana",
+        "B Mills",
+        "TW Lee",
+        "L Martin-Monier"
+      ],
+      "journal": "arXiv e-prints, arXiv: 2409.12313",
+      "year": 2024,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:RHpTSmoSYBkC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:hC7cP41nSMkC",
+      "title": "Magneto\u2010Optical Bi\u2010Substituted Yttrium and Terbium Iron Garnets for On\u2010Chip Crystallization via Microheaters",
+      "authors": [
+        "K Hayashi",
+        "KP Dao",
+        "MJ Gross",
+        "L Ranno",
+        "JXB Sia",
+        "T Fakhrul",
+        "Q Du"
+      ],
+      "journal": "Advanced Optical Materials 12 (25), 2400708",
+      "year": 2024,
+      "type": "article",
+      "citations": 12,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:hC7cP41nSMkC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:-f6ydRqryjwC",
+      "title": "Optoelectronic oscillator based on a silicon microring modulator",
+      "authors": [
+        "X Li",
+        "JXB Sia",
+        "J Wang",
+        "Z Qiao",
+        "W Wang",
+        "X Guo",
+        "H Wang",
+        "C Liu"
+      ],
+      "journal": "Applied Physics Letters 125 (7)",
+      "year": 2024,
+      "type": "article",
+      "citations": 7,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:-f6ydRqryjwC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:IWHjjKOFINEC",
+      "title": "Scalable single-microring hybrid III-V/Si lasers for emerging narrow-linewidth applications",
+      "authors": [
+        "J Wang",
+        "X Li",
+        "X Guo",
+        "TH Loh",
+        "L Ranno",
+        "C Liu",
+        "Rusli",
+        "H Wang",
+        "JX Brian Sia"
+      ],
+      "journal": "Optics Express 32 (15), 26751-26762",
+      "year": 2024,
+      "type": "article",
+      "citations": 12,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:IWHjjKOFINEC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:4JMBOYKVnBMC",
+      "title": "Heterogenous Photonic Integration",
+      "authors": [
+        "KPD Luigi Ranno",
+        "Jia Xu Brian Sia",
+        "Juejun Hu",
+        "Caroline Ross",
+        "Steven Vitale ..."
+      ],
+      "journal": "WO Patent WO/2024/124,125",
+      "year": 2024,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:4JMBOYKVnBMC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:qUcmZB5y_30C",
+      "title": "Crown ether decorated silicon photonics for safeguarding against lead poisoning",
+      "authors": [
+        "L Ranno",
+        "YZ Tan",
+        "CS Ong",
+        "X Guo",
+        "KN Koo",
+        "X Li",
+        "W Wang",
+        "S Serna",
+        "C Liu"
+      ],
+      "journal": "Nature Communications 15 (1), 3820",
+      "year": 2024,
+      "type": "article",
+      "citations": 24,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:qUcmZB5y_30C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:HDshCWvjkbEC",
+      "title": "3-D Free-Form Micro-Reflectors for Broadband and Low-Loss Scalable Fiber to Si-Waveguide Coupling",
+      "authors": [
+        "L Ranno",
+        "JXB Sia",
+        "C Popescu",
+        "D Weninger",
+        "S Serna",
+        "S Yu",
+        "LC Kimerling"
+      ],
+      "journal": "CLEO: Science and Innovations, SF3F. 5",
+      "year": 2024,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:HDshCWvjkbEC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:mB3voiENLucC",
+      "title": "A Crown Ether Decorated Silicon Photonic Platform to Safeguard Against Lead Poisoning in Society",
+      "authors": [
+        "L Ranno",
+        "YZ Tan",
+        "CS Ong",
+        "X Guo",
+        "KN Koo",
+        "X Li",
+        "W Wang",
+        "S Serna",
+        "C Liu"
+      ],
+      "journal": "CLEO: Science and Innovations, SF3A. 1",
+      "year": 2024,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:mB3voiENLucC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:hFOr9nPyWt4C",
+      "title": "Substrate-inverted Multi-Material Integration Technology (SuMMIT)",
+      "authors": [
+        "L Ranno",
+        "KP Dao",
+        "J Hu",
+        "JXB Sia"
+      ],
+      "journal": "CLEO: Science and Innovations, SM4G. 6",
+      "year": 2024,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:hFOr9nPyWt4C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:7PzlFSSx8tAC",
+      "title": "Highly efficient fiber to Si waveguide free-form coupler for foundry-scale silicon photonics",
+      "authors": [
+        "L Ranno",
+        "JXB Sia",
+        "C Popescu",
+        "D Weninger",
+        "S Serna",
+        "S Yu",
+        "LC Kimerling"
+      ],
+      "journal": "Photonics Research 12 (5), 1055-1066",
+      "year": 2024,
+      "type": "article",
+      "citations": 21,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:7PzlFSSx8tAC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:JV2RwH3_ST0C",
+      "title": "1967~ 2033 nm \u6ce2\u6bb5\u7845\u57fa\u53ef\u8c03\u8c10\u5916\u8154\u534a\u5bfc\u4f53\u6fc0\u5149\u5668\u8bbe\u8ba1\u4e0e\u4eff\u771f= Design and simulation of silicon-based tunable external cavity diode lasers in the 1967-2033 nm wavelength range",
+      "authors": [
+        "H Wan",
+        "Y Yang",
+        "Z Qiao",
+        "X Li",
+        "BJX Sia",
+        "W Yu",
+        "D Weng",
+        "Z Li",
+        "L Li",
+        "H Chen"
+      ],
+      "journal": "\u4e2d\u56fd\u6fc0\u5149/Chinese Journal of Lasers",
+      "year": 2024,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:JV2RwH3_ST0C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:iH-uZ7U-co4C",
+      "title": "Understanding and Circumventing Failure Mechanisms in Chalcogenide Optical Phase Change Material Ge",
+      "authors": [
+        "CC Popescu",
+        "K Aryana",
+        "B Mills",
+        "TW Lee",
+        "L Martin-Monier",
+        "L Ranno"
+      ],
+      "journal": "",
+      "year": 2024,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:iH-uZ7U-co4C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:9ZlFYXVOiuMC",
+      "title": "Crown ether decorated silicon photonics for safeguarding against lead poisoning",
+      "authors": [
+        "JXB Sia",
+        "L Ranno",
+        "YZ Tan",
+        "CS Ong",
+        "X Guo",
+        "KN Koo",
+        "X Li",
+        "W Wang"
+      ],
+      "journal": "",
+      "year": 2023,
+      "type": "article",
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:9ZlFYXVOiuMC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:Wp0gIr-vW9MC",
+      "title": "High-speed 4\u00d7 4 silicon photonic plasma dispersive switch, operating at the 2 \u00b5m waveband",
+      "authors": [
+        "J Wang",
+        "JXB Sia",
+        "X Li",
+        "X Guo",
+        "W Wang",
+        "Z Qiao",
+        "CG Littlejohns",
+        "C Liu"
+      ],
+      "journal": "Optics Express 31 (20), 33548-33564",
+      "year": 2023,
+      "type": "article",
+      "citations": 9,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:Wp0gIr-vW9MC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:aqlVkmm33-oC",
+      "title": "Multi-material heterogeneous integration on a 3-D photonic-CMOS platform",
+      "authors": [
+        "L Ranno",
+        "JXB Sia",
+        "KP Dao",
+        "J Hu"
+      ],
+      "journal": "Optical Materials Express 13 (10), 2711-2725",
+      "year": 2023,
+      "type": "article",
+      "citations": 27,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:aqlVkmm33-oC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:4TOpqqG69KYC",
+      "title": "Linear Optical Modulators for Prospective Communications at the 2 {\\mu} m Waveband",
+      "authors": [
+        "JXB Sia",
+        "X Li",
+        "X Guo",
+        "J Wang",
+        "W Wang",
+        "Z Qiao",
+        "CG Littlejohns",
+        "C Liu"
+      ],
+      "journal": "arXiv preprint arXiv:2210.06994",
+      "year": 2022,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:4TOpqqG69KYC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:ULOm3_A8WrAC",
+      "title": "Wafer-scale demonstration of low-loss (\u223c 0.43 dB/cm), high-bandwidth (> 38 GHz), silicon photonics platform operating at the C-band",
+      "authors": [
+        "JXB Sia",
+        "X Li",
+        "J Wang",
+        "W Wang",
+        "Z Qiao",
+        "X Guo",
+        "CW Lee",
+        "A Sasidharan"
+      ],
+      "journal": "IEEE Photonics Journal 14 (3), 1-9",
+      "year": 2022,
+      "type": "article",
+      "citations": 38,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:ULOm3_A8WrAC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:Zph67rFs4hoC",
+      "title": "Modal gain characteristics of a two-section InGaAs/GaAs double quantum well passively mode-locked laser with asymmetric waveguide",
+      "authors": [
+        "Z Qiao",
+        "X Li",
+        "JXB Sia",
+        "W Wang",
+        "H Wang",
+        "Z Li",
+        "Z Zhao",
+        "L Li",
+        "X Gao",
+        "B Bo"
+      ],
+      "journal": "Scientific Reports 12 (1), 5010",
+      "year": 2022,
+      "type": "article",
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:Zph67rFs4hoC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:3fE2CSJIrl8C",
+      "title": "Mode-locked operation characteristics of a monolithic integrated two-section InGaAs/GaAs double quantum wells laser with asymmetric waveguide",
+      "authors": [
+        "Z Qiao",
+        "X Li",
+        "JXB Sia",
+        "WJ Wang",
+        "H Wang",
+        "L Li",
+        "Z Li",
+        "Z Zhao",
+        "G Liu",
+        "H Chen"
+      ],
+      "journal": "Optics & Laser Technology 147, 107702",
+      "year": 2022,
+      "type": "article",
+      "citations": 3,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:3fE2CSJIrl8C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:0EnyYjriUFMC",
+      "title": "Optical frequency comb generation from a 1.65 \u00b5m single-section quantum well laser",
+      "authors": [
+        "X Li",
+        "JXB Sia",
+        "J Wang",
+        "Z Qiao",
+        "W Wang",
+        "X Guo",
+        "H Wang",
+        "C Liu"
+      ],
+      "journal": "Optics Express 30 (3), 4117-4124",
+      "year": 2022,
+      "type": "article",
+      "citations": 9,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:0EnyYjriUFMC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:_kc_bZDykSQC",
+      "title": "Development of hybrid/active/passive silicon photonics for future technologies",
+      "authors": [
+        "JXB Sia"
+      ],
+      "journal": "Nanyang Technological University",
+      "year": 2022,
+      "type": "article",
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:_kc_bZDykSQC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:hqOjcs7Dif8C",
+      "title": "Compact, hybrid III-V/silicon Vernier laser diode operating from 1955\u20131992 nm",
+      "authors": [
+        "JXB Sia",
+        "X Li",
+        "W Wang",
+        "Z Qiao",
+        "X Guo",
+        "J Wang",
+        "CG Littlejohns",
+        "C Liu"
+      ],
+      "journal": "IEEE Photonics Journal 13 (6), 1-5",
+      "year": 2021,
+      "type": "article",
+      "citations": 15,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:hqOjcs7Dif8C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:qxL8FJ1GzNcC",
+      "title": "Modal Gain Characteristics of A Two-section InGaAs/GaAs Double Quantum Well Passively Mode-locked Laser with Asymmetric Waveguide",
+      "authors": [
+        "Q Zhongliang",
+        "X Li",
+        "B Sia",
+        "W Wang",
+        "H Wang",
+        "Z Li",
+        "Z Zhao",
+        "L Li",
+        "X Gao"
+      ],
+      "journal": "",
+      "year": 2021,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:qxL8FJ1GzNcC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:Se3iqnhoufwC",
+      "title": "Phase noise reduction of a 2 \u00b5m passively mode-locked laser through hybrid III-V/silicon integration",
+      "authors": [
+        "X Li",
+        "JXB Sia",
+        "W Wang",
+        "Z Qiao",
+        "X Guo",
+        "GI Ng",
+        "Y Zhang",
+        "Z Niu",
+        "C Tong"
+      ],
+      "journal": "Optica 8 (6), 855-860",
+      "year": 2021,
+      "type": "article",
+      "citations": 19,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:Se3iqnhoufwC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:kNdYIx-mwKoC",
+      "title": "Stable mode-locked operation with high temperature characteristics of a two-section InGaAs/GaAs double quantum wells laser",
+      "authors": [
+        "Z Qiao",
+        "X Li",
+        "JX Sia",
+        "W Wang",
+        "H Wang",
+        "L Li",
+        "Z Li",
+        "Z Zhao",
+        "Y Qu",
+        "X Gao"
+      ],
+      "journal": "IEEE Access 9, 16608-16614",
+      "year": 2021,
+      "type": "article",
+      "citations": 4,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:kNdYIx-mwKoC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:W7OEmFMy1HYC",
+      "title": "Analysis of compact silicon photonic hybrid ring external cavity (SHREC) wavelength-tunable laser diodes operating from 1881\u20131947 nm",
+      "authors": [
+        "JXB Sia",
+        "W Wang",
+        "Z Qiao",
+        "X Li",
+        "TX Guo",
+        "J Zhou",
+        "CG Littlejohns",
+        "C Liu"
+      ],
+      "journal": "IEEE Journal of Quantum Electronics 56 (6), 1-11",
+      "year": 2020,
+      "type": "article",
+      "citations": 11,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:W7OEmFMy1HYC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:LkGwnXOMwfcC",
+      "title": "Temperature-dependent phase noise properties of a two-section GaSb-based mode-locked laser emitting at 2 \u03bcm",
+      "authors": [
+        "X Li",
+        "H Wang",
+        "Z Qiao",
+        "JXB Sia",
+        "W Wang",
+        "X Guo",
+        "Y Zhang",
+        "Z Niu",
+        "C Tong"
+      ],
+      "journal": "Applied Physics Letters 117 (14)",
+      "year": 2020,
+      "type": "article",
+      "citations": 3,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:LkGwnXOMwfcC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:Y0pCki6q_DkC",
+      "title": "Sub-kHz linewidth, hybrid III-V/silicon wavelength-tunable laser diode operating at the application-rich 1647-1690\u2005nm",
+      "authors": [
+        "JX Brian Sia",
+        "X Li",
+        "W Wang",
+        "Z Qiao",
+        "X Guo",
+        "J Zhou",
+        "CG Littlejohns",
+        "C Liu"
+      ],
+      "journal": "Optics Express 28 (17), 25215-25224",
+      "year": 2020,
+      "type": "article",
+      "citations": 36,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:Y0pCki6q_DkC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:zYLM7Y9cAGgC",
+      "title": "1\u00d7 N (N= 2, 8) silicon selector switch for prospective technologies at the 2 \u03bcm waveband",
+      "authors": [
+        "JXB Sia",
+        "X Li",
+        "Z Qiao",
+        "X Guo",
+        "J Zhou",
+        "CG Littlejohns",
+        "C Liu",
+        "GT Reed"
+      ],
+      "journal": "IEEE Photonics Technology Letters 32 (18), 1127-1130",
+      "year": 2020,
+      "type": "article",
+      "citations": 16,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:zYLM7Y9cAGgC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:ufrVoPGSRksC",
+      "title": "Experimental Auger Recombination Study of a 2 \u00b5m GaSb-Based Quantum Well Laser via Sidewall Spontaneous Emission",
+      "authors": [
+        "X Li",
+        "H Wang",
+        "W Wang",
+        "JXB Sia",
+        "X Guo",
+        "C Liu"
+      ],
+      "journal": "2020 IEEE International Symposium on the Physical and Failure Analysis of\u00a0\u2026",
+      "year": 2020,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:ufrVoPGSRksC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:WF5omc3nYNoC",
+      "title": "Compact silicon photonic hybrid ring external cavity (SHREC)/InGaSb-AlGaAsSb wavelength-tunable laser diode operating from 1881-1947 nm",
+      "authors": [
+        "JXB Sia",
+        "W Wang",
+        "Z Qiao",
+        "X Li",
+        "X Guo",
+        "J Zhou",
+        "CG Littlejohns",
+        "Z Zhang"
+      ],
+      "journal": "Optics express 28 (4), 5134-5146",
+      "year": 2020,
+      "type": "article",
+      "citations": 34,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:WF5omc3nYNoC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:_FxGoFyzp5QC",
+      "title": "SiN-SOI multilayer platform for prospective applications at 2 \u03bcm",
+      "authors": [
+        "JXB Sia",
+        "W Wang",
+        "X Guo",
+        "J Zhou",
+        "Z Zhang",
+        "X Li",
+        "ZL Qiao",
+        "CY Liu"
+      ],
+      "journal": "IEEE Photonics Journal 11 (6), 1-9",
+      "year": 2019,
+      "type": "article",
+      "citations": 9,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:_FxGoFyzp5QC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:qjMakFHDy7sC",
+      "title": "Silicon Nitride Waveguiding for Prospective Technologies at the 2 \u03bcm Waveband",
+      "authors": [
+        "JXB Sia",
+        "W Wang",
+        "Z Qiao",
+        "X Li",
+        "X Guo",
+        "J Zhou",
+        "CG Littlejohns",
+        "Z Zhang"
+      ],
+      "journal": "2019 IEEE 16th International Conference on Group IV Photonics (GFP), 1-2",
+      "year": 2019,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:qjMakFHDy7sC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:UeHWp8X0CEIC",
+      "title": "Two-mode multiplexer based on the multilayer Si-SiN platform for 2\u03bcm waveband",
+      "authors": [
+        "W Wang",
+        "JXB Sia",
+        "Z Qiao",
+        "X Li",
+        "X Guo",
+        "J Zhou",
+        "C Liu",
+        "CG Littlejohns"
+      ],
+      "journal": "2019 18th International Conference on Optical Communications and Networks\u00a0\u2026",
+      "year": 2019,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:UeHWp8X0CEIC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:roLk4NBRz8UC",
+      "title": "Silicon optical modulators for data transmission in different wavelength bands",
+      "authors": [
+        "DJ Thomson",
+        "K Li",
+        "W Cao",
+        "D Hagan",
+        "S Liu",
+        "F Meng",
+        "M Nedeljkovic"
+      ],
+      "journal": "2019 21st International Conference on Transparent Optical Networks (ICTON), 1-4",
+      "year": 2019,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:roLk4NBRz8UC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:MXK_kJrjxJIC",
+      "title": "The design of 1\u00d7 2 MMI at the MIR wavelength of 2 \u03bcm",
+      "authors": [
+        "S Feng",
+        "W Wang",
+        "SJX Brian",
+        "X Guo",
+        "J Zhou",
+        "Z Qiao",
+        "X Li",
+        "H Wang"
+      ],
+      "journal": "2019 IEEE International Conference on Electron Devices and Solid-State\u00a0\u2026",
+      "year": 2019,
+      "type": "article",
+      "citations": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:MXK_kJrjxJIC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:u-x6o8ySG0sC",
+      "title": "High temperature characteristics of a 2 \u03bcm InGaSb/AlGaAsSb passively mode-locked quantum well laser",
+      "authors": [
+        "X Li",
+        "H Wang",
+        "Z Qiao",
+        "X Guo",
+        "W Wang",
+        "JXB Sia",
+        "GI Ng",
+        "Y Zhang",
+        "Z Niu"
+      ],
+      "journal": "Applied Physics Letters 114 (22)",
+      "year": 2019,
+      "type": "article",
+      "citations": 18,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:u-x6o8ySG0sC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:eQOLeE2rZwMC",
+      "title": "Mid-infrared, ultra-broadband, low-loss, compact arbitrary power splitter based on adiabatic mode evolution",
+      "authors": [
+        "JXB Sia",
+        "W Wang",
+        "X Guo",
+        "J Zhou",
+        "Z Zhang",
+        "MS Rouifed",
+        "X Li",
+        "ZL Qiao"
+      ],
+      "journal": "IEEE Photonics Journal 11 (2), 1-11",
+      "year": 2019,
+      "type": "article",
+      "citations": 37,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:eQOLeE2rZwMC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:IjCSPb-OGe4C",
+      "title": "Compact, ultra-tunable InGaSb/AlGaAsSb Si external cavity laser at the Mid-Infrared (MIR)",
+      "authors": [
+        "JXB Sia",
+        "W Wang",
+        "Z Qiao",
+        "X Li",
+        "X Guo",
+        "J Zhou",
+        "Z Zhang",
+        "C Littlejohns"
+      ],
+      "journal": "CLEO: Science and Innovations, STu4O. 1",
+      "year": 2019,
+      "type": "article",
+      "citations": 3,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:IjCSPb-OGe4C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:8k81kl-MbHgC",
+      "title": "Compact, ultra-tunable InGaSb/AlGaAsSb Si external cavity laser at the Mid-Infrared (MIR)",
+      "authors": [
+        "JX Brian Sia",
+        "W Wang",
+        "Z Qiao",
+        "X Li",
+        "X Guo",
+        "J Zhou",
+        "Z Zhang",
+        "C Littlejohns"
+      ],
+      "journal": "IEEE",
+      "year": 2019,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:8k81kl-MbHgC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:dhFuZR0502QC",
+      "title": "NLR independently predicts advanced pathological staging and poorer survival outcomes in testicular cancer",
+      "authors": [
+        "YG Tan",
+        "HH Huang",
+        "J Sia",
+        "LKO Weber"
+      ],
+      "journal": "BJU INTERNATIONAL 122, 28-28",
+      "year": 2018,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:dhFuZR0502QC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:u5HHmVD_uO8C",
+      "title": "Experimental demonstration of thermally tunable Fano and EIT resonances in coupled resonant system on SOI platform",
+      "authors": [
+        "Z Zhang",
+        "GI Ng",
+        "T Hu",
+        "H Qiu",
+        "X Guo",
+        "W Wang",
+        "MS Rouifed",
+        "C Liu",
+        "J Sia"
+      ],
+      "journal": "IEEE Photonics Journal 10 (3), 1-8",
+      "year": 2018,
+      "type": "article",
+      "citations": 10,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:u5HHmVD_uO8C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:5nxA0vEk-isC",
+      "title": "Mid-infrared (MIR) Mach-Zehnder silicon modulator at 2\u03bcm wavelength based on interleaved PN junction",
+      "authors": [
+        "W Wang",
+        "Z Zhang",
+        "X Guo",
+        "J Zhou",
+        "SJX Brian",
+        "MS Rouifed",
+        "C Liu"
+      ],
+      "journal": "2018 Conference on Lasers and Electro-Optics (CLEO), 1-2",
+      "year": 2018,
+      "type": "article",
+      "citations": 21,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:5nxA0vEk-isC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:YsMSGLbcyi4C",
+      "title": "Mid-infrared sensor based on a suspended microracetrack resonator with lateral subwavelength-grating metamaterial cladding",
+      "authors": [
+        "Z Zhang",
+        "GI Ng",
+        "T Hu",
+        "H Qiu",
+        "X Guo",
+        "W Wang",
+        "MS Rouifed",
+        "C Liu",
+        "J Sia"
+      ],
+      "journal": "IEEE Photonics Journal 10 (2), 1-8",
+      "year": 2018,
+      "type": "article",
+      "citations": 27,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:YsMSGLbcyi4C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:M3ejUd6NZC8C",
+      "title": "Experimental demonstration of thermally tunable Fano and EIT resonances in coupled resonant system on SOI platform",
+      "authors": [
+        "CG Littlejohns",
+        "Z Zhang",
+        "GI Ng",
+        "T Hu",
+        "H Qiu",
+        "X Guo",
+        "W Wang",
+        "C Liu",
+        "J Sia"
+      ],
+      "journal": "",
+      "year": 2018,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:M3ejUd6NZC8C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:Tyk-4Ss8FVUC",
+      "title": "Suspended microracetrack resonator with lateral sub-wavelength-grating metamaterial cladding for mid-infrared sensing applications",
+      "authors": [
+        "Z Zhang",
+        "GI Ng",
+        "T Hu",
+        "H Qiu",
+        "X Guo",
+        "W Wang",
+        "C Liu",
+        "J Sia",
+        "J Zhou"
+      ],
+      "journal": "ITM Web of Conferences",
+      "year": 2018,
+      "type": "article",
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:Tyk-4Ss8FVUC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:d1gkVwhDpl0C",
+      "title": "Mid-infrared sensor based on a suspended microracetrack resonator with lateral subwavelength-grating metamaterial cladding",
+      "authors": [
+        "MS Rouifed",
+        "C Liu",
+        "J Sia",
+        "J Zhou",
+        "CG Littlejohns",
+        "GT Reed",
+        "H Wang"
+      ],
+      "journal": "",
+      "year": 2018,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:d1gkVwhDpl0C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:2osOgNQ5qMEC",
+      "title": "Silicon photonic devices for the mid-infrared",
+      "authors": [
+        "MS Rouifed",
+        "CG Littlejohns",
+        "GX Tina",
+        "JX Sia",
+        "H Qiu",
+        "JS Penades"
+      ],
+      "journal": "Conference on Lasers and Electro-Optics/Pacific Rim, s2264",
+      "year": 2017,
+      "type": "article",
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:2osOgNQ5qMEC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:M3NEmzRMIkIC",
+      "title": "Electrically-driven nonreciprocal silicon photonic isolator based on monolithically integrated bismuth terbium iron garnet",
+      "authors": [
+        "L RANNO",
+        "K HAYASHI",
+        "L MARTIN-MONIER",
+        "PE LAUER",
+        "S SERNA",
+        "Z XU"
+      ],
+      "journal": "",
+      "year": 0,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:M3NEmzRMIkIC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:e5wmG9Sq2KIC",
+      "title": "SuMMIT: A New Platform for Photonic Heterogeneous Integration",
+      "authors": [
+        "L Ranno",
+        "KP Dao",
+        "JXB Sia",
+        "J Hu"
+      ],
+      "journal": "Photonics and Optoelectronics, 145, 0",
+      "year": 0,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:e5wmG9Sq2KIC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:R3hNpaxXUhUC",
+      "title": "High-performance Facet-attached 3D Micro-reflectors for Scalable Fiber-to-Chip Coupling",
+      "authors": [
+        "L Ranno",
+        "JXB Sia",
+        "C Popescu",
+        "D Weninger",
+        "S Serna",
+        "S Yu",
+        "LC Kimerling"
+      ],
+      "journal": "Photonics and Optoelectronics, 144, 0",
+      "year": 0,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:R3hNpaxXUhUC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:L8Ckcad2t8MC",
+      "title": "High-speed 4\u00d7 4 silicon photonic plasma dispersive switch, operating at the 2 \u03bcm waveband: supplement",
+      "authors": [
+        "J WANG",
+        "JIAXUB SIA",
+        "X LI",
+        "XIN GUO",
+        "W WANG",
+        "Z QIAO"
+      ],
+      "journal": "",
+      "year": 0,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:L8Ckcad2t8MC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:9yKSN-GCB0IC",
+      "title": "\u2162-\u2164/Silicon Photonic Hybrid Ring External Cavity (SHREC) Wavelength-Tunable Laser Diode Operating at the Application-Rich Wavelength Region of 1.65 \u03bcm",
+      "authors": [
+        "JXB Sia",
+        "X Li",
+        "W Wang",
+        "Z Qiao",
+        "X Guo",
+        "J Zhou",
+        "C Littlejohns",
+        "C Liu"
+      ],
+      "journal": "",
+      "year": 0,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:9yKSN-GCB0IC"
+    }
+  ]
 }
