@@ -20,13 +20,13 @@ const Publications = () => {
                     <div className="text-xs uppercase tracking-[0.3em] text-white/60">
                       {pub.year}
                     </div>
-                    <h2 className="text-lg md:text-xl font-semibold text-white leading-tight">
+                    <h2 className="text-lg md:text-xl font-semibold leading-tight">
                       {pub.url ? (
-                        <a href={pub.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                        <a href={pub.url} target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-accent transition-colors">
                           {pub.title}
                         </a>
                       ) : (
-                        pub.title
+                        <span className="text-white">{pub.title}</span>
                       )}
                     </h2>
                     <p className="text-sm text-white">
