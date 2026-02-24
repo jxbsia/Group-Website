@@ -46,8 +46,8 @@ const Team = () => {
           {[
             teamMembers.slice(0, 3),
             teamMembers.slice(3, 6),
-            teamMembers.slice(6, 8),
-            teamMembers.slice(8, 11),
+            teamMembers.slice(6, 9),
+            teamMembers.slice(9, 12),
           ].map((row, rowIndex) => (
             <div key={rowIndex} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 last:mb-0">
               {row.map((member, index) => {
@@ -58,12 +58,16 @@ const Team = () => {
                     <div className="gilber-card group h-full overflow-hidden flex flex-col">
                       <div className="relative">
                         <div className="w-full bg-secondary" style={{ aspectRatio: '3 / 4' }}>
-                          <img
-                            src={member.image || placeholderPortrait}
-                            onError={(e) => { e.currentTarget.src = placeholderPortrait; }}
-                            alt={member.name}
-                            className="w-full h-full object-cover"
-                          />
+                          {member.image ? (
+                            <img
+                              src={member.image}
+                              onError={(e) => { e.currentTarget.src = placeholderPortrait; }}
+                              alt={member.name}
+                              className="w-full h-full object-cover"
+                            />
+                          ) : (
+                            <div className="w-full h-full" />
+                          )}
                         </div>
                       </div>
 

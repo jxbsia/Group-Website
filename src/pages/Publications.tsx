@@ -21,7 +21,13 @@ const Publications = () => {
                       {pub.year}
                     </div>
                     <h2 className="text-lg md:text-xl font-semibold text-white leading-tight">
-                      {pub.title}
+                      {pub.url ? (
+                        <a href={pub.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                          {pub.title}
+                        </a>
+                      ) : (
+                        pub.title
+                      )}
                     </h2>
                     <p className="text-sm text-white">
                       {pub.authors.join(', ')}

@@ -64,7 +64,7 @@
       "email": "xinguo@ntu.edu.sg",
       "researchInterests": ["Photonic characterization"],
       "startYear": "2024",
-      "image": "/team/tina-guo.jpg"
+      "image": ""
     },
     {
       "id": "8",
@@ -74,6 +74,15 @@
       "researchInterests": ["Hybrid III-V SiN Tunable Lasers"],
       "startYear": "2024",
       "image": "/team/xujie.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Hyun Sung Park",
+      "position": "Visiting Scientist, Samsung HQ",
+      "email": "",
+      "researchInterests": ["Reflection resistant photonics"],
+      "startYear": "2024",
+      "image": ""
     },
     {
       "id": "9",
