@@ -2,7 +2,7 @@
   {
     "id": "6",
     "title": "Photonics@SG 2026",
-    "description": "Brian attended Asian Photonics Expo 2026 in Singapore.",
+    "description": "Brian co-chaired and moderated the Photonics@SG 2026 session at the Asia Photonics Expo in Singapore, delivering an invited talk on chip scale unification of the terahertz and the megahertz.",
     "date": "2026-02-05",
     "category": "Event",
     "link": "/news/photonics_sg1.jpg",
@@ -12,7 +12,7 @@
   {
     "id": "5",
     "title": "Samsung-NTU-NUS signing ceremony",
-    "description": "Samsung signing ceremony.",
+    "description": "SIA Laboratories signed a research collaboration agreement with Samsung Electronics, marking Samsung's first university research partnership outside of South Korea and the United States.",
     "date": "2026-01-29",
     "category": "Event",
     "link": "/news/samsung1.jpg",
@@ -22,7 +22,7 @@
   {
     "id": "4",
     "title": "Paper on Newton published",
-    "description": "Paper on Newton published.",
+    "description": "Our invited perspective, 'The Emerging Applications of Silicon Photonics,' has been published in Newton, a Cell Press journal. Written in collaboration with DSO National Laboratories, A*STAR (IMRE and NSTIC), MIT, and the University of Washington, the paper examines how silicon photonics is expanding beyond traditional telecommunications into transformative domains including frequency modulated continuous wave (FMCW) LiDAR for autonomous navigation, photonic quantum computing architectures, and neuromorphic photonic processors for energy efficient AI acceleration. The perspective highlights how mature CMOS compatible fabrication, combined with heterogeneous III V integration for on chip laser sources, positions silicon photonics as a scalable platform for next generation sensing, computing, and communication systems.",
     "date": "2026-01-05",
     "category": "Publication",
     "link": "/news/newton.jpg",
@@ -32,7 +32,7 @@
   {
     "id": "3",
     "title": "Brian gave the inaugural tech talk at DSO QSC",
-    "description": "Brian gave the inaugural tech talk at the DSO National Laboratories Quantum Sensing Center (QSC).",
+    "description": "Brian delivered the inaugural Tech Talk at the DSO National Laboratories Quantum Sensing Centre (QSC), presenting on silicon lasers and the photonic component ecosystem required to unlock the potential of large-scale integration for quantum sensing applications.",
     "date": "2025-07-31",
     "category": "Talk",
     "link": "/news/dso_qsc.jpg",
@@ -42,7 +42,7 @@
   {
     "id": "2",
     "title": "Brian is PI at DSO QSC",
-    "description": "Brian is one of the principal investigators at the DSO National Laboratories Quantum Sensing Center (QSC).",
+    "description": "Brian has been appointed as a Principal Investigator at the DSO National Laboratories Quantum Sensing Centre (QSC), one of Singapore's premier defence research initiatives focused on developing next generation quantum photonic sensing technologies.",
     "date": "2025-07-30",
     "category": "Announcement",
     "link": "/news/dso_qsc2.jpg",
@@ -54,7 +54,7 @@
   {
     "id": "1",
     "title": "Brian is PI at NCAIP",
-    "description": "Brian is one of the principal investigators at the National Center of Advanced Integrated Photonics (NCAIP).",
+    "description": "Brian has been appointed as a Principal Investigator at the National Center of Advanced Integrated Photonics (NCAIP), Singapore's flagship national research infrastructure dedicated to advancing integrated photonics capabilities.",
     "date": "2025-02",
     "category": "Announcement",
     "link": "/news/ncaip.jpg",
