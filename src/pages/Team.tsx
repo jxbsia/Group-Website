@@ -6,7 +6,8 @@ import type { TeamMember } from '@/types/content';
 import placeholderPortrait from '@/assets/professor-placeholder.jpg';
 
 const Team = () => {
-  const teamMembers: TeamMember[] = teamData.members;
+  const adminMember: TeamMember = teamData.members[0];
+  const teamMembers: TeamMember[] = teamData.members.slice(1);
 
   return (
     <div className="min-h-screen pt-20">
@@ -42,6 +43,49 @@ const Team = () => {
       {/* Current Team Section */}
       <section className="vlt-gap-100 bg-card">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          {/* Administrator - centered top row */}
+          <div className="flex justify-center mb-8">
+            <div className="w-full md:w-1/2 lg:w-1/3">
+              <AnimatedBlock delay={0.1}>
+                <div className="gilber-card group h-full overflow-hidden flex flex-col">
+                  <div className="relative">
+                    <div className="w-full bg-secondary" style={{ aspectRatio: '3 / 4' }}>
+                      {adminMember.image ? (
+                        <img
+                          src={adminMember.image}
+                          onError={(e) => { e.currentTarget.src = placeholderPortrait; }}
+                          alt={adminMember.name}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="w-full h-full" />
+                      )}
+                    </div>
+                  </div>
+                  <div className="p-8 space-y-4 flex-1 flex flex-col">
+                    <div className="space-y-2">
+                      <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                        {adminMember.position}
+                      </p>
+                      <h3 className="text-xl font-semibold text-foreground">
+                        {adminMember.name}
+                      </h3>
+                    </div>
+                    <div className="flex items-center text-sm text-muted-foreground pt-4 border-t border-border">
+                      <a
+                        href={`mailto:${adminMember.email}`}
+                        className="flex items-center gap-2 hover:text-accent transition-colors"
+                      >
+                        <Mail className="h-4 w-4" />
+                        {adminMember.email}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </AnimatedBlock>
+            </div>
+          </div>
+
           {/* Team Grid */}
           {[
             teamMembers.slice(0, 3),
