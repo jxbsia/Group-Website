@@ -1,6 +1,15 @@
 {
   "members": [
     {
+      "id": "0",
+      "name": "Ju Gaohua",
+      "position": "Administrator",
+      "email": "gaohua.ju@ntu.edu.sg",
+      "researchInterests": [],
+      "startYear": "2025",
+      "image": "/team/gaohua.jpg"
+    },
+    {
       "id": "1",
       "name": "Wang Wanjun",
       "position": "Ph.D., Senior Scientist",
