@@ -1,15 +1,5 @@
 [
   {
-    "id": "7",
-    "title": "Office of Naval Research Global (ONRG) visit",
-    "description": "Brian visited the Office of Naval Research Global (ONRG)",
-    "date": "2026-05-11",
-    "category": "Event",
-    "link": "/news/onrg.jpg",
-    "thumbnail": "/news/onrg.jpg",
-    "images": ["/news/onrg.jpg"]
-  },
-  {
     "id": "6",
     "title": "Photonics@SG 2026",
     "description": "Brian co-chaired and moderated the Photonics@SG 2026 session at the Asia Photonics Expo in Singapore, delivering an invited talk on chip scale unification of the terahertz and the megahertz.",
