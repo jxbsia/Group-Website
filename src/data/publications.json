@@ -1,7 +1,7 @@
 {
   "stats": {
     "totalPublications": 68,
-    "totalCitations": 493,
+    "totalCitations": 500,
     "hIndex": 15,
     "avgCitations": 7
   },
@@ -24,7 +24,7 @@
       "journal": "Light: Science & Applications 15 (1), 42",
       "year": 2026,
       "type": "article",
-      "citations": 3,
+      "citations": 4,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:GnPB-g6toBAC"
     },
     {
@@ -43,7 +43,7 @@
       "journal": "Newton",
       "year": 2025,
       "type": "article",
-      "citations": 1,
+      "citations": 2,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:BqipwSGYUEgC"
     },
     {
@@ -150,7 +150,7 @@
       "journal": "",
       "year": 2025,
       "type": "article",
-      "citations": 0,
+      "citations": 1,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:isC4tDSrTZIC"
     },
     {
@@ -458,7 +458,7 @@
       "journal": "Photonics Research 12 (5), 1055-1066",
       "year": 2024,
       "type": "article",
-      "citations": 27,
+      "citations": 28,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:7PzlFSSx8tAC"
     },
     {
@@ -587,7 +587,7 @@
       "journal": "IEEE Photonics Journal 14 (3), 1-9",
       "year": 2022,
       "type": "article",
-      "citations": 40,
+      "citations": 41,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:ULOm3_A8WrAC"
     },
     {
@@ -1077,7 +1077,7 @@
       "journal": "2018 Conference on Lasers and Electro-Optics (CLEO), 1-2",
       "year": 2018,
       "type": "article",
-      "citations": 21,
+      "citations": 23,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:5nxA0vEk-isC"
     },
     {
