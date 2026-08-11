@@ -1,7 +1,7 @@
 {
   "stats": {
     "totalPublications": 68,
-    "totalCitations": 528,
+    "totalCitations": 532,
     "hIndex": 15,
     "avgCitations": 8
   },
@@ -114,7 +114,7 @@
       "journal": "Journal of Semiconductors 46 (11), 112403",
       "year": 2025,
       "type": "article",
-      "citations": 0,
+      "citations": 1,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:k_IJM867U9cC"
     },
     {
@@ -149,7 +149,7 @@
       "journal": "Frontiers in Biological Detection: From Nanosensors to Systems XVII 13338, 30-36",
       "year": 2025,
       "type": "article",
-      "citations": 0,
+      "citations": 1,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:TFP_iSt0sucC"
     },
     {
@@ -314,7 +314,7 @@
       "journal": "Applied Physics Letters 125 (7)",
       "year": 2024,
       "type": "article",
-      "citations": 9,
+      "citations": 10,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:-f6ydRqryjwC"
     },
     {
@@ -441,7 +441,7 @@
       "journal": "Photonics Research 12 (5), 1055-1066",
       "year": 2024,
       "type": "article",
-      "citations": 34,
+      "citations": 35,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:7PzlFSSx8tAC"
     },
     {
