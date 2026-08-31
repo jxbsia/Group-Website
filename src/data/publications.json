@@ -1,12 +1,31 @@
 {
   "stats": {
-    "totalPublications": 68,
-    "totalCitations": 532,
+    "totalPublications": 69,
+    "totalCitations": 547,
     "hIndex": 15,
     "avgCitations": 8
   },
   "googleScholarLink": "https://scholar.google.com/citations?hl=en&user=HC8AFQcAAAAJ",
   "publications": [
+    {
+      "id": "HC8AFQcAAAAJ:O3NaXMp0MMsC",
+      "title": "Programmable Cascaded Optical Memristors Based on Phase-Change Materials for Photonic Neuromorphic Computing",
+      "authors": [
+        "AMD Rachmavisista",
+        "M Dai",
+        "J Deng",
+        "P Liu",
+        "Q Liu",
+        "Y Wang",
+        "Z Xu",
+        "S Tian"
+      ],
+      "journal": "ACS nano",
+      "year": 2026,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:O3NaXMp0MMsC"
+    },
     {
       "id": "HC8AFQcAAAAJ:GnPB-g6toBAC",
       "title": "Hybrid tungsten oxyselenide/graphene electrodes for near-lossless 2D semiconductor phase modulators",
@@ -166,7 +185,7 @@
       "journal": "Advanced Optical Materials 13 (8), 2402751",
       "year": 2025,
       "type": "article",
-      "citations": 22,
+      "citations": 23,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:j3f4tGmQtD8C"
     },
     {
@@ -334,7 +353,7 @@
       "journal": "Optics Express 32 (15), 26751-26762",
       "year": 2024,
       "type": "article",
-      "citations": 13,
+      "citations": 14,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:IWHjjKOFINEC"
     },
     {
@@ -370,7 +389,7 @@
       "journal": "Nature Communications 15 (1), 3820",
       "year": 2024,
       "type": "article",
-      "citations": 28,
+      "citations": 30,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:qUcmZB5y_30C"
     },
     {
@@ -441,7 +460,7 @@
       "journal": "Photonics Research 12 (5), 1055-1066",
       "year": 2024,
       "type": "article",
-      "citations": 35,
+      "citations": 39,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:7PzlFSSx8tAC"
     },
     {
@@ -662,7 +681,7 @@
       "journal": "IEEE Photonics Journal 13 (6), 1-5",
       "year": 2021,
       "type": "article",
-      "citations": 15,
+      "citations": 16,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:hqOjcs7Dif8C"
     },
     {
@@ -702,7 +721,7 @@
       "journal": "Optica 8 (6), 855-860",
       "year": 2021,
       "type": "article",
-      "citations": 20,
+      "citations": 21,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:Se3iqnhoufwC"
     },
     {
@@ -742,7 +761,7 @@
       "journal": "IEEE Journal of Quantum Electronics 56 (6), 1-11",
       "year": 2020,
       "type": "article",
-      "citations": 11,
+      "citations": 12,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:W7OEmFMy1HYC"
     },
     {
@@ -781,7 +800,7 @@
       "journal": "Optics Express 28 (17), 25215-25224",
       "year": 2020,
       "type": "article",
-      "citations": 35,
+      "citations": 36,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:Y0pCki6q_DkC"
     },
     {
@@ -800,7 +819,7 @@
       "journal": "IEEE Photonics Technology Letters 32 (18), 1127-1130",
       "year": 2020,
       "type": "article",
-      "citations": 18,
+      "citations": 20,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:zYLM7Y9cAGgC"
     },
     {
@@ -836,7 +855,7 @@
       "journal": "Optics express 28 (4), 5134-5146",
       "year": 2020,
       "type": "article",
-      "citations": 33,
+      "citations": 34,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:WF5omc3nYNoC"
     },
     {
