@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Twitter, Linkedin, Github, Mail } from 'lucide-react';
+import { Menu, Mail } from 'lucide-react';
+import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import siaLogo from '@/assets/sia-logo.svg';
 
 const Navigation = () => {
@@ -18,34 +19,34 @@ const Navigation = () => {
     { name: 'Contact', path: '/contact' },
   ];
 
-  const socialLinks = [
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Mail, href: 'mailto:contact@example.com', label: 'Email' },
-  ];
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useLayoutEffect(() => {
+    setIsOpen(false);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [location.pathname]);
+
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [isOpen]);
+    const desktop = window.matchMedia('(min-width: 1024px)');
+    const closeOnDesktop = () => {
+      if (desktop.matches) setIsOpen(false);
+    };
+    desktop.addEventListener('change', closeOnDesktop);
+    return () => desktop.removeEventListener('change', closeOnDesktop);
+  }, []);
 
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <>
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled ? 'bg-background/95 backdrop-blur-sm border-b border-border' : 'bg-transparent'
@@ -89,61 +90,36 @@ const Navigation = () => {
             </div>
 
             {/* Mobile menu button */}
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 text-foreground hover:text-accent transition-colors"
-              aria-label="Toggle menu"
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+            <SheetTrigger asChild>
+              <button
+                className="lg:hidden flex h-11 w-11 items-center justify-center text-foreground hover:text-accent transition-colors"
+                aria-label="Open menu"
+              >
+                <Menu className="h-6 w-6" />
+              </button>
+            </SheetTrigger>
           </div>
         </div>
       </nav>
 
-      {/* Mobile Off-canvas Menu */}
-      <div
-        className={`fixed inset-0 z-50 lg:hidden transition-opacity duration-300 ${
-          isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
+      <SheetContent
+        aria-describedby={undefined}
+        className="flex h-[100dvh] w-full max-w-md flex-col gap-6 pt-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] sm:max-w-md [&>button]:flex [&>button]:h-11 [&>button]:w-11 [&>button]:items-center [&>button]:justify-center [&>button>svg]:h-6 [&>button>svg]:w-6"
       >
-        {/* Backdrop */}
-        <div
-          className="absolute inset-0 bg-background/90 backdrop-blur-sm"
-          onClick={() => setIsOpen(false)}
-        />
+        <div className="shrink-0 pr-12">
+          <img src={siaLogo} alt="SIA Laboratories" className="h-10" />
+          <SheetTitle className="sr-only">Site navigation</SheetTitle>
+        </div>
 
-        {/* Menu Content */}
-        <div
-          className={`absolute right-0 top-0 h-full w-full max-w-md bg-background border-l border-border transform transition-transform duration-300 ${
-            isOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
-        >
-          {/* Close Button */}
-          <div className="flex justify-end p-6">
-            <button
-              onClick={() => setIsOpen(false)}
-              className="p-2 text-foreground hover:text-accent transition-colors"
-              aria-label="Close menu"
-            >
-              <X className="h-6 w-6" />
-            </button>
-          </div>
-
-          {/* Navigation Links */}
-          <nav className="px-6 py-8">
-            <ul className="space-y-6">
-              {navItems.map((item, index) => (
-                <li
-                  key={item.name}
-                  className={`transform transition-all duration-300 ${
-                    isOpen ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
-                  }`}
-                  style={{ transitionDelay: `${index * 50}ms` }}
-                >
+        <nav aria-label="Mobile" className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
+          <ul className="space-y-2">
+            {navItems.map((item) => (
+              <li key={item.name}>
+                <SheetClose asChild>
                   <Link
                     to={item.path}
-                    onClick={() => setIsOpen(false)}
-                    className={`block text-3xl font-semibold transition-colors duration-300 ${
+                    aria-current={isActive(item.path) ? 'page' : undefined}
+                    className={`flex min-h-11 items-center py-2 text-2xl font-semibold transition-colors duration-300 ${
                       isActive(item.path)
                         ? 'text-accent'
                         : 'text-foreground hover:text-accent'
@@ -151,37 +127,23 @@ const Navigation = () => {
                   >
                     {item.name}
                   </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+                </SheetClose>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-          {/* Social Links */}
-          <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-border">
-            <div className="flex items-center justify-center space-x-6">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target={social.href.startsWith('http') ? '_blank' : undefined}
-                  rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="p-2 text-muted-foreground hover:text-accent transition-colors duration-300"
-                  aria-label={social.label}
-                >
-                  <social.icon className="h-5 w-5" />
-                </a>
-              ))}
-            </div>
-            <div className="flex flex-col items-center gap-2 mt-4">
-              <img src={siaLogo} alt="SIA Laboratories" className="h-8" />
-              <span className="text-xs tracking-[0.15em] text-muted-foreground" style={{ fontFamily: 'Moonspace, sans-serif' }}>
-                SIA LABORATORIES
-              </span>
-            </div>
-          </div>
+        <div className="shrink-0 border-t border-border pt-4">
+          <a
+            href="mailto:jiaxubrian.sia@ntu.edu.sg"
+            className="flex min-h-11 items-center gap-3 text-sm text-muted-foreground hover:text-accent transition-colors"
+          >
+            <Mail className="h-5 w-5 shrink-0" />
+            <span className="break-all">jiaxubrian.sia@ntu.edu.sg</span>
+          </a>
         </div>
-      </div>
-    </>
+      </SheetContent>
+    </Sheet>
   );
 };
 

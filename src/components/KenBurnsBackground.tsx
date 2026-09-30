@@ -6,6 +6,7 @@ interface KenBurnsBackgroundProps {
   reverse?: boolean;
   overlay?: 'dark' | 'top' | 'bottom' | 'none';
   className?: string;
+  loading?: 'eager' | 'lazy';
 }
 
 const KenBurnsBackground: React.FC<KenBurnsBackgroundProps> = ({
@@ -14,6 +15,7 @@ const KenBurnsBackground: React.FC<KenBurnsBackgroundProps> = ({
   reverse = false,
   overlay = 'dark',
   className = '',
+  loading = 'eager',
 }) => {
   const overlayClasses = {
     dark: 'bg-gradient-to-b from-background/60 via-background/80 to-background',
@@ -27,6 +29,8 @@ const KenBurnsBackground: React.FC<KenBurnsBackgroundProps> = ({
       <img
         src={imageSrc}
         alt={alt}
+        loading={loading}
+        decoding="async"
         className={`w-full h-full object-cover ${reverse ? 'animate-ken-burns-reverse' : 'animate-ken-burns'}`}
       />
       {overlay !== 'none' && (

@@ -46,11 +46,11 @@ const App = () => (
           <footer className="footer bg-background">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
               <div className="footer-content">
-                <div className="footer-copyright flex items-center gap-2">
+                <div className="footer-copyright flex flex-wrap justify-center items-center gap-2">
                   <span>© {new Date().getFullYear()}</span>
                   <img src={siaLogo} alt="SIA Laboratories" className="h-5" />
                   <span style={{ fontFamily: 'Moonspace, sans-serif' }} className="tracking-wider">SIA LABORATORIES</span>
-                  <span>All rights reserved.</span>
+                  <span className="whitespace-nowrap">All rights reserved.</span>
                 </div>
 
                 <div className="footer-links">

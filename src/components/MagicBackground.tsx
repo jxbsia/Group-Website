@@ -1,5 +1,5 @@
 import React from 'react';
-import heroBackground from '@/assets/hero-background.jpg';
+import heroBackground from '@/assets/hero-background.webp';
 
 interface MagicBackgroundProps {
   className?: string;
@@ -18,6 +18,7 @@ const MagicBackground: React.FC<MagicBackgroundProps> = ({
         <img
           src={heroBackground}
           alt="Background"
+          fetchPriority="high"
           className="w-full h-full object-cover"
         />
       </div>
