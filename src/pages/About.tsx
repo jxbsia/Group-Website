@@ -66,7 +66,7 @@ const About = () => {
             </div>
 
             {/* Right: Image with Experience Number */}
-            <div className="relative">
+            <div className="relative overflow-hidden">
               <AnimatedBlock delay={0.2} animation="slide-in-right">
                 <div className="relative">
                   <img
