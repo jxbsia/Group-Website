@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import AnimatedBlock from '@/components/AnimatedBlock';
 import KenBurnsBackground from '@/components/KenBurnsBackground';
 import MagicBackground from '@/components/MagicBackground';
-import ctaBackground from '@/assets/cta-background.jpg';
+import ctaBackground from '@/assets/cta-background.webp';
 import ntuLogo from '@/assets/ntu-logo.png';
 import astarLogo from '@/assets/astar-logo.png';
 import moeLogo from '@/assets/moe-logo.png';
@@ -29,19 +29,19 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Magic Background */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <MagicBackground interval={4000} />
+      <section className="relative min-h-svh flex items-center justify-center overflow-hidden pt-28 pb-32">
+        <MagicBackground />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text Content */}
-            <div>
-              <p className="text-lg uppercase tracking-[0.3em] text-accent font-medium mb-4" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7)' }}>
+            <div className="min-w-0">
+              <p className="text-sm sm:text-lg uppercase tracking-[0.3em] text-accent font-medium mb-4" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7)' }}>
                 {homeData.hero.institution}
               </p>
 
               <AnimatedBlock delay={0.1}>
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-foreground tracking-[0.1em] mb-6" style={{ fontFamily: 'Moonspace, sans-serif' }}>
+                <h1 className="text-[clamp(1.5rem,7.5vw,1.875rem)] md:text-5xl lg:text-6xl font-semibold text-foreground tracking-[0.05em] sm:tracking-[0.1em] mb-6" style={{ fontFamily: 'Moonspace, sans-serif' }}>
                   SIA LABORATORIES<span className="text-accent">.</span>
                 </h1>
               </AnimatedBlock>
@@ -174,11 +174,11 @@ const Home = () => {
           </AnimatedBlock>
 
           <AnimatedBlock delay={0.2}>
-            <div className="flex justify-center items-center gap-6 lg:gap-12">
+            <div className="flex flex-wrap justify-center items-center gap-6 lg:gap-12">
               {homeData.funders.map((funder, index) => (
                 <div
                   key={index}
-                  className={`flex items-center justify-center p-6 bg-white/5 rounded-2xl ${index === 2 ? 'scale-110' : ''}`}
+                  className={`flex w-40 items-center justify-center p-6 bg-white/5 rounded-2xl ${index === 2 ? 'scale-110' : ''}`}
                 >
                   <img
                     src={logoMap[funder.logo]}
@@ -198,12 +198,13 @@ const Home = () => {
           imageSrc={ctaBackground}
           alt="CTA Background"
           overlay="dark"
+          loading="lazy"
           reverse
         />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <AnimatedBlock>
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white uppercase tracking-[0.2em]">
+            <h2 className="text-[clamp(1.5rem,5vw,4.5rem)] font-bold text-white uppercase tracking-[0.1em]">
               Collaboration
             </h2>
           </AnimatedBlock>

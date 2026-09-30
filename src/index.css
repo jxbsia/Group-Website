@@ -513,7 +513,7 @@
   }
 
   .footer-content {
-    @apply flex flex-col md:flex-row justify-between items-center gap-4;
+    @apply flex flex-col lg:flex-row justify-between items-center gap-4;
   }
 
   .footer-copyright {
@@ -521,11 +521,11 @@
   }
 
   .footer-links {
-    @apply flex gap-6;
+    @apply flex flex-wrap justify-center gap-x-6 gap-y-2;
   }
 
   .footer-links a {
-    @apply text-sm text-muted-foreground hover:text-accent transition-colors;
+    @apply inline-flex min-h-11 items-center text-sm text-muted-foreground hover:text-accent transition-colors;
   }
 }
 
