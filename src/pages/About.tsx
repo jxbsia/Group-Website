@@ -127,7 +127,7 @@ const About = () => {
             {pi.researchInterests.map((interest, index) => (
               <AnimatedBlock key={interest} delay={0.1 + index * 0.05}>
                 <div className="gilber-card p-6 text-center hover:border-accent transition-colors">
-                  <span className="text-4xl font-semibold text-accent opacity-30 mb-4 block">
+                  <span className="text-4xl font-semibold text-accent mb-4 block">
                     {String(index + 1).padStart(2, '0')}
                   </span>
                   <h3 className="text-lg font-medium text-foreground">

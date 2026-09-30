@@ -64,7 +64,7 @@ const Team = () => {
                   </div>
                   <div className="p-8 space-y-4 flex-1 flex flex-col">
                     <div className="space-y-2">
-                      <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                      <p className="text-sm uppercase tracking-[0.15em] text-muted-foreground">
                         {adminMember.position}
                       </p>
                       <h3 className="text-xl font-semibold text-foreground">
@@ -117,28 +117,28 @@ const Team = () => {
 
                       <div className="p-8 space-y-4 flex-1 flex flex-col">
                         <div className="space-y-2">
-                          <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                          <p className="text-sm uppercase tracking-[0.15em] text-muted-foreground">
                             {member.position}
                           </p>
                           <h3 className="text-xl font-semibold text-foreground">
                             {member.name}
                           </h3>
                           {member.role && (
-                            <span className="inline-block px-3 py-1 text-xs uppercase tracking-widest text-accent border border-accent">
+                            <span className="inline-block px-3 py-1 text-sm uppercase tracking-widest text-accent border border-accent">
                               {member.role}
                             </span>
                           )}
                         </div>
 
                         <div className="space-y-3 flex-1">
-                          <h4 className="text-xs uppercase tracking-widest text-muted-foreground">
+                          <h4 className="text-sm uppercase tracking-widest text-muted-foreground">
                             Research Interests
                           </h4>
                           <div className="flex flex-wrap gap-2">
                             {member.researchInterests.map((interest) => (
                               <span
                                 key={interest}
-                                className="px-2 py-1 text-xs bg-secondary text-muted-foreground"
+                                className="px-2 py-1 text-sm bg-secondary text-muted-foreground"
                               >
                                 {interest}
                               </span>
@@ -146,10 +146,10 @@ const Team = () => {
                           </div>
                         </div>
 
-                        <div className="flex items-center justify-between text-sm text-muted-foreground pt-4 border-t border-border">
+                        <div className="flex flex-wrap items-center justify-between gap-3 text-sm text-muted-foreground pt-4 border-t border-border">
                           <a
                             href={member.email ? `mailto:${member.email}` : undefined}
-                            className={`flex items-center gap-2 hover:text-accent transition-colors ${member.email ? '' : 'cursor-not-allowed opacity-70'}`}
+                            className={`flex items-center gap-2 transition-colors ${member.email ? 'hover:text-accent' : 'cursor-not-allowed'}`}
                             aria-disabled={!member.email}
                           >
                             <Mail className="h-4 w-4" />

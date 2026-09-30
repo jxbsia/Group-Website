@@ -48,8 +48,8 @@ const Navigation = () => {
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-background/95 backdrop-blur-sm border-b border-border' : 'bg-transparent'
+        className={`fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm transition-all duration-300 ${
+          isScrolled ? 'border-b border-border' : 'border-b border-transparent'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -104,10 +104,10 @@ const Navigation = () => {
 
       <SheetContent
         aria-describedby={undefined}
-        className="flex h-[100dvh] w-full max-w-md flex-col gap-6 pt-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] sm:max-w-md [&>button]:flex [&>button]:h-11 [&>button]:w-11 [&>button]:items-center [&>button]:justify-center [&>button>svg]:h-6 [&>button>svg]:w-6"
+        className="flex h-[100dvh] w-full max-w-md flex-col gap-[24px] p-[24px] pb-[max(24px,env(safe-area-inset-bottom))] sm:max-w-md [&>button]:right-[12px] [&>button]:top-[12px] [&>button]:flex [&>button]:h-[44px] [&>button]:w-[44px] [&>button]:items-center [&>button]:justify-center [&>button>svg]:h-[24px] [&>button>svg]:w-[24px]"
       >
-        <div className="shrink-0 pr-12">
-          <img src={siaLogo} alt="SIA Laboratories" className="h-10" />
+        <div className="shrink-0 pr-[48px]">
+          <img src={siaLogo} alt="SIA Laboratories" className="h-[40px]" />
           <SheetTitle className="sr-only">Site navigation</SheetTitle>
         </div>
 
@@ -133,12 +133,12 @@ const Navigation = () => {
           </ul>
         </nav>
 
-        <div className="shrink-0 border-t border-border pt-4">
+        <div className="shrink-0 border-t border-border pt-[16px]">
           <a
             href="mailto:jiaxubrian.sia@ntu.edu.sg"
-            className="flex min-h-11 items-center gap-3 text-sm text-muted-foreground hover:text-accent transition-colors"
+            className="flex min-h-[44px] items-center gap-[12px] text-sm text-muted-foreground hover:text-accent transition-colors"
           >
-            <Mail className="h-5 w-5 shrink-0" />
+            <Mail className="h-[20px] w-[20px] shrink-0" />
             <span className="break-all">jiaxubrian.sia@ntu.edu.sg</span>
           </a>
         </div>

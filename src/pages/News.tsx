@@ -122,7 +122,7 @@ const News = () => {
                     </div>
 
                     <div className="space-y-3">
-                      <div className="flex items-center gap-3 text-xs uppercase tracking-widest text-muted-foreground">
+                      <div className="flex flex-wrap items-center gap-3 text-sm uppercase tracking-widest text-muted-foreground">
                         <span className="px-3 py-1 border border-border text-foreground">
                           {item.category}
                         </span>
@@ -131,7 +131,7 @@ const News = () => {
                       <h2 className="text-2xl font-semibold text-foreground">
                         {item.title}
                       </h2>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                      <p className="text-base text-muted-foreground leading-relaxed">
                         {item.description}
                       </p>
                     </div>

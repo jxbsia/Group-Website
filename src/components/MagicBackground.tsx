@@ -24,7 +24,7 @@ const MagicBackground: React.FC<MagicBackgroundProps> = ({
       </div>
 
       {/* Overlay gradient for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
     </div>
   );
 };

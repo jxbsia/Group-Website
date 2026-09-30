@@ -24,7 +24,7 @@ const Contact = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl">
             <AnimatedBlock>
-              <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
+              <p className="text-sm uppercase tracking-[0.3em] text-foreground mb-4">
                 Get in Touch
               </p>
             </AnimatedBlock>
@@ -48,7 +48,7 @@ const Contact = () => {
       {/* Contact Content */}
       <section className="vlt-gap-120 bg-background">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Left: Contact Information */}
             <div className="space-y-12">
               {/* Principal Investigator */}
@@ -140,7 +140,7 @@ const Contact = () => {
                         <h4 className="text-lg font-semibold text-foreground mb-2">
                           {opp.title}
                         </h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base leading-relaxed text-muted-foreground">
                           {opp.description}
                         </p>
                       </div>
@@ -153,28 +153,30 @@ const Contact = () => {
             {/* Right: Contact Form */}
             <div>
               <AnimatedBlock delay={0.1}>
-                <div className="gilber-card p-8 lg:p-12">
+                <div className="gilber-card p-5 sm:p-8 lg:p-12">
                   <h2 className="text-2xl font-semibold text-foreground mb-2">
                     Send a Message<span className="text-accent">.</span>
                   </h2>
-                  <p className="text-sm text-muted-foreground mb-8">
+                  <p className="text-base leading-relaxed text-muted-foreground mb-8">
                     Fill out the form below and we'll get back to you as soon as possible.
                   </p>
 
                   <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
+                        <label htmlFor="first-name" className="block text-base mb-2">First Name *</label>
                         <input
+                          id="first-name"
                           type="text"
-                          placeholder="First Name *"
                           required
                           className="gilber-input"
                         />
                       </div>
                       <div>
+                        <label htmlFor="last-name" className="block text-base mb-2">Last Name *</label>
                         <input
+                          id="last-name"
                           type="text"
-                          placeholder="Last Name *"
                           required
                           className="gilber-input"
                         />
@@ -182,34 +184,38 @@ const Contact = () => {
                     </div>
 
                     <div>
+                      <label htmlFor="email" className="block text-base mb-2">Email Address *</label>
                       <input
+                        id="email"
                         type="email"
-                        placeholder="Email Address *"
                         required
                         className="gilber-input"
                       />
                     </div>
 
                     <div>
+                      <label htmlFor="institution" className="block text-base mb-2">Institution / Organization</label>
                       <input
+                        id="institution"
                         type="text"
-                        placeholder="Institution / Organization"
                         className="gilber-input"
                       />
                     </div>
 
                     <div>
+                      <label htmlFor="subject" className="block text-base mb-2">Subject *</label>
                       <input
+                        id="subject"
                         type="text"
-                        placeholder="Subject *"
                         required
                         className="gilber-input"
                       />
                     </div>
 
                     <div>
+                      <label htmlFor="message" className="block text-base mb-2">Your Message *</label>
                       <textarea
-                        placeholder="Your Message *"
+                        id="message"
                         rows={6}
                         required
                         className="gilber-textarea"
@@ -233,14 +239,14 @@ const Contact = () => {
                   <h3 className="text-lg font-semibold text-foreground mb-4">
                     Response Time
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-6">
+                  <p className="text-base leading-relaxed text-muted-foreground mb-6">
                     {contactData.additionalInfo.responseTime}
                   </p>
 
                   <h3 className="text-lg font-semibold text-foreground mb-4">
                     Collaboration Inquiries
                   </h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base leading-relaxed text-muted-foreground">
                     {contactData.additionalInfo.collaborationNote}
                   </p>
                 </div>

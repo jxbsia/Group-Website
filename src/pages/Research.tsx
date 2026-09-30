@@ -77,7 +77,7 @@ const Research = () => {
                           {area.applications.map((app) => (
                             <span
                               key={app}
-                              className="px-3 py-1 text-xs border border-border text-muted-foreground hover:border-accent hover:text-accent transition-colors"
+                              className="px-3 py-1 text-sm border border-border text-muted-foreground hover:border-accent hover:text-accent transition-colors"
                             >
                               {app}
                             </span>
@@ -85,7 +85,7 @@ const Research = () => {
                         </div>
                       </div>
 
-                      <div className="flex items-center gap-6 text-sm">
+                      <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
                         <span className="text-foreground">
                           <strong className="text-accent">{area.publications}</strong> Publications
                         </span>
@@ -99,8 +99,8 @@ const Research = () => {
 
                     {/* Visual Card */}
                     <div className={!isEven ? 'lg:col-start-1' : ''}>
-                      <div className="gilber-card p-8 lg:p-12 aspect-square flex flex-col justify-between relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 text-[200px] font-semibold text-accent/5 leading-none select-none">
+                      <div className="gilber-card p-6 sm:p-8 lg:p-12 min-h-80 lg:min-h-96 flex flex-col justify-between gap-8 relative overflow-hidden group">
+                        <div aria-hidden="true" className="absolute top-0 right-0 text-[200px] font-semibold text-accent/5 leading-none select-none">
                           {String(index + 1).padStart(2, '0')}
                         </div>
                         <img
@@ -108,12 +108,12 @@ const Research = () => {
                           alt={area.title}
                           className="absolute inset-0 w-full h-full object-cover opacity-90 brightness-110 saturate-110"
                         />
-                        <div className="absolute inset-0 bg-background/25" />
+                        <div className="absolute inset-0 bg-background/85" />
                         <div className="relative z-10">
                           <h3 className="text-2xl font-semibold text-foreground mb-4">
                             {area.title}
                           </h3>
-                          <p className="text-sm text-muted-foreground">
+                          <p className="text-base leading-relaxed text-muted-foreground">
                             {area.description}
                           </p>
                         </div>
@@ -122,7 +122,7 @@ const Research = () => {
                           {area.keyTechnologies.slice(0, 3).map((tech) => (
                             <span
                               key={tech}
-                              className="px-3 py-1 text-xs bg-background text-muted-foreground"
+                              className="px-3 py-1 text-sm bg-background text-muted-foreground"
                             >
                               {tech}
                             </span>
