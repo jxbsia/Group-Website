@@ -14,7 +14,6 @@ import News from "./pages/News";
 import NewsPhoto from "./pages/NewsPhoto";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import BackgroundMusic from "./components/BackgroundMusic";
 
 const queryClient = new QueryClient();
 
@@ -26,7 +25,6 @@ const App = () => (
       <BrowserRouter>
         <div className="min-h-screen bg-background font-sans">
           <Navigation />
-          <BackgroundMusic />
 
           {/* Main Content */}
           <main>
