@@ -174,16 +174,16 @@ const Home = () => {
           </AnimatedBlock>
 
           <AnimatedBlock delay={0.2}>
-            <div className="flex flex-wrap justify-center items-center gap-6 lg:gap-12">
-              {homeData.funders.map((funder, index) => (
+            <div className="grid grid-cols-1 min-[360px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
+              {homeData.funders.map((funder) => (
                 <div
-                  key={index}
-                  className={`flex w-40 items-center justify-center p-6 bg-white/5 rounded-2xl ${index === 2 ? 'scale-110' : ''}`}
+                  key={funder.name}
+                  className="flex h-40 min-w-0 items-center justify-center rounded-2xl bg-white p-4 sm:p-5"
                 >
                   <img
                     src={logoMap[funder.logo]}
                     alt={funder.name}
-                    className="partner-logo max-h-28 w-auto rounded-xl"
+                    className="h-full w-full object-contain"
                   />
                 </div>
               ))}
