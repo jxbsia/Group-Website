@@ -36,7 +36,7 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text Content */}
             <div className="min-w-0">
-              <p className="text-sm sm:text-lg uppercase tracking-[0.3em] text-accent font-medium mb-4" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7)' }}>
+              <p className="text-base sm:text-lg uppercase tracking-[0.2em] text-foreground font-medium mb-4" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7)' }}>
                 {homeData.hero.institution}
               </p>
 
@@ -75,7 +75,7 @@ const Home = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground">
-          <span className="text-xs uppercase tracking-widest">Scroll</span>
+          <span className="text-sm uppercase tracking-widest">Scroll</span>
           <div className="w-px h-12 bg-border relative overflow-hidden">
             <div className="absolute inset-0 bg-accent animate-pulse" />
           </div>
@@ -174,18 +174,23 @@ const Home = () => {
           </AnimatedBlock>
 
           <AnimatedBlock delay={0.2}>
-            <div className="grid grid-cols-1 min-[360px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {homeData.funders.map((funder) => (
-                <div
+                <figure
                   key={funder.name}
-                  className="flex h-40 min-w-0 items-center justify-center rounded-2xl bg-white p-4 sm:p-5"
+                  className="min-w-0 rounded-2xl bg-white p-6 text-center text-background"
                 >
-                  <img
-                    src={logoMap[funder.logo]}
-                    alt={funder.name}
-                    className="h-full w-full object-contain"
-                  />
-                </div>
+                  <div className="flex h-48 items-center justify-center">
+                    <img
+                      src={logoMap[funder.logo]}
+                      alt=""
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                  <figcaption className="mt-5 text-lg font-medium leading-relaxed">
+                    {funder.name}
+                  </figcaption>
+                </figure>
               ))}
             </div>
           </AnimatedBlock>

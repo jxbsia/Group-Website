@@ -17,7 +17,7 @@ const Publications = () => {
               {publications.map((pub) => (
                 <li key={pub.id} className="py-6">
                   <div className="flex flex-col gap-2">
-                    <div className="text-xs uppercase tracking-[0.3em] text-white/60">
+                    <div className="text-sm uppercase tracking-[0.2em] text-white/80">
                       {pub.year}
                     </div>
                     <h2 className="text-lg md:text-xl font-semibold leading-tight">
@@ -29,11 +29,11 @@ const Publications = () => {
                         <span className="text-white">{pub.title}</span>
                       )}
                     </h2>
-                    <p className="text-sm text-white">
+                    <p className="text-base leading-relaxed text-white">
                       {pub.authors.join(', ')}
                     </p>
                     {pub.journal.trim() !== '' && (
-                      <p className="text-sm italic text-white/80">
+                      <p className="text-base leading-relaxed italic text-white/90">
                         {pub.journal}
                       </p>
                     )}

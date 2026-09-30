@@ -130,17 +130,17 @@ const NewsPhoto = () => {
 
           <AnimatedBlock delay={0.1}>
             <div className="space-y-2">
-              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+              <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground">
                 NEWS
               </p>
               <h1 className="text-3xl font-semibold text-foreground">{title}</h1>
               {description && (
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   {description}
                 </p>
               )}
               {images.length > 1 && (
-                <p className="text-xs text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   {current + 1} / {images.length}
                 </p>
               )}
