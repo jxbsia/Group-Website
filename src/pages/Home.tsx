@@ -185,13 +185,10 @@ const Home = () => {
                   <div className="flex h-48 items-center justify-center">
                     <img
                       src={logoMap[funder.logo]}
-                      alt=""
+                      alt={funder.name}
                       className="h-full w-full object-contain"
                     />
                   </div>
-                  <figcaption className="mt-5 text-lg font-medium leading-relaxed">
-                    {funder.name}
-                  </figcaption>
                 </figure>
               ))}
             </div>
