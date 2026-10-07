@@ -43,8 +43,8 @@ const Home = () => {
               </p>
 
               <AnimatedBlock delay={0.1}>
-                <h1 className="text-[clamp(1.5rem,7.5vw,1.875rem)] md:text-5xl lg:text-6xl font-semibold text-foreground tracking-[0.05em] sm:tracking-[0.1em] mb-6" style={{ fontFamily: 'Moonspace, sans-serif' }}>
-                  SIA LABORATORIES<span className="text-accent">.</span>
+                <h1 className="text-[clamp(1.5rem,7.5vw,1.875rem)] md:text-5xl lg:text-[clamp(2.5rem,4vw,3.25rem)] font-semibold text-foreground tracking-[0.05em] sm:tracking-[0.1em] mb-6" style={{ fontFamily: 'Moonspace, sans-serif' }}>
+                  SIA <span className="whitespace-nowrap">LABORATORIES<span className="text-accent">.</span></span>
                 </h1>
               </AnimatedBlock>
 
