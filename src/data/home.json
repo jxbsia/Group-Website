@@ -68,6 +68,10 @@
     {
       "name": "Samsung",
       "logo": "samsung-logo.png"
+    },
+    {
+      "name": "Future Systems and Technology Directorate",
+      "logo": "fstd-logo.png"
     }
   ],
   "callToAction": {

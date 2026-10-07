@@ -97,10 +97,12 @@ const About = () => {
               </AnimatedBlock>
 
               <AnimatedBlock delay={0.1}>
-                <div className="prose prose-invert max-w-none">
-                  <p className="text-muted-foreground leading-relaxed text-lg">
-                    {pi.biography}
-                  </p>
+                <div className="prose prose-invert max-w-none space-y-6">
+                  {pi.biography.split('\n\n').map((paragraph) => (
+                    <p key={paragraph} className="text-muted-foreground leading-relaxed text-lg">
+                      {paragraph}
+                    </p>
+                  ))}
                 </div>
               </AnimatedBlock>
             </div>

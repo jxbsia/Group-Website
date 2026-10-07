@@ -10,6 +10,7 @@ import astarLogo from '@/assets/astar-logo.png';
 import moeLogo from '@/assets/moe-logo.png';
 import dsoLogo from '@/assets/dso-logo.png';
 import samsungLogo from '@/assets/samsung-logo.png';
+import fstdLogo from '@/assets/fstd-logo.png';
 import siaLogo from '@/assets/sia-logo.svg';
 import homeData from '@/data/home.json';
 import newsData from '@/data/news.json';
@@ -23,7 +24,8 @@ const Home = () => {
     'dso-logo.png': dsoLogo,
     'ntu-logo.png': ntuLogo,
     'moe-logo.png': moeLogo,
-    'samsung-logo.png': samsungLogo
+    'samsung-logo.png': samsungLogo,
+    'fstd-logo.png': fstdLogo
   };
 
   return (
