@@ -1,7 +1,7 @@
 {
   "stats": {
-    "totalPublications": 70,
-    "totalCitations": 564,
+    "totalPublications": 73,
+    "totalCitations": 570,
     "hIndex": 15,
     "avgCitations": 8
   },
@@ -22,7 +22,7 @@
       "journal": "Nature Communications",
       "year": 2026,
       "type": "article",
-      "citations": 0,
+      "citations": 1,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:hMod-77fHWUC"
     },
     {
@@ -44,6 +44,24 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:ns9cj8rnVeAC"
     },
     {
+      "id": "HC8AFQcAAAAJ:RGFaLdJalmkC",
+      "title": "Wafer-Scale Conformal Metasurfaces",
+      "authors": [
+        "L Martin-Monier",
+        "S Chang",
+        "J Froech",
+        "Z Li",
+        "L Ranno",
+        "KP Dao",
+        "A Ueno"
+      ],
+      "journal": "2026 Twentieth International Congress on Artificial Materials for Novel Wave\u00a0\u2026",
+      "year": 2026,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:RGFaLdJalmkC"
+    },
+    {
       "id": "HC8AFQcAAAAJ:O3NaXMp0MMsC",
       "title": "Programmable Cascaded Optical Memristors Based on Phase-Change Materials for Photonic Neuromorphic Computing",
       "authors": [
@@ -61,6 +79,39 @@
       "type": "article",
       "citations": 0,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:O3NaXMp0MMsC"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:NaGl4SEjCO4C",
+      "title": "Heterogenous Photonic Integration",
+      "authors": [
+        "L Ranno",
+        "JXB Sia",
+        "J Hu",
+        "C Ross",
+        "S Vitale",
+        "T Gu",
+        "Q DU",
+        "CC Popescu"
+      ],
+      "journal": "US Patent App. 19/136,355",
+      "year": 2026,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:NaGl4SEjCO4C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:J_g5lzvAfSwC",
+      "title": "Reflector for use in laser architecture",
+      "authors": [
+        "JXB SIA",
+        "H Wang",
+        "KS Ang"
+      ],
+      "journal": "US Patent App. 18/722,102",
+      "year": 2026,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:J_g5lzvAfSwC"
     },
     {
       "id": "HC8AFQcAAAAJ:GnPB-g6toBAC",
@@ -264,27 +315,6 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:bEWYMUwI8FkC"
     },
     {
-      "id": "HC8AFQcAAAAJ:ZeXyd9-uunAC",
-      "title": "Corrigendum to \u201cMode-locked Operation Characteristics of a Monolithic Integrated Two-section InGaAs/GaAs Double Quantum Wells Laser with Asymmetric Waveguide\u201d[Optics & Laser\u00a0\u2026",
-      "authors": [
-        "Z Qiao",
-        "X Li",
-        "JXB Sia",
-        "WJ Wang",
-        "H Wang",
-        "L Li",
-        "Z Li",
-        "Z Zhao",
-        "G Liu",
-        "H Chen"
-      ],
-      "journal": "Optics & Laser Technology 177, 111080",
-      "year": 2024,
-      "type": "article",
-      "citations": 0,
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:ZeXyd9-uunAC"
-    },
-    {
       "id": "HC8AFQcAAAAJ:TQgYirikUcIC",
       "title": "Unravelling and circumventing failure mechanisms in chalcogenide optical phase change materials",
       "authors": [
@@ -332,7 +362,7 @@
       "journal": "Advanced Optical Materials 12 (25), 2400708",
       "year": 2024,
       "type": "article",
-      "citations": 24,
+      "citations": 25,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:hC7cP41nSMkC"
     },
     {
@@ -516,8 +546,29 @@
       "journal": "",
       "year": 2024,
       "type": "article",
-      "citations": 0,
+      "citations": 1,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:iH-uZ7U-co4C"
+    },
+    {
+      "id": "HC8AFQcAAAAJ:ZeXyd9-uunAC",
+      "title": "Corrigendum to \u201cMode-locked Operation Characteristics of a Monolithic Integrated Two-section InGaAs/GaAs Double Quantum Wells Laser with Asymmetric Waveguide\u201d[Optics & Laser\u00a0\u2026",
+      "authors": [
+        "Z Qiao",
+        "B Bo",
+        "C Liu",
+        "R Zhao",
+        "H Wan",
+        "Z Niu",
+        "D Fu",
+        "S Liu",
+        "X Gao",
+        "P Su"
+      ],
+      "journal": "Hongwai Yu Haomibo Xuebao 43 (4), 1",
+      "year": 2024,
+      "type": "article",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:ZeXyd9-uunAC"
     },
     {
       "id": "HC8AFQcAAAAJ:9ZlFYXVOiuMC",
@@ -739,7 +790,7 @@
       "journal": "Optica 8 (6), 855-860",
       "year": 2021,
       "type": "article",
-      "citations": 21,
+      "citations": 22,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:Se3iqnhoufwC"
     },
     {
@@ -799,7 +850,7 @@
       "journal": "Applied Physics Letters 117 (14)",
       "year": 2020,
       "type": "article",
-      "citations": 3,
+      "citations": 4,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:LkGwnXOMwfcC"
     },
     {
@@ -873,7 +924,7 @@
       "journal": "Optics express 28 (4), 5134-5146",
       "year": 2020,
       "type": "article",
-      "citations": 34,
+      "citations": 35,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HC8AFQcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HC8AFQcAAAAJ:WF5omc3nYNoC"
     },
     {
