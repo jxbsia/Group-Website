@@ -621,11 +621,10 @@
   .home-news-list li > div { animation: none; opacity: 1; }
 }
 
-/* Frame the beam and optical mounts, rather than the full portrait-oriented source. */
-.about-lab-frame { height: clamp(24rem, 68svh, 45rem); }
-.about-lab-photo { object-position: center 35%; }
+/* Full-width signal field on About. */
+.about-signal-panel { height: clamp(23rem, 60svh, 40rem); }
+.signal-toggle-about { right: max(.6rem, calc((100% - 80rem) / 2)); bottom: 1rem; }
 
 @media (max-width: 639px) {
-  .about-lab-frame { height: clamp(19rem, 52svh, 32rem); }
-  .about-lab-photo { object-position: center 33%; }
+  .about-signal-panel { height: clamp(18rem, 47svh, 29rem); }
 }
