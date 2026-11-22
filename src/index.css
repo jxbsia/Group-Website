@@ -621,10 +621,21 @@
   .home-news-list li > div { animation: none; opacity: 1; }
 }
 
-/* Full-width signal field on About. */
-.about-signal-panel { height: clamp(23rem, 60svh, 40rem); }
-.signal-toggle-about { right: max(.6rem, calc((100% - 80rem) / 2)); bottom: 1rem; }
-
-@media (max-width: 639px) {
-  .about-signal-panel { height: clamp(18rem, 47svh, 29rem); }
+/* About and Team share a viewport-sized backdrop rather than allocating
+   a canvas as tall as the roster. Content cards retain their own contrast. */
+.signal-page {
+  position: relative;
+  isolation: isolate;
+  background: hsl(var(--background));
+}
+.signal-page .signal-field {
+  position: fixed;
+  z-index: -1;
+}
+.signal-page .signal-toggle {
+  position: fixed;
+  right: max(.6rem, calc((100% - 80rem) / 2));
+  bottom: max(.75rem, env(safe-area-inset-bottom));
+  background: hsl(var(--background) / .85);
+  border: 1px solid hsl(var(--accent) / .25);
 }

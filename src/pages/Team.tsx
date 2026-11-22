@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
 import AnimatedBlock from '@/components/AnimatedBlock';
+import SignalField from '@/components/SignalField';
 import teamData from '@/data/team.json';
 import type { TeamMember } from '@/types/content';
 import placeholderPortrait from '@/assets/professor-placeholder.jpg';
@@ -15,9 +16,10 @@ const Team = () => {
   );
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="signal-page min-h-screen pt-20">
+      <SignalField placement="team" />
       {/* Hero Section */}
-      <section className="vlt-gap-100 bg-background">
+      <section className="vlt-gap-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-end">
             <div>
@@ -46,7 +48,7 @@ const Team = () => {
       </section>
 
       {/* Current Team Section */}
-      <section className="vlt-gap-100 bg-card">
+      <section className="vlt-gap-100 bg-card/25">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {[topRow, ...teamRows].map((row, rowIndex) => (
             <div
@@ -138,7 +140,7 @@ const Team = () => {
       </section>
 
       {/* Alumni Section */}
-      <section className="vlt-gap-100 bg-background">
+      <section className="vlt-gap-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedBlock>
             <div className="mb-16">
@@ -162,7 +164,7 @@ const Team = () => {
       </section>
 
       {/* Join Us CTA */}
-      <section className="vlt-gap-100 bg-card">
+      <section className="vlt-gap-100 bg-card/25">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <AnimatedBlock>
             <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">

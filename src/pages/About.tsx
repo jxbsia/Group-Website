@@ -8,9 +8,10 @@ const About = () => {
   const { pi } = aboutData;
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="signal-page min-h-screen pt-20">
+      <SignalField placement="about" />
       {/* Hero Section */}
-      <section className="about-portrait-hero vlt-gap-100 bg-background">
+      <section className="about-portrait-hero vlt-gap-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: Experience Block */}
@@ -82,7 +83,7 @@ const About = () => {
       </section>
 
       {/* Biography Section */}
-      <section className="vlt-gap-100 bg-card">
+      <section className="vlt-gap-100 bg-card/25">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid gap-16">
             {/* Left: Biography */}
@@ -111,9 +112,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="about-signal-panel relative w-full overflow-hidden bg-black" aria-label="Decorative light animation">
-        <SignalField placement="about" />
-      </section>
+
 
     </div>
   );
