@@ -622,10 +622,10 @@
 }
 
 /* Frame the beam and optical mounts, rather than the full portrait-oriented source. */
-.about-lab-frame { aspect-ratio: 2.2; }
+.about-lab-frame { height: clamp(24rem, 68svh, 45rem); }
 .about-lab-photo { object-position: center 35%; }
 
 @media (max-width: 639px) {
-  .about-lab-frame { aspect-ratio: 4 / 3; }
+  .about-lab-frame { height: clamp(19rem, 52svh, 32rem); }
   .about-lab-photo { object-position: center 33%; }
 }
