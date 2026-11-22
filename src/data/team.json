@@ -120,6 +120,60 @@
       "startYear": "2025",
       "image": "/team/hz.jpg",
       "needsNewPhoto": false
+    },
+    {
+      "id": "13",
+      "name": "Xue Hanxiao",
+      "position": "",
+      "email": "",
+      "researchInterests": [],
+      "startYear": "",
+      "image": "/team/hanxiao-xue.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Tian Yuan",
+      "position": "",
+      "email": "",
+      "researchInterests": [],
+      "startYear": "",
+      "image": "/team/yuan-tian.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Zou Zhi",
+      "position": "",
+      "email": "",
+      "researchInterests": [],
+      "startYear": "",
+      "image": "/team/zhi-zou.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Yue Lu",
+      "position": "",
+      "email": "",
+      "researchInterests": [],
+      "startYear": "",
+      "image": "/team/yue-lu.jpg"
+    },
+    {
+      "id": "17",
+      "name": "Ping Yu",
+      "position": "",
+      "email": "",
+      "researchInterests": [],
+      "startYear": "",
+      "image": "/team/ping-yu.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Yosep Kim",
+      "position": "",
+      "email": "",
+      "researchInterests": [],
+      "startYear": "",
+      "image": "/team/yosep-kim.jpg"
     }
   ],
   "alumni": [],
