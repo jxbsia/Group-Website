@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import AnimatedBlock from '@/components/AnimatedBlock';
 import KenBurnsBackground from '@/components/KenBurnsBackground';
 import MagicBackground from '@/components/MagicBackground';
+import SignalField from '@/components/SignalField';
 import ctaBackground from '@/assets/cta-background.webp';
 import ntuLogo from '@/assets/ntu-logo.png';
 import astarLogo from '@/assets/astar-logo.png';
@@ -33,6 +34,7 @@ const Home = () => {
       {/* Hero Section with Magic Background */}
       <section className="relative min-h-svh flex items-center justify-center overflow-hidden pt-28 pb-32">
         <MagicBackground />
+        <SignalField placement="hero" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
