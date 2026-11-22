@@ -111,22 +111,16 @@ const About = () => {
         </div>
       </section>
 
-      <section className="vlt-gap-100 bg-background" aria-label="Inside the lab">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <AnimatedBlock animation="fade-in-up-sm">
-            <figure className="about-lab-frame mx-auto max-w-6xl overflow-hidden border border-white/10 bg-black">
-              <img
-                className="about-lab-photo block h-full w-full object-cover"
-                src={opticalSetup}
-                alt="Red laser light passing through an optical setup"
-                width={853}
-                height={1233}
-                loading="lazy"
-                decoding="async"
-              />
-            </figure>
-          </AnimatedBlock>
-        </div>
+      <section className="about-lab-frame relative w-full overflow-hidden bg-black" aria-label="Inside the lab">
+        <img
+          className="about-lab-photo absolute inset-0 block h-full w-full object-cover"
+          src={opticalSetup}
+          alt="Red laser light passing through an optical setup"
+          width={853}
+          height={1233}
+          loading="lazy"
+          decoding="async"
+        />
       </section>
 
     </div>
