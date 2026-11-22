@@ -2,6 +2,8 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { ArrowLeft, ArrowLeftCircle, ArrowRightCircle } from 'lucide-react';
 import AnimatedBlock from '@/components/AnimatedBlock';
+import newsData from '@/data/news.json';
+import type { NewsItem } from '@/types/content';
 
 const NewsPhoto = () => {
   const [searchParams] = useSearchParams();
@@ -12,6 +14,7 @@ const NewsPhoto = () => {
   const title = searchParams.get('title') || 'News photo';
   const description = searchParams.get('description');
   const requestedIndex = Number(searchParams.get('index') ?? '0');
+  const item = (newsData as NewsItem[]).find(entry => entry.id === searchParams.get('item'));
 
   const images = useMemo(() => {
     if (imagesParam) {
@@ -81,14 +84,14 @@ const NewsPhoto = () => {
                   <button
                     onClick={goPrev}
                     className="absolute left-3 top-1/2 -translate-y-1/2 bg-background/80 border border-border rounded-full p-2 text-foreground hover:bg-accent/20 transition-colors"
-                    aria-label="上一张"
+                    aria-label="Previous image"
                   >
                     <ArrowLeftCircle className="w-5 h-5" />
                   </button>
                   <button
                     onClick={goNext}
                     className="absolute right-3 top-1/2 -translate-y-1/2 bg-background/80 border border-border rounded-full p-2 text-foreground hover:bg-accent/20 transition-colors"
-                    aria-label="下一张"
+                    aria-label="Next image"
                   >
                     <ArrowRightCircle className="w-5 h-5" />
                   </button>
@@ -115,11 +118,11 @@ const NewsPhoto = () => {
                         : 'border-border hover:border-accent/60'
                     }`}
                     style={{ width: '96px', aspectRatio: '4 / 3' }}
-                    aria-label={`第 ${idx + 1} 张`}
+                    aria-label={`View image ${idx + 1}`}
                   >
                     <img
                       src={img}
-                      alt={`${title} - 缩略图 ${idx + 1}`}
+                      alt={`${title} - thumbnail ${idx + 1}`}
                       className="w-full h-full object-cover"
                     />
                   </button>

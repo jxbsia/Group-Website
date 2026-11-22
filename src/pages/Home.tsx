@@ -50,7 +50,7 @@ const Home = () => {
               </p>
 
               <AnimatedBlock delay={0.1}>
-                <h1 className="text-[clamp(1.5rem,7.5vw,1.875rem)] md:text-5xl lg:text-[clamp(2.5rem,4vw,3.25rem)] font-semibold text-foreground tracking-[0.05em] sm:tracking-[0.1em] mb-6">
+                <h1 className="text-[clamp(1.5rem,7.5vw,1.875rem)] md:text-5xl lg:text-[clamp(2.5rem,4vw,3.25rem)] font-semibold text-foreground tracking-[0.05em] sm:tracking-[0.1em] mb-6" style={{ fontFamily: 'Moonspace, sans-serif' }}>
                   SIA <span className="whitespace-nowrap">LABORATORIES<span className="text-accent">.</span></span>
                 </h1>
               </AnimatedBlock>
@@ -140,23 +140,25 @@ const Home = () => {
             {featuredNews.map((news, index) => (
               <AnimatedBlock key={news.id} delay={0.1 + index * 0.1}>
                 <article className="news-card">
-                  <div className="news-card-image bg-secondary">
-                    {news.thumbnail ? (
+                  {news.thumbnail && (
+                    <div className="news-card-image bg-secondary">
                       <img
                         src={news.thumbnail}
                         alt={news.title}
-                        className="w-full h-full object-cover"
+                        loading="lazy"
+                        className={`w-full h-full ${news.imageFit === 'contain' ? 'object-contain' : 'object-cover'}`}
                       />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                        <span className="text-6xl font-semibold opacity-20">
-                          {String(index + 1).padStart(2, '0')}
-                        </span>
-                      </div>
-                    )}
-                  </div>
+                    </div>
+                  )}
                   <div className="news-card-content">
                     <p className="news-card-date">{news.date}</p>
+                    {news.photoLicenseUrl && news.photoCredit && (
+                      <p className="mb-2 text-xs text-muted-foreground">
+                        {news.photoCredit}{' '}
+                        <a className="underline" href={news.photoLicenseUrl} target="_blank" rel="noopener noreferrer">License</a>
+                        {news.sourceUrl && <> · <a className="underline" href={news.sourceUrl} target="_blank" rel="noopener noreferrer">{news.sourceLabel || 'Source'}</a></>}
+                      </p>
+                    )}
                     <h3 className="news-card-title">{news.title}</h3>
                     <p className="news-card-excerpt">{news.description || news.excerpt}</p>
                   </div>

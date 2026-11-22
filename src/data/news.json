@@ -1,5 +1,78 @@
 [
   {
+    "id": "13",
+    "title": "Electrically tunable light conversion on a photonic chip",
+    "description": "A collaboration including Brian reported in Nature Nanotechnology that an electrically adjustable photonic chip can convert light to twice its input frequency. The device retains its selected optical setting after switching.",
+    "date": "2026-11-09",
+    "category": "Publication",
+    "link": "https://doi.org/10.1038/s41565-026-02331-w",
+    "sourceUrl": "https://doi.org/10.1038/s41565-026-02331-w",
+    "sourceLabel": "Paper and figures"
+  },
+  {
+    "id": "12",
+    "title": "Heterogeneous Integration Colloquium at Samsung Electronics",
+    "description": "Brian and Prof Chuan Seng Tan joined researchers from Samsung Electronics, NTU and NUS in South Korea on 30 September and 1 October. The workshop brought the teams together to discuss progress in integrated photonics and advanced semiconductor packaging.",
+    "date": "2026-09-30",
+    "category": "Event",
+    "link": "https://sg.linkedin.com/company/ncaip",
+    "sourceUrl": "https://sg.linkedin.com/company/ncaip",
+    "sourceLabel": "NCAIP recap"
+  },
+  {
+    "id": "11",
+    "title": "Wafer-scale conformal metasurface optics",
+    "description": "In Nature Communications, an international team including Brian demonstrated a wafer-scale approach for fabricating optical metasurfaces that conform to curved surfaces.",
+    "date": "2026-09-18",
+    "category": "Publication",
+    "link": "/news/wafer-scale-metasurface-figure-1.webp",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13683382/",
+    "sourceLabel": "Paper and figures",
+    "thumbnail": "/news/wafer-scale-metasurface-figure-1.webp",
+    "images": [
+      "/news/wafer-scale-metasurface-figure-1.webp"
+    ],
+    "photoCredit": "Martin-Monier et al., Nature Communications (2026), Fig. 1. Unmodified; CC BY-NC-ND 4.0.",
+    "photoLicenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "imageFit": "contain"
+  },
+  {
+    "id": "10",
+    "title": "Programmable optical memristors for photonic computing",
+    "description": "Shuoqiu Tian, Yihong Sun and Brian coauthored an ACS Nano paper on programmable optical memristors for photonic neuromorphic computing. The collaboration used phase-change materials to build devices that can be connected in sequence.",
+    "date": "2026-08-18",
+    "category": "Publication",
+    "link": "https://doi.org/10.1021/acsnano.6c08364",
+    "sourceUrl": "https://doi.org/10.1021/acsnano.6c08364",
+    "sourceLabel": "Paper and figures"
+  },
+  {
+    "id": "9",
+    "title": "Inaugural Quantum Sensing Centre Symposium",
+    "description": "Brian contributed a technical talk to the inaugural DSO Quantum Sensing Centre symposium. Researchers and partners met to exchange progress in quantum sensing, including work on miniaturised photonic integrated circuits.",
+    "date": "2026-07-29",
+    "category": "Talk",
+    "link": "https://qsc.dso.org.sg/post/the-inaugural-qsc-symposium-was-held-on-the-29th-july-2026-featuring-technical-talks-in-all-the-qsc",
+    "sourceUrl": "https://qsc.dso.org.sg/post/the-inaugural-qsc-symposium-was-held-on-the-29th-july-2026-featuring-technical-talks-in-all-the-qsc",
+    "sourceLabel": "DSO recap and photos"
+  },
+  {
+    "id": "8",
+    "title": "Integrated photonics at Asia Tech x Singapore",
+    "description": "Brian spoke on integrated photonics at NTU Innovation Fridays during Asia Tech x Singapore. The programme at Singapore EXPO brought researchers and industry together to discuss photonics, semiconductor hardware and cooling for AI data centres.",
+    "date": "2026-05-22",
+    "category": "Talk",
+    "link": "/news/innovation-fridays-atxsg-talk.jpg",
+    "sourceUrl": "https://www.ntu.edu.sg/innovates/news-events/events/detail/2026/05/22/default-calendar/innovation-fridays---advancing-data-centre-infrastructure",
+    "sourceLabel": "NTU event programme",
+    "thumbnail": "/news/innovation-fridays-atxsg-talk.jpg",
+    "images": [
+      "/news/innovation-fridays-atxsg-talk.jpg",
+      "/news/innovation-fridays-atxsg-panel.jpg"
+    ],
+    "photoCredit": "Event photos shared by SIA Laboratories."
+  },
+  {
     "id": "7",
     "title": "Office of Naval Research Global (ONRG) visit",
     "description": "",
@@ -7,7 +80,9 @@
     "category": "Event",
     "link": "/news/onrg.jpg",
     "thumbnail": "/news/onrg.jpg",
-    "images": ["/news/onrg.jpg"]
+    "images": [
+      "/news/onrg.jpg"
+    ]
   },
   {
     "id": "6",
@@ -17,7 +92,9 @@
     "category": "Event",
     "link": "/news/photonics_sg1.jpg",
     "thumbnail": "/news/photonics_sg1.jpg",
-    "images": ["/news/photonics_sg1.jpg"]
+    "images": [
+      "/news/photonics_sg1.jpg"
+    ]
   },
   {
     "id": "5",
@@ -27,7 +104,10 @@
     "category": "Event",
     "link": "/news/samsung1.jpg",
     "thumbnail": "/news/samsung1.jpg",
-    "images": ["/news/samsung1.jpg", "/news/samsung2.jpg"]
+    "images": [
+      "/news/samsung1.jpg",
+      "/news/samsung2.jpg"
+    ]
   },
   {
     "id": "4",
@@ -37,7 +117,9 @@
     "category": "Publication",
     "link": "/news/newton.jpg",
     "thumbnail": "/news/newton.jpg",
-    "images": ["/news/newton.jpg"]
+    "images": [
+      "/news/newton.jpg"
+    ]
   },
   {
     "id": "3",
@@ -47,7 +129,9 @@
     "category": "Talk",
     "link": "/news/dso_qsc.jpg",
     "thumbnail": "/news/dso_qsc.jpg",
-    "images": ["/news/dso_qsc.jpg"]
+    "images": [
+      "/news/dso_qsc.jpg"
+    ]
   },
   {
     "id": "2",
@@ -57,7 +141,9 @@
     "category": "Announcement",
     "link": "/news/dso_qsc2.jpg",
     "thumbnail": "/news/dso_qsc2.jpg",
-    "images": ["/news/dso_qsc2.jpg"]
+    "images": [
+      "/news/dso_qsc2.jpg"
+    ]
   },
   {
     "id": "1",
@@ -67,6 +153,8 @@
     "category": "Announcement",
     "link": "/news/ncaip.jpg",
     "thumbnail": "/news/ncaip.jpg",
-    "images": ["/news/ncaip.jpg"]
+    "images": [
+      "/news/ncaip.jpg"
+    ]
   }
 ]

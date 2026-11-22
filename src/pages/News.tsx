@@ -16,10 +16,10 @@ const News = () => {
     images: string[],
     title: string,
     description?: string,
-    index = 0
+    itemId?: string
   ) => {
     const payload = encodeURIComponent(JSON.stringify(images));
-    return `/news/photo?images=${payload}&index=${index}&title=${encodeURIComponent(
+    return `/news/photo?images=${payload}&index=0&item=${encodeURIComponent(itemId ?? '')}&title=${encodeURIComponent(
       title
     )}${description ? `&description=${encodeURIComponent(description)}` : ''}`;
   };
@@ -84,16 +84,15 @@ const News = () => {
               const imageList =
                 (item.images && item.images.length > 0
                   ? item.images
-                  : [item.thumbnail || '/placeholder.svg']);
+                  : (item.thumbnail ? [item.thumbnail] : []));
               const primaryImage = imageList[0];
               const primaryDestination =
-                !isExternalLink(hasLink ? item.link : primaryImage) &&
-                isImagePath(hasLink ? item.link : primaryImage)
+                primaryImage && isImagePath(primaryImage)
                   ? buildPhotoViewerUrl(
                       imageList,
                       item.title,
                       item.description,
-                      0
+                      item.id
                     )
                   : hasLink
                   ? item.link
@@ -101,8 +100,8 @@ const News = () => {
 
               return (
                 <AnimatedBlock key={item.id} delay={0.05 * idx}>
-                  <article className="p-6 lg:p-8 grid lg:grid-cols-[minmax(240px,320px)_1fr_auto] gap-6 hover:bg-card/60 transition-colors">
-                    <div className="space-y-3">
+                  <article className={`p-6 lg:p-8 grid gap-6 hover:bg-card/60 transition-colors ${primaryImage ? 'lg:grid-cols-[minmax(240px,320px)_1fr_auto]' : 'lg:grid-cols-[1fr_auto]'}`}>
+                    {primaryImage && <div className="space-y-3">
                       <div
                         className="relative w-full bg-secondary overflow-hidden rounded-lg"
                         style={{ aspectRatio: '16 / 9' }}
@@ -113,13 +112,19 @@ const News = () => {
                           <img
                             src={primaryImage}
                             alt={item.title}
-                            className="w-full h-full object-cover"
+                            className={`w-full h-full ${item.imageFit === 'contain' ? 'object-contain' : 'object-cover'}`}
+                            loading="lazy"
                           />
                         )}
                       </div>
 
-                      {/* Hide additional thumbnails on list view; full set opens in viewer */}
-                    </div>
+                      {item.photoCredit && (
+                        <p className="text-xs text-muted-foreground">
+                          {item.photoCredit}
+                          {item.photoLicenseUrl && <> <a className="underline" href={item.photoLicenseUrl} target="_blank" rel="noopener noreferrer">License</a></>}
+                        </p>
+                      )}
+                    </div>}
 
                     <div className="space-y-3">
                       <div className="flex flex-wrap items-center gap-3 text-sm uppercase tracking-widest text-muted-foreground">
@@ -134,6 +139,11 @@ const News = () => {
                       <p className="text-base text-muted-foreground leading-relaxed">
                         {item.description}
                       </p>
+                      {item.sourceUrl && primaryImage && (
+                        <a className="inline-flex text-sm text-accent underline hover:text-foreground" href={item.sourceUrl} target="_blank" rel="noopener noreferrer">
+                          {item.sourceLabel || 'Source'}
+                        </a>
+                      )}
                     </div>
 
                     {hasLink &&
@@ -142,12 +152,13 @@ const News = () => {
                           ? buildPhotoViewerUrl(
                               imageList,
                               item.title,
-                              item.description
+                              item.description,
+                              item.id
                             )
                           : item.link,
                         "self-center inline-flex items-center gap-2 text-sm uppercase tracking-widest text-accent hover:text-foreground transition-colors",
                         <>
-                          View
+                          {primaryImage ? (item.imageFit === 'contain' ? 'View figure' : 'View photos') : (item.sourceLabel || 'View')}
                           <ArrowUpRight className="h-4 w-4" />
                         </>
                       )}
