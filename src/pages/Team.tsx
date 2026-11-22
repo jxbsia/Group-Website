@@ -98,7 +98,7 @@ const Team = () => {
 
                         {hasProfileDetails && (
                           <>
-                            {rowIndex > 0 && <div className="space-y-3 flex-1">
+                            {rowIndex > 0 && (hasStartYear || member.researchInterests.length > 0) && <div className="space-y-3 flex-1">
                               <h4 className="text-sm uppercase tracking-widest text-muted-foreground">
                                 Research Interests
                               </h4>
@@ -123,11 +123,7 @@ const Team = () => {
                                 <Mail className="h-4 w-4" />
                                 {member.email || 'Email pending'}
                               </a>
-                              {rowIndex > 0 && (
-                                <span>
-                                  {hasStartYear ? `Since ${member.startYear}` : 'Start year pending'}
-                                </span>
-                              )}
+                              {rowIndex > 0 && hasStartYear && <span>Since {member.startYear}</span>}
                             </div>
                           </>
                         )}
