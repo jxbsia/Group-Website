@@ -10,11 +10,8 @@ const About = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="about-portrait-hero relative isolate overflow-hidden vlt-gap-100 bg-background">
-        <div className="about-portrait-backdrop" aria-hidden="true">
-          <img src={opticalSetup} alt="" width={853} height={1233} />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="about-portrait-hero vlt-gap-100 bg-background">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: Experience Block */}
             <div>
@@ -117,22 +114,16 @@ const About = () => {
       <section className="vlt-gap-100 bg-background" aria-label="Inside the lab">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedBlock animation="fade-in-up-sm">
-            <figure className="mx-auto max-w-2xl">
-              <div className="overflow-hidden border border-white/10 bg-black">
-                <img
-                  className="about-lab-photo mx-auto block h-auto w-full"
-                  src={opticalSetup}
-                  alt="Red laser light passing through an optical setup"
-                  width={853}
-                  height={1233}
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <figcaption className="flex flex-wrap items-baseline justify-between gap-2 border-b border-border py-4">
-                <span className="text-xs uppercase tracking-[0.2em] text-accent">Inside the lab</span>
-                <span className="text-sm text-muted-foreground">Laser light in an optical setup.</span>
-              </figcaption>
+            <figure className="about-lab-frame mx-auto max-w-6xl overflow-hidden border border-white/10 bg-black">
+              <img
+                className="about-lab-photo block h-full w-full object-cover"
+                src={opticalSetup}
+                alt="Red laser light passing through an optical setup"
+                width={853}
+                height={1233}
+                loading="lazy"
+                decoding="async"
+              />
             </figure>
           </AnimatedBlock>
         </div>
