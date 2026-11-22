@@ -59,7 +59,7 @@ const Team = () => {
               {row.map((member, index) => {
                 const hasStartYear = /^\d{4}$/.test(member.startYear);
 
-                const hasProfileDetails = Boolean(member.position || member.email || member.startYear || member.researchInterests.length);
+                const hasProfileDetails = Boolean(member.email || member.startYear || member.researchInterests.length);
 
                 return (
                   <AnimatedBlock key={member.id} delay={0.1 + (index % 6) * 0.05}>
