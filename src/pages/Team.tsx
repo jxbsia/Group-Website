@@ -8,6 +8,11 @@ import placeholderPortrait from '@/assets/professor-placeholder.jpg';
 const Team = () => {
   const adminMember: TeamMember = teamData.members[0];
   const teamMembers: TeamMember[] = teamData.members.slice(1);
+  const cardsPerRow = 3;
+  const teamRows = Array.from(
+    { length: Math.ceil(teamMembers.length / cardsPerRow) },
+    (_, i) => teamMembers.slice(i * cardsPerRow, (i + 1) * cardsPerRow),
+  );
 
   return (
     <div className="min-h-screen pt-20">
@@ -87,15 +92,12 @@ const Team = () => {
           </div>
 
           {/* Team Grid */}
-          {[
-            teamMembers.slice(0, 3),
-            teamMembers.slice(3, 6),
-            teamMembers.slice(6, 9),
-            teamMembers.slice(9, 12),
-          ].map((row, rowIndex) => (
+          {teamRows.map((row, rowIndex) => (
             <div key={rowIndex} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 last:mb-0">
               {row.map((member, index) => {
                 const hasStartYear = /^\d{4}$/.test(member.startYear);
+
+                const hasProfileDetails = Boolean(member.position || member.email || member.startYear || member.researchInterests.length);
 
                 return (
                   <AnimatedBlock key={member.id} delay={0.1 + (index % 6) * 0.05}>
@@ -117,9 +119,11 @@ const Team = () => {
 
                       <div className="p-8 space-y-4 flex-1 flex flex-col">
                         <div className="space-y-2">
-                          <p className="text-sm uppercase tracking-[0.15em] text-muted-foreground">
-                            {member.position}
-                          </p>
+                          {member.position && (
+                            <p className="text-sm uppercase tracking-[0.15em] text-muted-foreground">
+                              {member.position}
+                            </p>
+                          )}
                           <h3 className="text-xl font-semibold text-foreground">
                             {member.name}
                           </h3>
@@ -130,35 +134,39 @@ const Team = () => {
                           )}
                         </div>
 
-                        <div className="space-y-3 flex-1">
-                          <h4 className="text-sm uppercase tracking-widest text-muted-foreground">
-                            Research Interests
-                          </h4>
-                          <div className="flex flex-wrap gap-2">
-                            {member.researchInterests.map((interest) => (
-                              <span
-                                key={interest}
-                                className="px-2 py-1 text-sm bg-secondary text-muted-foreground"
-                              >
-                                {interest}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
+                        {hasProfileDetails && (
+                          <>
+                            <div className="space-y-3 flex-1">
+                              <h4 className="text-sm uppercase tracking-widest text-muted-foreground">
+                                Research Interests
+                              </h4>
+                              <div className="flex flex-wrap gap-2">
+                                {member.researchInterests.map((interest) => (
+                                  <span
+                                    key={interest}
+                                    className="px-2 py-1 text-sm bg-secondary text-muted-foreground"
+                                  >
+                                    {interest}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
 
-                        <div className="flex flex-wrap items-center justify-between gap-3 text-sm text-muted-foreground pt-4 border-t border-border">
-                          <a
-                            href={member.email ? `mailto:${member.email}` : undefined}
-                            className={`flex items-center gap-2 transition-colors ${member.email ? 'hover:text-accent' : 'cursor-not-allowed'}`}
-                            aria-disabled={!member.email}
-                          >
-                            <Mail className="h-4 w-4" />
-                            {member.email || 'Email pending'}
-                          </a>
-                          <span>
-                            {hasStartYear ? `Since ${member.startYear}` : 'Start year pending'}
-                          </span>
-                        </div>
+                            <div className="flex flex-wrap items-center justify-between gap-3 text-sm text-muted-foreground pt-4 border-t border-border">
+                              <a
+                                href={member.email ? `mailto:${member.email}` : undefined}
+                                className={`flex items-center gap-2 transition-colors ${member.email ? 'hover:text-accent' : 'cursor-not-allowed'}`}
+                                aria-disabled={!member.email}
+                              >
+                                <Mail className="h-4 w-4" />
+                                {member.email || 'Email pending'}
+                              </a>
+                              <span>
+                                {hasStartYear ? `Since ${member.startYear}` : 'Start year pending'}
+                              </span>
+                            </div>
+                          </>
+                        )}
                       </div>
                     </div>
                   </AnimatedBlock>
