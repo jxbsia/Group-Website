@@ -175,13 +175,6 @@ export interface HeroSection {
   subtitle: string;
 }
 
-export interface ResearchHighlight {
-  id: string;
-  title: string;
-  description: string;
-  icon: string;
-}
-
 export interface Funder {
   name: string;
   logo: string;
@@ -195,7 +188,7 @@ export interface CallToAction {
 
 export interface HomeData {
   hero: HeroSection;
-  researchHighlights: ResearchHighlight[];
+  researchHighlights: string[];
   funders: Funder[];
   callToAction: CallToAction;
 }

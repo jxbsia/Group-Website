@@ -614,4 +614,5 @@
 @media (prefers-reduced-motion: reduce) {
   .spectrum-layer, .spectrum-layer .animate-ken-burns-reverse { animation: none; }
   .spectrum-toggle { display: none; }
+  .home-research-list li > div { animation: none; opacity: 1; }
 }

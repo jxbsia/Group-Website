@@ -100,14 +100,13 @@ const Home = () => {
             </h2>
           </AnimatedBlock>
 
-          <ul className="space-y-4" style={{ fontFamily: 'CS Gilbert Mono, monospace' }}>
-            {homeData.researchHighlights.map((highlight, index) => (
-              <AnimatedBlock key={highlight.id} delay={0.2 + index * 0.05}>
-                <li className="text-lg md:text-xl text-foreground flex items-start gap-4">
-                  <span className="text-accent">—</span>
-                  {highlight.title}
-                </li>
-              </AnimatedBlock>
+          <ul className="home-research-list max-w-xl border-t border-white/[.13]">
+            {homeData.researchHighlights.map((title, index) => (
+              <li key={title} className="border-b border-white/[.13] py-4 text-lg leading-snug text-foreground/80">
+                <AnimatedBlock animation="fade-in-up-sm" delay={index * 0.07}>
+                  {title}
+                </AnimatedBlock>
+              </li>
             ))}
           </ul>
         </div>
