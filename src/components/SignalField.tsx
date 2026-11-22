@@ -8,9 +8,12 @@ const randomAt = (index: number) => {
   return n - Math.floor(n);
 };
 
-type SignalFieldProps = { placement: 'hero' | 'footer' };
+type SignalFieldProps = {
+  placement: 'hero' | 'footer';
+  onPauseChange?: (paused: boolean) => void;
+};
 
-export default function SignalField({ placement }: SignalFieldProps) {
+export default function SignalField({ placement, onPauseChange }: SignalFieldProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [paused, setPaused] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches);
@@ -122,9 +125,12 @@ export default function SignalField({ placement }: SignalFieldProps) {
         <button
           className={`signal-toggle signal-toggle-${placement}`}
           type="button"
-          aria-label={`${paused ? 'Resume' : 'Pause'} ${placement} blinking animation`}
+          aria-label={`${paused ? 'Resume' : 'Pause'} ${placement} animation`}
           title={`${paused ? 'Resume' : 'Pause'} animation`}
-          onClick={() => setPaused(value => !value)}
+          onClick={() => {
+            setPaused(!paused);
+            onPauseChange?.(!paused);
+          }}
         >
           {paused ? <Play size={14} aria-hidden="true" /> : <Pause size={14} aria-hidden="true" />}
         </button>

@@ -1,10 +1,11 @@
-import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Pause, Play } from 'lucide-react';
 import AnimatedBlock from '@/components/AnimatedBlock';
 import KenBurnsBackground from '@/components/KenBurnsBackground';
 import MagicBackground from '@/components/MagicBackground';
 import SignalField from '@/components/SignalField';
+import SpectrumLayer from '@/components/SpectrumLayer';
 import ctaBackground from '@/assets/cta-background.webp';
 import ntuLogo from '@/assets/ntu-logo.png';
 import astarLogo from '@/assets/astar-logo.png';
@@ -18,6 +19,8 @@ import newsData from '@/data/news.json';
 import type { NewsItem } from '@/types/content';
 
 const Home = () => {
+  const [heroPaused, setHeroPaused] = useState(false);
+  const [collaborationPaused, setCollaborationPaused] = useState(false);
   const featuredNews: NewsItem[] = newsData.slice(0, 3);
 
   const logoMap: Record<string, string> = {
@@ -33,8 +36,10 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section with Magic Background */}
       <section className="relative min-h-svh flex items-center justify-center overflow-hidden pt-28 pb-32">
-        <MagicBackground />
-        <SignalField placement="hero" />
+        <SpectrumLayer placement="hero" paused={heroPaused}>
+          <MagicBackground />
+        </SpectrumLayer>
+        <SignalField placement="hero" onPauseChange={setHeroPaused} />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -200,13 +205,24 @@ const Home = () => {
 
       {/* Call to Action Section */}
       <section className="relative vlt-gap-120 overflow-hidden">
-        <KenBurnsBackground
-          imageSrc={ctaBackground}
-          alt="CTA Background"
-          overlay="dark"
-          loading="lazy"
-          reverse
-        />
+        <SpectrumLayer placement="collaboration" paused={collaborationPaused}>
+          <KenBurnsBackground
+            imageSrc={ctaBackground}
+            alt="CTA Background"
+            overlay="dark"
+            loading="lazy"
+            reverse
+          />
+        </SpectrumLayer>
+        <button
+          type="button"
+          className="signal-toggle spectrum-toggle"
+          aria-label={`${collaborationPaused ? 'Resume' : 'Pause'} collaboration background animation`}
+          title={`${collaborationPaused ? 'Resume' : 'Pause'} animation`}
+          onClick={() => setCollaborationPaused(value => !value)}
+        >
+          {collaborationPaused ? <Play size={14} aria-hidden="true" /> : <Pause size={14} aria-hidden="true" />}
+        </button>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <AnimatedBlock>

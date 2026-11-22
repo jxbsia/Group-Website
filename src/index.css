@@ -584,3 +584,34 @@
 .signal-toggle:focus-visible { outline: 2px solid currentColor; outline-offset: -4px; }
 .signal-toggle-hero { right: max(.6rem, calc((100% - 80rem) / 2)); bottom: 1rem; }
 .signal-toggle-footer { right: max(.6rem, calc((100% - 80rem) / 2)); top: 0; }
+
+/* Move only the rainbow artwork, never the foreground, teal UI, or signal dots. */
+@keyframes spectrum-hue-cycle {
+  from { filter: hue-rotate(0deg); }
+  to { filter: hue-rotate(360deg); }
+}
+@keyframes spectrum-drift {
+  from { transform: translate3d(-3.5%, -1.2%, 0) scale(1.11); }
+  to { transform: translate3d(3.5%, 1.2%, 0) scale(1.11); }
+}
+.spectrum-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  animation:
+    spectrum-drift 14s ease-in-out -5s infinite alternate,
+    spectrum-hue-cycle 28s linear infinite;
+}
+.spectrum-layer-collaboration {
+  animation-duration: 18s, 34s;
+  animation-delay: -7s, 0s;
+  animation-direction: alternate-reverse, normal;
+}
+.spectrum-layer[data-running="false"],
+.spectrum-layer[data-running="false"] .animate-ken-burns-reverse { animation-play-state: paused; }
+.spectrum-toggle { right: max(.6rem, calc((100% - 80rem) / 2)); bottom: 1rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .spectrum-layer, .spectrum-layer .animate-ken-burns-reverse { animation: none; }
+  .spectrum-toggle { display: none; }
+}
