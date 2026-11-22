@@ -6,8 +6,8 @@ import type { TeamMember } from '@/types/content';
 import placeholderPortrait from '@/assets/professor-placeholder.jpg';
 
 const Team = () => {
-  const adminMember: TeamMember = teamData.members[0];
-  const teamMembers: TeamMember[] = teamData.members.slice(1);
+  const topRow: TeamMember[] = teamData.members.slice(0, 2);
+  const teamMembers: TeamMember[] = teamData.members.slice(topRow.length);
   const cardsPerRow = 3;
   const teamRows = Array.from(
     { length: Math.ceil(teamMembers.length / cardsPerRow) },
@@ -48,52 +48,14 @@ const Team = () => {
       {/* Current Team Section */}
       <section className="vlt-gap-100 bg-card">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          {/* Administrator - centered top row */}
-          <div className="flex justify-center mb-8">
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <AnimatedBlock delay={0.1}>
-                <div className="gilber-card group h-full overflow-hidden flex flex-col">
-                  <div className="relative">
-                    <div className="w-full bg-secondary" style={{ aspectRatio: '3 / 4' }}>
-                      {adminMember.image ? (
-                        <img
-                          src={adminMember.image}
-                          onError={(e) => { e.currentTarget.src = placeholderPortrait; }}
-                          alt={adminMember.name}
-                          className="w-full h-full object-cover"
-                        />
-                      ) : (
-                        <div className="w-full h-full" />
-                      )}
-                    </div>
-                  </div>
-                  <div className="p-8 space-y-4 flex-1 flex flex-col">
-                    <div className="space-y-2">
-                      <p className="text-sm uppercase tracking-[0.15em] text-muted-foreground">
-                        {adminMember.position}
-                      </p>
-                      <h3 className="text-xl font-semibold text-foreground">
-                        {adminMember.name}
-                      </h3>
-                    </div>
-                    <div className="flex items-center text-sm text-muted-foreground pt-4 border-t border-border">
-                      <a
-                        href={`mailto:${adminMember.email}`}
-                        className="flex items-center gap-2 hover:text-accent transition-colors"
-                      >
-                        <Mail className="h-4 w-4" />
-                        {adminMember.email}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedBlock>
-            </div>
-          </div>
-
-          {/* Team Grid */}
-          {teamRows.map((row, rowIndex) => (
-            <div key={rowIndex} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 last:mb-0">
+          {[topRow, ...teamRows].map((row, rowIndex) => (
+            <div
+              key={rowIndex}
+              data-team-row={rowIndex === 0 ? 'top' : undefined}
+              className={rowIndex === 0
+                ? 'mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8 lg:max-w-[calc(66.6667%-0.6667rem)]'
+                : 'grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 last:mb-0'}
+            >
               {row.map((member, index) => {
                 const hasStartYear = /^\d{4}$/.test(member.startYear);
 
@@ -136,7 +98,7 @@ const Team = () => {
 
                         {hasProfileDetails && (
                           <>
-                            <div className="space-y-3 flex-1">
+                            {rowIndex > 0 && <div className="space-y-3 flex-1">
                               <h4 className="text-sm uppercase tracking-widest text-muted-foreground">
                                 Research Interests
                               </h4>
@@ -150,7 +112,7 @@ const Team = () => {
                                   </span>
                                 ))}
                               </div>
-                            </div>
+                            </div>}
 
                             <div className="flex flex-wrap items-center justify-between gap-3 text-sm text-muted-foreground pt-4 border-t border-border">
                               <a
@@ -161,9 +123,11 @@ const Team = () => {
                                 <Mail className="h-4 w-4" />
                                 {member.email || 'Email pending'}
                               </a>
-                              <span>
-                                {hasStartYear ? `Since ${member.startYear}` : 'Start year pending'}
-                              </span>
+                              {rowIndex > 0 && (
+                                <span>
+                                  {hasStartYear ? `Since ${member.startYear}` : 'Start year pending'}
+                                </span>
+                              )}
                             </div>
                           </>
                         )}
