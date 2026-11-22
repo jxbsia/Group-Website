@@ -10,14 +10,23 @@
       "image": "/team/gaohua.jpg"
     },
     {
-      "id": "1",
-      "name": "Wang Wanjun",
-      "position": "Ph.D., Senior Scientist",
-      "role": "Photonic Design Lead",
-      "email": "wanjun.wang@ntu.edu.sg",
-      "researchInterests": ["Photonic IC design", "System architecture"],
-      "startYear": "2025",
-      "image": "/team/wanjun.jpg"
+      "id": "17",
+      "name": "Prof Yu Ping",
+      "position": "",
+      "email": "",
+      "researchInterests": [],
+      "startYear": "",
+      "image": "/team/ping-yu.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Xue Hanxiao",
+      "position": "",
+      "role": "Radar Lead",
+      "email": "",
+      "researchInterests": [],
+      "startYear": "",
+      "image": "/team/hanxiao-xue.jpg"
     },
     {
       "id": "2",
@@ -40,15 +49,6 @@
       "image": "/team/yongzen.jpg"
     },
     {
-      "id": "4",
-      "name": "Wang Kaiyuan",
-      "position": "Ph.D., Postdoctoral Fellow",
-      "email": "kaiyuan.wang@ntu.edu.sg",
-      "researchInterests": ["Machine design"],
-      "startYear": "2025",
-      "image": "/team/kaiyuan.jpg"
-    },
-    {
       "id": "5",
       "name": "Sun Yihong",
       "position": "Ph.D. Student",
@@ -65,24 +65,6 @@
       "researchInterests": ["Coherent photonic systems", "Spectrometry"],
       "startYear": "2025",
       "image": "/team/huy.jpg"
-    },
-    {
-      "id": "7",
-      "name": "Tina Guo",
-      "position": "Scientist",
-      "email": "xinguo@ntu.edu.sg",
-      "researchInterests": ["Photonic characterization"],
-      "startYear": "2024",
-      "image": ""
-    },
-    {
-      "id": "8",
-      "name": "Tong Xujie",
-      "position": "Ph.D., Postdoctoral Fellow",
-      "email": "xujie.tong@ntu.edu.sg",
-      "researchInterests": ["Hybrid III-V SiN Tunable Lasers"],
-      "startYear": "2024",
-      "image": "/team/xujie.jpg"
     },
     {
       "id": "12",
@@ -122,15 +104,6 @@
       "needsNewPhoto": false
     },
     {
-      "id": "13",
-      "name": "Xue Hanxiao",
-      "position": "",
-      "email": "",
-      "researchInterests": [],
-      "startYear": "",
-      "image": "/team/hanxiao-xue.jpg"
-    },
-    {
       "id": "14",
       "name": "Tian Yuan",
       "position": "",
@@ -156,15 +129,6 @@
       "researchInterests": [],
       "startYear": "",
       "image": "/team/yue-lu.jpg"
-    },
-    {
-      "id": "17",
-      "name": "Ping Yu",
-      "position": "",
-      "email": "",
-      "researchInterests": [],
-      "startYear": "",
-      "image": "/team/ping-yu.jpg"
     },
     {
       "id": "18",
