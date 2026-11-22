@@ -9,7 +9,7 @@ const randomAt = (index: number) => {
 };
 
 type SignalFieldProps = {
-  placement: 'hero' | 'footer' | 'about';
+  placement: 'hero' | 'footer' | 'about' | 'team';
   onPauseChange?: (paused: boolean) => void;
 };
 
@@ -71,7 +71,7 @@ export default function SignalField({ placement, onPauseChange }: SignalFieldPro
           const edgeFade = Math.min(u * 8, (1 - u) * 8, 1);
           const verticalFade = placement === 'hero'
             ? Math.min(v * 4, (1 - v) * 8, 1) * (0.47 + 0.53 * u)
-            : placement === 'about'
+            : placement === 'about' || placement === 'team'
               ? Math.min(v * 3.6, (1 - v) * 4, 1)
               : Math.min(0.30 + v * 1.7, 1);
           const fades = edgeFade * verticalFade;
@@ -128,7 +128,7 @@ export default function SignalField({ placement, onPauseChange }: SignalFieldPro
         <button
           className={`signal-toggle signal-toggle-${placement}`}
           type="button"
-          aria-label={`${paused ? 'Resume' : 'Pause'} ${placement === 'about' ? 'About page' : placement} animation`}
+          aria-label={`${paused ? 'Resume' : 'Pause'} ${placement === 'about' ? 'About page' : placement === 'team' ? 'Team page' : placement} animation`}
           title={`${paused ? 'Resume' : 'Pause'} animation`}
           onClick={() => {
             setPaused(!paused);
