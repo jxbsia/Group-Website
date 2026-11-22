@@ -1,7 +1,7 @@
 import { Mail, MapPin, ExternalLink } from 'lucide-react';
 import AnimatedBlock from '@/components/AnimatedBlock';
 import professorImage from '@/assets/professor.jpg';
-import opticalSetup from '@/assets/about-optical-setup.jpg';
+import SignalField from '@/components/SignalField';
 import aboutData from '@/data/about.json';
 
 const About = () => {
@@ -111,16 +111,8 @@ const About = () => {
         </div>
       </section>
 
-      <section className="about-lab-frame relative w-full overflow-hidden bg-black" aria-label="Inside the lab">
-        <img
-          className="about-lab-photo absolute inset-0 block h-full w-full object-cover"
-          src={opticalSetup}
-          alt="Red laser light passing through an optical setup"
-          width={853}
-          height={1233}
-          loading="lazy"
-          decoding="async"
-        />
+      <section className="about-signal-panel relative w-full overflow-hidden bg-black" aria-label="Decorative light animation">
+        <SignalField placement="about" />
       </section>
 
     </div>
