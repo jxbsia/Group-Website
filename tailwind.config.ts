@@ -19,19 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Gilroy', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
-				gilroy: ['Gilroy', 'sans-serif'],
-				'gilbert-mono': [
-					'"Gilbert Mono"',
-					'ui-monospace',
-					'SFMono-Regular',
-					'Menlo',
-					'Monaco',
-					'Consolas',
-					'Liberation Mono',
-					'Courier New',
-					'monospace'
-				],
+				sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
