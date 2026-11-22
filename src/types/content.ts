@@ -203,4 +203,9 @@ export interface NewsItem {
   link?: string;
   thumbnail?: string;
   images?: string[];
+  sourceUrl?: string;
+  sourceLabel?: string;
+  photoCredit?: string;
+  photoLicenseUrl?: string;
+  imageFit?: 'contain';
 }
