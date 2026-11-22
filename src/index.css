@@ -617,5 +617,36 @@
 @media (prefers-reduced-motion: reduce) {
   .spectrum-layer, .spectrum-layer .animate-ken-burns-reverse { animation: none; }
   .spectrum-toggle { display: none; }
-  .home-research-list li > div { animation: none; opacity: 1; }
+  .home-research-list li > div,
+  .home-news-list li > div { animation: none; opacity: 1; }
+}
+
+/* A second, subdued use of the supplied lab photograph behind the About portrait. */
+.about-portrait-backdrop {
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 0 23%;
+  pointer-events: none;
+}
+.about-portrait-backdrop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 34%;
+  opacity: .55;
+}
+.about-portrait-backdrop::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background:
+    linear-gradient(90deg, hsl(var(--background)), hsl(var(--background) / .56) 37%, transparent 76%),
+    linear-gradient(0deg, hsl(var(--background)), transparent 36%);
+}
+@media (max-width: 1023px) {
+  .about-portrait-backdrop { inset: 0; }
+  .about-portrait-backdrop img { object-position: 50% 22%; opacity: .38; }
+  .about-portrait-backdrop::after {
+    background: linear-gradient(180deg, hsl(var(--background) / .82), transparent 55%, hsl(var(--background)));
+  }
 }

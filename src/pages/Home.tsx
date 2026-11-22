@@ -136,36 +136,16 @@ const Home = () => {
             </AnimatedBlock>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
+          <ul className="home-news-list max-w-3xl border-t border-white/[.13]" aria-label="Latest news">
             {featuredNews.map((news, index) => (
-              <AnimatedBlock key={news.id} delay={0.1 + index * 0.1}>
-                <article className="news-card">
-                  {news.thumbnail && (
-                    <div className="news-card-image bg-secondary">
-                      <img
-                        src={news.thumbnail}
-                        alt={news.title}
-                        loading="lazy"
-                        className={`w-full h-full ${news.imageFit === 'contain' ? 'object-contain' : 'object-cover'}`}
-                      />
-                    </div>
-                  )}
-                  <div className="news-card-content">
-                    <p className="news-card-date">{news.date}</p>
-                    {news.photoLicenseUrl && news.photoCredit && (
-                      <p className="mb-2 text-xs text-muted-foreground">
-                        {news.photoCredit}{' '}
-                        <a className="underline" href={news.photoLicenseUrl} target="_blank" rel="noopener noreferrer">License</a>
-                        {news.sourceUrl && <> · <a className="underline" href={news.sourceUrl} target="_blank" rel="noopener noreferrer">{news.sourceLabel || 'Source'}</a></>}
-                      </p>
-                    )}
-                    <h3 className="news-card-title">{news.title}</h3>
-                    <p className="news-card-excerpt">{news.description || news.excerpt}</p>
-                  </div>
-                </article>
-              </AnimatedBlock>
+              <li key={news.id} className="border-b border-white/[.13] py-4">
+                <AnimatedBlock animation="fade-in-up-sm" delay={index * 0.07} className="grid gap-1 sm:grid-cols-[7rem_1fr] sm:gap-5">
+                  <time dateTime={news.date} className="text-sm tabular-nums leading-relaxed text-foreground/60">{news.date}</time>
+                  <span className="text-lg leading-snug text-foreground/[.85]">{news.title}</span>
+                </AnimatedBlock>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 

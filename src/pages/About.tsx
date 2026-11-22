@@ -1,7 +1,7 @@
-import React from 'react';
 import { Mail, MapPin, ExternalLink } from 'lucide-react';
 import AnimatedBlock from '@/components/AnimatedBlock';
 import professorImage from '@/assets/professor.jpg';
+import opticalSetup from '@/assets/about-optical-setup.jpg';
 import aboutData from '@/data/about.json';
 
 const About = () => {
@@ -10,8 +10,11 @@ const About = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="vlt-gap-100 bg-background">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="about-portrait-hero relative isolate overflow-hidden vlt-gap-100 bg-background">
+        <div className="about-portrait-backdrop" aria-hidden="true">
+          <img src={opticalSetup} alt="" width={853} height={1233} />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: Experience Block */}
             <div>
@@ -72,7 +75,7 @@ const About = () => {
                   <img
                     src={professorImage}
                     alt={pi.name}
-                    className="w-full aspect-[3/4] object-cover"
+                    className="w-full aspect-[3/4] object-cover border border-white/10"
                   />
                 </div>
               </AnimatedBlock>
@@ -111,34 +114,27 @@ const About = () => {
         </div>
       </section>
 
-      {/* Research Interests Section */}
-      <section className="vlt-gap-100 bg-background">
+      <section className="vlt-gap-100 bg-background" aria-label="Inside the lab">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <AnimatedBlock>
-            <div className="text-center mb-16">
-              <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4">
-                Focus Areas
-              </p>
-              <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
-                Research Interests<span className="text-accent">.</span>
-              </h2>
-            </div>
+          <AnimatedBlock animation="fade-in-up-sm">
+            <figure className="mx-auto max-w-2xl">
+              <div className="overflow-hidden border border-white/10 bg-black">
+                <img
+                  className="about-lab-photo mx-auto block h-auto w-full"
+                  src={opticalSetup}
+                  alt="Red laser light passing through an optical setup"
+                  width={853}
+                  height={1233}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <figcaption className="flex flex-wrap items-baseline justify-between gap-2 border-b border-border py-4">
+                <span className="text-xs uppercase tracking-[0.2em] text-accent">Inside the lab</span>
+                <span className="text-sm text-muted-foreground">Laser light in an optical setup.</span>
+              </figcaption>
+            </figure>
           </AnimatedBlock>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {pi.researchInterests.map((interest, index) => (
-              <AnimatedBlock key={interest} delay={0.1 + index * 0.05}>
-                <div className="gilber-card p-6 text-center hover:border-accent transition-colors">
-                  <span className="text-4xl font-semibold text-accent mb-4 block">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
-                  <h3 className="text-lg font-medium text-foreground">
-                    {interest}
-                  </h3>
-                </div>
-              </AnimatedBlock>
-            ))}
-          </div>
         </div>
       </section>
 
