@@ -13,7 +13,7 @@
       "id": "17",
       "name": "Prof Yu Ping",
       "position": "",
-      "email": "",
+      "email": "ping.yu@ntu.edu.sg",
       "researchInterests": [],
       "startYear": "",
       "image": "/team/ping-yu.jpg"
@@ -21,9 +21,9 @@
     {
       "id": "13",
       "name": "Xue Hanxiao",
-      "position": "",
+      "position": "Senior Scientist",
       "role": "Radar Lead",
-      "email": "",
+      "email": "hanxiao.xue@ntu.edu.sg",
       "researchInterests": [],
       "startYear": "",
       "image": "/team/hanxiao-xue.jpg"
@@ -70,7 +70,7 @@
       "id": "12",
       "name": "Hyun Sung Park",
       "position": "Visiting Scientist, Samsung HQ",
-      "email": "",
+      "email": "hs1211.park@samsung.com",
       "researchInterests": ["Reflection resistant photonics"],
       "startYear": "2024",
       "image": ""
@@ -107,7 +107,7 @@
       "id": "14",
       "name": "Tian Yuan",
       "position": "Visiting Ph.D. Student",
-      "email": "",
+      "email": "n2606510b@e.ntu.edu.sg",
       "researchInterests": [],
       "startYear": "",
       "image": "/team/yuan-tian.jpg"
@@ -116,7 +116,7 @@
       "id": "15",
       "name": "Zou Zhi",
       "position": "Ph.D. Student",
-      "email": "",
+      "email": "zzou004@e.ntu.edu.sg",
       "researchInterests": [],
       "startYear": "",
       "image": "/team/zhi-zou.jpg"
@@ -125,7 +125,7 @@
       "id": "16",
       "name": "Lu Yue",
       "position": "Ph.D. Student",
-      "email": "",
+      "email": "ylu060@e.ntu.edu.sg",
       "researchInterests": [],
       "startYear": "",
       "image": "/team/yue-lu.jpg"
@@ -134,7 +134,7 @@
       "id": "18",
       "name": "Yosep Kim",
       "position": "Ph.D. Student",
-      "email": "",
+      "email": "kimy0008@e.ntu.edu.sg",
       "researchInterests": [],
       "startYear": "",
       "image": "/team/yosep-kim.jpg"
