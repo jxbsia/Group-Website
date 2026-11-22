@@ -2,9 +2,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Navigation from "./components/Navigation";
-import SiteFooter from "./components/SiteFooter";
+import siaLogo from './assets/sia-logo.svg';
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Team from "./pages/Team";
@@ -23,7 +23,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div id="top" className="min-h-screen bg-background font-sans">
+        <div className="min-h-screen bg-background font-sans">
           <Navigation />
 
           {/* Main Content */}
@@ -42,7 +42,26 @@ const App = () => (
             </Routes>
           </main>
 
-          <SiteFooter />
+          {/* Footer */}
+          <footer className="footer bg-background">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+              <div className="footer-content">
+                <div className="footer-copyright flex flex-wrap justify-center items-center gap-2">
+                  <span>© {new Date().getFullYear()}</span>
+                  <img src={siaLogo} alt="SIA Laboratories" className="h-5" />
+                  <span style={{ fontFamily: 'Moonspace, sans-serif' }} className="tracking-wider">SIA LABORATORIES</span>
+                  <span className="whitespace-nowrap">All rights reserved.</span>
+                </div>
+
+                <div className="footer-links">
+                  <Link to="/about">About</Link>
+                  <Link to="/research">Research</Link>
+                  <Link to="/publications">Publications</Link>
+                  <Link to="/contact">Contact</Link>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </BrowserRouter>
     </TooltipProvider>
