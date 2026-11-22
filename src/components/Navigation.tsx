@@ -48,37 +48,45 @@ const Navigation = () => {
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <nav
-        aria-label="Main"
-        className={`site-header ${isScrolled || location.pathname !== '/' ? 'site-header-scrolled' : ''}`}
+        className={`fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm transition-all duration-300 ${
+          isScrolled ? 'border-b border-border' : 'border-b border-transparent'
+        }`}
       >
-        <div className="cinematic-wrap">
-          <div className="flex justify-between items-center h-16 gap-5">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link
               to="/"
-              className="site-brand flex items-center gap-3"
-              aria-label="SIA Laboratories home"
+              className="flex items-center"
             >
-              <img src={siaLogo} alt="" className="h-7" />
-              <span>SIA Laboratories</span>
+              <img src={siaLogo} alt="SIA Laboratories" className="h-10" />
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-[clamp(0.85rem,1.8vw,1.6rem)] desktop-site-links">
+            <div className="hidden lg:flex items-center space-x-8">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
-                  aria-current={isActive(item.path) ? 'page' : undefined}
-                  className={`text-sm font-medium transition-colors duration-300 ${
+                  className={`text-sm uppercase tracking-widest font-bold transition-colors duration-300 ${
                     isActive(item.path)
                       ? 'text-accent'
-                      : 'text-white/85 hover:text-accent'
+                      : 'text-white hover:text-accent'
                   }`}
                 >
                   {item.name}
                 </Link>
               ))}
+            </div>
+
+            {/* Desktop Contact Info */}
+            <div className="hidden lg:flex items-center">
+              <a
+                href="mailto:jiaxubrian.sia@ntu.edu.sg"
+                className="text-sm text-white font-bold hover:text-accent transition-colors duration-300"
+              >
+                jiaxubrian.sia@ntu.edu.sg
+              </a>
             </div>
 
             {/* Mobile menu button */}
